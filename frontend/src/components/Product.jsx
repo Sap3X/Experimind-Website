@@ -27,7 +27,7 @@ const ProductsSection = () => {
     { title: "PSL", imageSrc: "https://placehold.co/339x203" },
     { title: "Prastuti", imageSrc: "https://placehold.co/339x203" },
     { title: "Geomagic", imageSrc: "https://placehold.co/339x203" },
-    { title: "Anubhav", imageSrc: "https://placehold.co/339x203" },
+    { title: "Anubhav", imageSrc: "./assets/Experimind-Anubhav-Kit.webp" },
   ];
 
   return (

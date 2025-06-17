@@ -90,7 +90,7 @@ const StatisticsComponent = () => {
                     duration={2000 + (index * 200)} // Stagger animation
                   />
                 </div>
-                <div className="text-gray-700 text-sm sm:text-base lg:text-xl font-semibold uppercase tracking-wide">
+                <div className="text-gray-700 text-sm sm:text-base lg:text-xl font-semibold tracking-wide">
                   {item.label}
                 </div>
               </div>
