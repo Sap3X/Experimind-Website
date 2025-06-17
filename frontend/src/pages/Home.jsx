@@ -6,6 +6,7 @@ import Testimonials from "../components/Testimonial";
 import HeroSec from "../components/HeroSec";
 import img1 from "./assets/About-ExperimindLabs-1st-pic.webp";
 import img2 from "./assets/About-ExperimindLabs-2nd-pic.webp";
+import arrow from "./assets/arrow-right-circle.png";
 import ProductsSection from "../components/Product";
 import { useNavigate } from "react-router-dom";
 import PartnerCarousel from "../components/Ourpartner";
@@ -22,14 +23,15 @@ export default function Home() {
 
       {/* Impact Section */}
       <StatisticsComponent/>
+
       {/* Who Are We Section */}
       <div className="pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-8 lg:mb-12">
+          <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-8 lg:mb-12">
             Who are we?
           </h2>
 
-          <p className="text-[#696983] text-lg sm:text-xl lg:text-2xl text-center mb-12 lg:mb-16 max-w-7xl mx-auto leading-relaxed">
+          <p className="Utility-font-NunitoSans text-[#696983] text-lg sm:text-xl lg:text-2xl text-center mb-12 lg:mb-16 max-w-7xl mx-auto leading-relaxed">
             We are Experimind Labs an innovative educational research center
             dedicated to transforming education through cutting-edge research,
             creative solutions, and impactful training programs. Our mission is
@@ -52,17 +54,16 @@ export default function Home() {
                 alt="Learning Innovation"
                 className="w-full h-64 lg:h-96 object-cover rounded-lg shadow-lg"
               />
-              {/* Overlay removed for better mobile experience */}
             </div>
           </div>
 
           <div className="text-center">
             <button
-              className="bg-[#2E3192] text-white text-lg lg:text-xl font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors inline-flex items-center gap-4"
+              className="Utility-font-Montserrat bg-[#2E3192] text-white text-lg lg:text-xl font-bold py-4 px-8 rounded-lg hover:bg-gray-400 transition-colors inline-flex items-center gap-4"
               onClick={() => navigate("/about")}
             >
               <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/k5j2gvsp_expires_30_days.png"
+                src={arrow}
                 alt="Learn More Icon"
                 className="w-8 h-8 lg:w-12 lg:h-12 rounded-lg"
               />

@@ -1,4 +1,7 @@
 import React from "react";
+import "../index.css";
+import img1 from "./assets/Experimindlabs-Shiksha-2.0.webp";
+import img5 from "./assets/Experimind-Anubhav-Kit.webp";
 
 const ProductCard = ({ title, imageSrc, className = "" }) => (
   <div
@@ -23,20 +26,20 @@ const ProductCard = ({ title, imageSrc, className = "" }) => (
 
 const ProductsSection = () => {
   const products = [
-    { title: "Shiksha 2.0", imageSrc: "./assets/Experimindlabs-Shiksha-2.0.webp" },
+    { title: "Shiksha 2.0", imageSrc: {img1} },
     { title: "PSL", imageSrc: "https://placehold.co/339x203" },
     { title: "Prastuti", imageSrc: "https://placehold.co/339x203" },
     { title: "Geomagic", imageSrc: "https://placehold.co/339x203" },
-    { title: "Anubhav", imageSrc: "./assets/Experimind-Anubhav-Kit.webp" },
+    { title: "Anubhav", imageSrc: {img5} },
   ];
 
   return (
-    <div className="bg-[#2e31923b] flex items-center">
+    <div className="Utility-font-Montserrat bg-[#2e31923b] flex items-center">
       <section className="w-full py-12 sm:py-16 lg:py-20 xl:py-20 px-4 sm:px-6 lg:px-8 xl:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Title */}
-          <div className="text-center mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
-            <h2 className="text-indigo-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-sans leading-tight">
+          <div className=" text-center mb-8 sm:mb-12 lg:mb-16 xl:mb-20">
+            <h2 className="text-indigo-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
               Our Products
             </h2>
             <div className="mt-4 w-24 h-1 bg-orange-600 mx-auto rounded-full"></div>
@@ -53,15 +56,6 @@ const ProductsSection = () => {
               />
             ))}
           </div>
-
-          {/* Optional: Show more button for large collections */}
-          {products.length > 8 && (
-            <div className="text-center mt-8 sm:mt-12 lg:mt-16">
-              <button className="px-8 py-3 bg-indigo-900 hover:bg-indigo-800 text-white rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                View All Products
-              </button>
-            </div>
-          )}
         </div>
         <div className="flex justify-center">Coming Very Soon</div>
       </section>

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import '../index.css';
 
 const PartnerCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -172,8 +173,8 @@ const PartnerCarousel = () => {
     <div className="w-full max-w-7xl mt-11 mx-auto py-16">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-[#2E3192] mb-4">Our Partners</h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h2 className="Utility-font-Montserrat text-4xl font-bold text-[#2E3192] mb-4">Our Partners</h2>
+        <p className="Utility-font-Buenard text-lg text-gray-600 max-w-2xl mx-auto">
           We collaborate with leading organizations to drive innovation and create meaningful impact
         </p>
       </div>
