@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Buenard:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root{
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Buenard", serif;
+  --tertiary-font: "Nunito Sans", sans-serif;
+  --primary-color: #2e3192;
+  --secondary-color: #00aeef;
+  --accent-color: #f05a28;
+  --tertiary-color: #ffdd15;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family:var(--main-font,--secondary-font,--tertiary-font); */
+  background-color: #ECECEC;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Utlity-font-Montserrat{
+    font-family: var(--main-font) !important;
+}
+
+.Utlity-font-Buenard{
+    font-family: var(--secondary-font) !important;
+}
+
+.Utility-font-NunitoSans{
+    font-family: var(--tertiary-font) !important;
+}
+
+.Utility-color-Blue{
+    color: var(--primary-color) !important;
+}
+
+.Utility-color-Cyanblue{
+    color: var(--secondary-color) !important;
+}
+
+.Utility-color-Orange{
+    color: var(--accent-color) !important;
+}
+
+.Utility-color-Yellow{
+    color: var(--tertiary-color) !important;
+}
+
+.Utility-bg-Blue{
+    background-color: var(--primary-color) !important;
+}
+
+.Utility-bg-Cyanblue{
+    background-color: var(--secondary-color) !important;
+}
+
+.Utility-bg-Orange{
+    background-color: var(--accent-color) !important;
+}
+
+.Utility-bg-Yellow{
+    background-color: var(--tertiary-color) !important;
+}
