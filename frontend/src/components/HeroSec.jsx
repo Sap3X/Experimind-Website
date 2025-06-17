@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./assets/hero.jpeg";
+import img from "./assets/Experimindlabs-HeroImg.webp";
 
 export default function HeroSec() {
   return (

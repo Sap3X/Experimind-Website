@@ -23,7 +23,7 @@ const ProductCard = ({ title, imageSrc, className = "" }) => (
 
 const ProductsSection = () => {
   const products = [
-    { title: "Shiksha 2.0", imageSrc: "https://placehold.co/340x203" },
+    { title: "Shiksha 2.0", imageSrc: "./assets/Experimindlabs-Shiksha-2.0.webp" },
     { title: "PSL", imageSrc: "https://placehold.co/339x203" },
     { title: "Prastuti", imageSrc: "https://placehold.co/339x203" },
     { title: "Geomagic", imageSrc: "https://placehold.co/339x203" },
@@ -63,6 +63,7 @@ const ProductsSection = () => {
             </div>
           )}
         </div>
+        <div className="flex justify-center">Coming Very Soon</div>
       </section>
     </div>
   );

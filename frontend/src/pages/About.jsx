@@ -105,11 +105,9 @@ export default function About() {
             
             {/* Values Card */}
             <div className="flex flex-col items-center bg-blue-400 bg-opacity-40 p-8 lg:p-12 rounded-3xl text-center md:col-span-2 lg:col-span-1">
-              <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/6kpjx8mn_expires_30_days.png"
-                alt="Values Icon"
-                className="w-20 h-20 lg:w-28 lg:h-28 object-contain mb-6"
-              />
+              <div className="w-20 h-20 lg:w-28 lg:h-28 object-contain mb-6 bg-blue-400 rounded-full">
+                <img src="" alt="" />
+              </div>
 
               <h3 className="text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
                 Our Values

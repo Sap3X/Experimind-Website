@@ -7,43 +7,43 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Rahul Bhandari",
-      role: "Director",
-      company: "Nitte University",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face&auto=format",
-      testimonial: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet."
+      name: " Narayana Shenoy",
+      role: "Head Master",
+      company: "Srimad Bhuvanendra High School, Karkala",
+      image: "https://placehold.co/46x46/FFD700/000000?text=Narayana+Shenoy",
+      testimonial: "Thanks to the PSL and its hands-on approach, our classrooms are now filled with curiosity, innovation, and excitement for STEM learning."
     },
     {
       id: 2,
-      name: "Sarah Johnson",
-      role: "CEO",
-      company: "TechCorp Solutions",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b9a3e27b?w=100&h=100&fit=crop&crop=face&auto=format",
-      testimonial: "Outstanding service and exceptional quality. The team delivered beyond our expectations and helped transform our business processes. Their attention to detail and commitment to excellence is truly remarkable. We've seen significant improvements in our operations."
+      name: "Tanishka",
+      role: "Student of 9th grade",
+      company: "NITK English Medium School",
+      image: "https://placehold.co/46x46/FFD700/000000?text=Tanishka",
+      testimonial: "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!"
     },
     {
       id: 3,
-      name: "Michael Chen",
-      role: "CTO",
-      company: "Innovation Labs",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face&auto=format",
-      testimonial: "Working with this team has been a game-changer for our organization. Their innovative approach and technical expertise helped us overcome complex challenges. The results speak for themselves - increased efficiency and remarkable growth in our market presence."
+      name: "Kamakshi Rao",
+      role: "Teacher",
+      company: "",
+      image: "https://placehold.co/46x46/FFD700/000000?text=Kamakshi+Rao",
+      testimonial: "Shiksha Robot has transformed the way my students learn English! It makes practice engaging and interactive, helping them build confidence in speaking. The guided conversations and pronunciation support have are very useful."
     },
     {
       id: 4,
-      name: "Emily Rodriguez",
-      role: "Marketing Director",
-      company: "Global Dynamics",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face&auto=format",
-      testimonial: "Professional, reliable, and incredibly talented. They understood our vision perfectly and brought it to life with creativity and precision. The collaborative process was smooth and the final outcome exceeded all our expectations. Highly recommended!"
+      name: "Adarsh Hegde",
+      role: "Student of 7th grade",
+      company: "",
+      image: "https://placehold.co/46x46/FFD700/000000?text=Adarsh+Hegde",
+      testimonial: "I used to feel shy about speaking English, but Shiksha has helped me practice without hesitation. The interactive lessons and real-time feedback make learning easy and enjoyable."
     },
     {
       id: 5,
-      name: "David Thompson",
-      role: "Operations Manager",
+      name: "Ananya Shetty",
+      role: "Student of 6th grade",
       company: "Premier Industries",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face&auto=format",
-      testimonial: "Exceptional value and outstanding results. The project was completed on time and within budget, with quality that surpassed our requirements. Their proactive communication and problem-solving abilities made the entire experience seamless and enjoyable."
+      image: "https://placehold.co/46x46/FFD700/000000?text=Ananya+Shetty",
+      testimonial: "I love using Shiksha! It feels like talking to a real person. I have improved my vocabulary and can now introduce myself fluently in English. Learning with the robot is so much fun!"
     }
   ];
 

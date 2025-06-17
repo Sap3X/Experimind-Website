@@ -4,11 +4,12 @@ import Footer from "../components/Footer";
 import "../index.css";
 import Testimonials from "../components/Testimonial";
 import HeroSec from "../components/HeroSec";
-import img1 from "./assets/home/1stwhower.JPG";
-import img2 from "./assets/home/2ndwhower.JPG";
+import img1 from "./assets/About-ExperimindLabs-1st-pic.webp";
+import img2 from "./assets/About-ExperimindLabs-2nd-pic.webp";
 import ProductsSection from "../components/Product";
 import { useNavigate } from "react-router-dom";
-import PartnerCarousel from "../components/Ourparnter";
+import PartnerCarousel from "../components/Ourpartner";
+import StatisticsComponent from "../components/Impact";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -20,34 +21,9 @@ export default function Home() {
       <HeroSec />
 
       {/* Impact Section */}
-      <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-            THE IMPACT WE CREATE
-          </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 ">
-            {[
-              { number: "10K+", label: "Students" },
-              { number: "25+", label: "Schools Reached" },
-              { number: "200+", label: "Workshops Conducted" },
-              { number: "1000+", label: "Awards Winning" },
-            ].map((item, index) => (
-              <div key={index} className="text-center">
-                <div className="Utility-color-Blue text-4xl sm:text-6xl lg:text-8xl font-normal mb-2">
-                  {item.number}
-                </div>
-                <div className="text-black text-sm sm:text-lg lg:text-2xl font-semibold">
-                  {item.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
+      <StatisticsComponent/>
       {/* Who Are We Section */}
-      <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="pb-16 lg:pb-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-8 lg:mb-12">
             Who are we?
