@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import img from "../image";
 
 export default function ResponsiveNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,11 +14,11 @@ export default function ResponsiveNavbar() {
 
   return (
     <>
-      <nav className="Utility-font-Montserrat container h-16 bg-[#ffffff] z-50 fixed top-0 left-0 right-0 mx-auto flex justify-between items-center py-2 px-4 shadow-sm my-3 rounded-xl">
+      <nav className="container h-16 bg-[#ffffff] z-50 fixed top-0 left-0 right-0 mx-auto flex justify-between items-center py-2 px-4 shadow-sm my-3 rounded-xl">
         <div className="">
           <a href="/">
             <div className="">
-              <img src={img.experimindlabs_logo} alt="logo" width="200" />
+              <img src="/assets/logo.png" alt="logo" width="200" />
             </div>
           </a>
         </div>
@@ -65,7 +64,7 @@ export default function ResponsiveNavbar() {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div
-          className="Utility-font-Montserrat fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
+          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
           onClick={closeMobileMenu}
         >
           <div

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../image";
+import img from "./assets/hero.jpeg";
 
 export default function HeroSec() {
   return (
@@ -8,7 +8,7 @@ export default function HeroSec() {
         {/* Hero Background Image */}
         <img
           className="absolute left-96 inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
-          src={img.heroimg}
+          src={img}
           alt="Hero Background"
           loading="lazy"
         />
