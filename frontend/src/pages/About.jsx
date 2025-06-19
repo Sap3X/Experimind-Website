@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../index.css";
+import img from '../image';
 import icon from "./assets/file-detail.png";
 import icon1 from "./assets/community.png";
 import icon2 from "./assets/briefcase-alt-2.png";
@@ -30,9 +30,9 @@ export default function About() {
 
               <div className="flex justify-center mt-8 lg:mt-12">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/qxd6ki7e_expires_30_days.png"
+                  src= {img.meeting}
                   alt="Experimind Labs Illustration"
-                  className="w-full max-w-4xl h-auto object-contain"
+                  className="w-full max-w-4xl h-auto object-contain rounded-3xl shadow-lg transform transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function About() {
                   Who are we?
                 </h2>
 
-                <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-center lg:text-left">
+                <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-justify">
                   We are an organization dedicated to conducting research in the
                   field of education. We focus on curriculum development,
                   teaching aid design, student learning, methods, teacher
@@ -193,7 +193,7 @@ export default function About() {
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
                   <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-14 lg:h-14 rounded-full bg-gray-500 flex items-center justify-center">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-24 lg:h-24 rounded-full bg-gray-500 flex items-center justify-center">
                       <svg
                         className="w-7 h-7 sm:w-8 sm:h-8 text-gray-300"
                         fill="currentColor"

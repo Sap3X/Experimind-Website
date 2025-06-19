@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import '../index.css';
+import img from'../image';
 
 const PartnerCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,60 +14,57 @@ const PartnerCarousel = () => {
   const partners = [
     {
       id: 1,
-      name: 'AIM Innovation',
-      logo: 'https://placehold.co/453x168/FFD700/000000?text=AIM+Innovation'
+      name: 'AIC NITTE',
+      logo: img.aicnitte,
     },
     {
       id: 2,
-      name: 'RV University',
-      logo: 'https://placehold.co/453x168/4169E1/FFFFFF?text=RV+University'
+      name: 'Atal Innovation Mission',
+      logo: img.aim,
     },
     {
       id: 3,
-      name: 'NITTE University',
-      logo: 'https://placehold.co/453x168/1E40AF/FFFFFF?text=NITTE+University'
+      name: 'Nagarjuna Group of Institutions',
+      logo: img.ngi,
     },
     {
       id: 4,
-      name: 'Tech Corp',
-      logo: 'https://placehold.co/453x168/059669/FFFFFF?text=Tech+Corp'
+      name: 'RV University',
+      logo: img.rv,
     },
     {
       id: 5,
-      name: 'Innovation Hub',
-      logo: 'https://placehold.co/453x168/DC2626/FFFFFF?text=Innovation+Hub'
+      name: 'Nitte University',
+      logo: img.nitte,
     },
     {
       id: 6,
-      name: 'Future Labs',
-      logo: 'https://placehold.co/453x168/7C3AED/FFFFFF?text=Future+Labs'
+      name: 'SSRVM',
+      logo: img.ssrvm,
     },
     {
       id: 7,
-      name: 'Global Partners',
-      logo: 'https://placehold.co/453x168/EA580C/FFFFFF?text=Global+Partners'
+      name: 'SBC',
+      logo: img.sbc,
     },
     {
       id: 8,
-      name: 'Smart Solutions',
-      logo: 'https://placehold.co/453x168/0891B2/FFFFFF?text=Smart+Solutions'
+      name: 'YFS',
+      logo: img.yfs,
     }
   ];
 
   const partnersPerView = 3;
   
-  // Create extended array for seamless infinite scroll
-  // We need enough copies to prevent any visible gaps during transitions
   const extendedPartners = [
-    ...partners.slice(-partnersPerView), // Last few items at the beginning
+    ...partners.slice(-partnersPerView), 
     ...partners,
     ...partners,
-    ...partners.slice(0, partnersPerView) // First few items at the end
+    ...partners.slice(0, partnersPerView) 
   ];
   
-  const initialIndex = partnersPerView; // Start position (skipping the prepended items)
+  const initialIndex = partnersPerView; 
   
-  // Counter animation function
   const animateCounter = (target, setter, duration = 2000) => {
     let start = 0;
     const increment = target / (duration / 16);
@@ -84,12 +81,10 @@ const PartnerCarousel = () => {
     animate();
   };
 
-  // Initialize position
   useEffect(() => {
     setCurrentIndex(initialIndex);
   }, []);
 
-  // Intersection Observer for counter animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -120,7 +115,6 @@ const PartnerCarousel = () => {
     
     setTimeout(() => {
       setCurrentIndex(prev => {
-        // If we've moved past the main content, reset to the beginning seamlessly
         if (prev >= initialIndex + partners.length) {
           if (carouselRef.current) {
             carouselRef.current.style.transition = 'none';
@@ -146,7 +140,6 @@ const PartnerCarousel = () => {
     
     setTimeout(() => {
       setCurrentIndex(prev => {
-        // If we've moved before the main content, reset to the end seamlessly
         if (prev < initialIndex) {
           if (carouselRef.current) {
             carouselRef.current.style.transition = 'none';
@@ -164,7 +157,6 @@ const PartnerCarousel = () => {
     }, 500);
   };
 
-  // Calculate the dot indicator position
   const getDotIndex = () => {
     return (currentIndex - initialIndex + partners.length) % partners.length;
   };
@@ -173,7 +165,9 @@ const PartnerCarousel = () => {
     <div className="w-full max-w-7xl mt-11 mx-auto py-16">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="Utility-font-Montserrat text-4xl font-bold text-[#2E3192] mb-4">Our Partners</h2>
+        <h2 className="Utility-font-Montserrat text-3xl sm:text-4xl lg:text-6xl font-bold text-center Utility-color-Blue mb-4">
+          Our Partners
+        </h2>
         <p className="Utility-font-Buenard text-lg text-gray-600 max-w-2xl mx-auto">
           We collaborate with leading organizations to drive innovation and create meaningful impact
         </p>
@@ -251,7 +245,7 @@ const PartnerCarousel = () => {
       </div>
 
       {/* Partnership Stats with Counter Animation */}
-      <div ref={statsRef} className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div ref={statsRef} className="Utility-font-Montserrat mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
           <div className="text-3xl font-bold text-blue-600 mb-2">
             {counters.partners}+

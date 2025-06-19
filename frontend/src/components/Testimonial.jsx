@@ -72,7 +72,7 @@ const Testimonials = () => {
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
       {/* Header */}
       <div className="text-center">
-        <h2 className="Utility-color-Blue text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 lg:mb-4">
+        <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-3 lg:mb-10">
           Testimonials
         </h2>
       </div>

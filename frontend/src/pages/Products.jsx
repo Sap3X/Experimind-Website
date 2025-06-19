@@ -13,7 +13,7 @@ export default function Products() {
           className="w-full h-[500px] md:h-[600px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-6">
             Our Products
           </h1>
           <p className="text-white text-lg md:text-2xl max-w-2xl mx-auto">

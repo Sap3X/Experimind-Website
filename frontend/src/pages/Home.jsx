@@ -1,16 +1,15 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import "../index.css";
-import Testimonials from "../components/Testimonial";
-import HeroSec from "../components/HeroSec";
-import img1 from "./assets/About-ExperimindLabs-1st-pic.webp";
-import img2 from "./assets/About-ExperimindLabs-2nd-pic.webp";
-import arrow from "./assets/arrow-right-circle.png";
-import ProductsSection from "../components/Product";
 import { useNavigate } from "react-router-dom";
-import PartnerCarousel from "../components/Ourpartner";
+import img from "../image";
+import Header from "../components/Header";
+import HeroSec from "../components/HeroSec";
 import StatisticsComponent from "../components/Impact";
+import ProductsSection from "../components/Product";
+import PartnerCarousel from "../components/Ourpartner";
+import Testimonials from "../components/Testimonial";
+import becomePartner from "../components/BecomePartner";
+import Footer from "../components/Footer";
+import BecomePartner from "../components/BecomePartner";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -42,7 +41,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12">
             <div className="flex-1">
               <img
-                src={img1}
+                src={img.who_we_are_1}
                 alt="Educational Research"
                 className="w-full h-64 lg:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -50,7 +49,7 @@ export default function Home() {
 
             <div className="flex-1 relative">
               <img
-                src={img2}
+                src={img.who_we_are_2}
                 alt="Learning Innovation"
                 className="w-full h-64 lg:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -63,7 +62,7 @@ export default function Home() {
               onClick={() => navigate("/about")}
             >
               <img
-                src={arrow}
+                src={img.arrow}
                 alt="Learn More Icon"
                 className="w-8 h-8 lg:w-12 lg:h-12 rounded-lg"
               />
@@ -82,7 +81,7 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-[#2E3192] text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
+          <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
             Why Choose Us?
           </h2>
 
@@ -114,10 +113,10 @@ export default function Home() {
                   key={index}
                   className="bg-[#F7F7F7] p-3 lg:p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col hover:-translate-y-1"
                 >
-                  <h3 className="text-[#2E3192] font-bold text-lg lg:text-xl mb-2">
+                  <h3 className="Utility-font-Montserrat Utility-color-Blue font-bold text-lg lg:text-xl mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-[#2E3192] text-base lg:text-lg">
+                  <p className="text-[#4d50929d] Utility-font-NunitoSans text-base lg:text-lg">
                     {item.description}
                   </p>
                 </div>
@@ -126,22 +125,22 @@ export default function Home() {
 
             <div className="flex-1">
               <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/57t6z3y1_expires_30_days.png"
+                src={img.whychooseus}
                 alt="Why Choose Us"
-                className="w-full h-100% object-contain"
+                className="w-full h-100% object-contain rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               />
             </div>
           </div>
         </div>
       </div>
 
-      {}
+      {/* {Testimonial Section} */}
       <Testimonials />
 
       {/* Call to Action Section */}
-      <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 mb-16 lg:mb-24">
+      {/* <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 mb-16 lg:mb-24">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-[#5F5D5D80] rounded-3xl p-8 lg:p-16 text-center shadow-2xl">
+          <div className="bg-[#5f5d5d70] rounded-3xl p-8 lg:p-16 text-center shadow-2xl">
             <h2 className="text-white text-2xl sm:text-3xl lg:text-5xl font-bold mb-8 lg:mb-12 leading-tight">
               Want to make your School ready for change?
               <br className="hidden lg:block" />
@@ -161,7 +160,8 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
+      <BecomePartner/>
       {/* Footer component would go here */}
       <Footer />
     </div>

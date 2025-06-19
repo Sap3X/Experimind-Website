@@ -74,7 +74,7 @@ const StatisticsComponent = () => {
   return (
     <div className="Utility-font-Montserrat py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16 tracking-tight">
+        <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
           THE IMPACT WE CREATE
         </h2>
 

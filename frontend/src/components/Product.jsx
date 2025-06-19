@@ -1,7 +1,5 @@
 import React from "react";
-import "../index.css";
-import img1 from "./assets/Experimindlabs-Shiksha-2.0.webp";
-import img5 from "./assets/Experimind-Anubhav-Kit.webp";
+import img from "../image";
 
 const ProductCard = ({ title, imageSrc, className = "" }) => (
   <div
@@ -9,7 +7,7 @@ const ProductCard = ({ title, imageSrc, className = "" }) => (
   >
     <div className="aspect-[5/3] w-full mb-3 sm:mb-4 overflow-hidden rounded-lg bg-gray-100">
       <img
-        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+        className="w-50 h-50 object-cover hover:scale-105 transition-transform duration-500"
         src={imageSrc}
         alt={title}
         loading="lazy"
@@ -26,11 +24,11 @@ const ProductCard = ({ title, imageSrc, className = "" }) => (
 
 const ProductsSection = () => {
   const products = [
-    { title: "Shiksha 2.0", imageSrc: {img1} },
-    { title: "PSL", imageSrc: "https://placehold.co/339x203" },
-    { title: "Prastuti", imageSrc: "https://placehold.co/339x203" },
-    { title: "Geomagic", imageSrc: "https://placehold.co/339x203" },
-    { title: "Anubhav", imageSrc: {img5} },
+    { title: "Shiksha 2.0", imageSrc: img.shiksha },
+    { title: "PSL", imageSrc: img.psl },
+    { title: "Prastuti", imageSrc: img.prastuti },
+    { title: "Geomagic", imageSrc: img.geomagic },
+    { title: "Anubhav", imageSrc: img.anubhav },
   ];
 
   return (
