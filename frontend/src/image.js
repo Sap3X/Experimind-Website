@@ -20,5 +20,8 @@ const image =
     yfs: require('./assets/YFS_Logo.webp'),
     whychooseus: require('./assets/Experimindlabs-kids-studing.webp'),
     meeting: require('./assets/Experimindlabs-meeting.webp'),
+    vision_icons: require('./assets/file-detail.png'),
+    mission_icons: require('./assets/briefcase-alt-2.png'),
+    values_icons: require('./assets/community.png'),
 }
 export default image;

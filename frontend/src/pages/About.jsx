@@ -2,9 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import img from '../image';
-import icon from "./assets/file-detail.png";
-import icon1 from "./assets/community.png";
-import icon2 from "./assets/briefcase-alt-2.png";
 
 export default function About() {
   return (
@@ -81,7 +78,7 @@ export default function About() {
               <div className="flex flex-col items-center bg-blue-400 bg-opacity-40 p-8 lg:p-12 rounded-3xl text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
                 <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-blue-700 rounded-full mb-6">
                   <img
-                    src={icon}
+                    src={img.vision_icons}
                     alt="Vision Icon"
                     className="w-12 h-12 lg:w-16 lg:h-16 object-contain transition-transform duration-300"
                   />
@@ -101,7 +98,7 @@ export default function About() {
               <div className="flex flex-col items-center bg-blue-400 bg-opacity-40 p-8 lg:p-12 rounded-3xl text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
                 <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-yellow-300 rounded-full mb-6">
                   <img
-                    src={icon2}
+                    src={img.mission_icons}
                     alt="Mission Icon"
                     className="w-12 h-12 lg:w-16 lg:h-16 object-contain transition-transform duration-300"
                   />
@@ -121,7 +118,7 @@ export default function About() {
               <div className="flex flex-col items-center bg-blue-400 bg-opacity-40 p-8 lg:p-12 rounded-3xl text-center md:col-span-2 lg:col-span-1 transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
                 <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-blue-400 rounded-full mb-6">
                   <img
-                    src={icon1}
+                    src={img.values_icons}
                     alt="Values Icon"
                     className="w-12 h-12 lg:w-16 lg:h-16 object-contain transition-transform duration-300"
                   />
