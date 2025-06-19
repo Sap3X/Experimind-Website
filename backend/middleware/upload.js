@@ -6,33 +6,21 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const resumesPath = path.join(__dirname, '../uploads/resumes');
-
-// Ensure the directory exists
+const resumesPath = path.join(__dirname, '../temp_resumes');
 fs.mkdirSync(resumesPath, { recursive: true });
 
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, resumesPath);
-  },
+  destination: (req, file, cb) => cb(null, resumesPath),
   filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
-    cb(null, `resume-${uniqueSuffix}${path.extname(file.originalname)}`);
-  }
+    const uniqueName = `resume-${Date.now()}${path.extname(file.originalname)}`;
+    cb(null, uniqueName);
+  },
 });
 
 const fileFilter = (req, file, cb) => {
-  if (file.mimetype === 'application/pdf') {
-    cb(null, true);
-  } else {
-    cb(new Error('Only PDF files are allowed'), false);
-  }
+  file.mimetype === 'application/pdf' ? cb(null, true) : cb(new Error('Only PDFs allowed'));
 };
 
-const upload = multer({
-  storage,
-  fileFilter,
-  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB max
-});
+const upload = multer({ storage, fileFilter, limits: { fileSize: 5 * 1024 * 1024 } });
 
 export default upload;

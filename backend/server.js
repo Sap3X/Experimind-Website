@@ -5,9 +5,12 @@ import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
-
+import contactRoute from "./routes/contact.js"; // contact form submission route
 import jobsRoute from "./routes/jobs.js";          // job listing routes
 import jobApplyRoute from "./routes/jobRoutes.js"; // job application form submission
+import internshipApplyRoute from "./routes/internships.js"; // job application form submission
+
+
 
 dotenv.config();
 
@@ -38,6 +41,8 @@ mongoose.connect(process.env.MONGO, {
 // Routes
 app.use("/api/jobs", jobsRoute);
 app.use("/api/jobs", jobApplyRoute); // handles POST /apply
+app.use("/api/internships", internshipApplyRoute); // handles POST /apply
+app.use("/api/contact", contactRoute); // handles POST /contact
 
 // Start server
 const PORT = process.env.PORT || 9001;
