@@ -24,11 +24,11 @@ const ProductCard = ({ title, imageSrc, className = "" }) => (
 
 const ProductsSection = () => {
   const products = [
-    { title: "Shiksha 2.0", imageSrc: img.shiksha },
     { title: "PSL", imageSrc: img.psl },
     { title: "Prastuti", imageSrc: img.prastuti },
-    { title: "Geomagic", imageSrc: img.geomagic },
     { title: "Anubhav", imageSrc: img.anubhav },
+    { title: "Geomagic", imageSrc: img.geomagic },
+    // { title: "Shiksha 2.0", imageSrc: img.shiksha }
   ];
 
   return (
@@ -44,7 +44,7 @@ const ProductsSection = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 justify-items-center">
+          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 xl:gap-10 justify-items-center">
             {products.map((product, index) => (
               <ProductCard
                 key={index}

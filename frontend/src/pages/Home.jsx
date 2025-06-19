@@ -138,30 +138,8 @@ export default function Home() {
       <Testimonials />
 
       {/* Call to Action Section */}
-      {/* <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 mb-16 lg:mb-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-[#5f5d5d70] rounded-3xl p-8 lg:p-16 text-center shadow-2xl">
-            <h2 className="text-white text-2xl sm:text-3xl lg:text-5xl font-bold mb-8 lg:mb-12 leading-tight">
-              Want to make your School ready for change?
-              <br className="hidden lg:block" />
-              Want to make students future ready?
-            </h2>
-
-            <button
-              className="bg-[#FFA807] text-black text-lg lg:text-2xl font-bold py-4 px-8 rounded-lg hover:bg-orange-500 transition-colors inline-flex items-center gap-4"
-              onClick={() => alert("Pressed!")}
-            >
-              Become a partner
-              <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/7f9ixbrh_expires_30_days.png"
-                alt="Partner Icon"
-                className="w-8 h-8 lg:w-12 lg:h-12 rounded-lg"
-              />
-            </button>
-          </div>
-        </div>
-      </div> */}
       <BecomePartner/>
+      
       {/* Footer component would go here */}
       <Footer />
     </div>

@@ -8,7 +8,7 @@ const image =
     shiksha: require('./assets/Shiksha.webp'),
     psl: require('./assets/Experimind-PSL.webp'),
     prastuti: require('./assets/Experimind-Prastuti.webp'),
-    geomagic: require('./assets/About-ExperimindLabs-1st-pic.webp'),
+    geomagic: require('./assets/Experimind_GeoMagic.webp'),
     anubhav: require('./assets/Experimind-Anubhav-Kit.webp'),
     aicnitte: require('./assets/AIC_nitte_Logo.webp'),
     aim: require('./assets/AIM_Logo.webp'),
