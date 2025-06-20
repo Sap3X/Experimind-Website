@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import img from '../image';
+import image from "../image";
 
 export default function About() {
   return (
@@ -147,42 +148,71 @@ export default function About() {
               {/* All team members in individual divs */}
               {[
                 {
-                  name: "John Doe",
-                  linkedin: "https://linkedin.com/in/johndoe",
+                  image: img.ceo,
+                  name: "Akshay Mashelkar",
+                  designation: "Founder & CEO",
+                  linkedin: "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
                 },
                 {
-                  name: "Jane Smith",
-                  linkedin: "https://linkedin.com/in/janesmith",
+                  image: img.cto,
+                  name: "Adarsh Devadiga",
+                  designation: "CTO",
+                  linkedin: "https://www.linkedin.com/in/adarsh-devadiga007/",
                 },
                 {
-                  name: "Mike Johnson",
-                  linkedin: "https://linkedin.com/in/mikejohnson",
+                  image: img.techinical_engineer,
+                  name: "Anand J",
+                  designation: "Technical Engineer",
+                  linkedin: "https://www.linkedin.com/in/anandj01/",
                 },
                 {
-                  name: "Sarah Wilson",
-                  linkedin: "https://linkedin.com/in/sarahwilson",
+                  image: img.accountant,
+                  name: "Shruthi",
+                  designation: "Accountant",
+                  linkedin: "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
                 },
                 {
-                  name: "David Brown",
-                  linkedin: "https://linkedin.com/in/davidbrown",
+                  image: img.intern1,
+                  name: "Sapekcha Bhandari",
+                  designation: "Frontend Developer Intern",
+                  linkedin: "https://www.linkedin.com/in/sapekcha-bhandari/",
                 },
                 {
-                  name: "Emily Davis",
+                  image: img.intern2,
+                  name: "Kavan Shetty",
+                  designation: "Intern",
                   linkedin: "https://linkedin.com/in/emilydavis",
                 },
                 {
-                  name: "Alex Miller",
-                  linkedin: "https://linkedin.com/in/alexmiller",
+                  image: img.intern3,
+                  name: "Sagar Shanbhogue",
+                  designation: "Intern",
+                  linkedin: "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
                 },
                 {
-                  name: "Lisa Garcia",
-                  linkedin: "https://linkedin.com/in/lisagarcia",
+                  image: img.intern4,
+                  name: "Harish Vishwanath Bhat",
+                  designation: "Intern",
+                  linkedin: "https://www.linkedin.com/in/harish-bhat-b8a001250/",
                 },
                 {
-                  name: "Chris Taylor",
-                  linkedin: "https://linkedin.com/in/christaylor",
+                  image: img.intern5,
+                  name: "Sandesh shripad hegde",
+                  designation: "Intern",
+                  linkedin: "https://www.linkedin.com/in/sandesh-sh-528888340/",
                 },
-
+                {
+                  image: img.intern6,
+                  name: "Sharamanth P Acharya",
+                  designation: "Intern",
+                  linkedin: "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
+                },
+                {
+                  image: img.intern6,
+                  name: "Manish Poojary",
+                  designation: "Intern",
+                  linkedin: "hhttps://www.linkedin.com/in/manish-poojary-341154369/",
+                },
               ].map((member, index) => (
                 <div
                   key={index}
@@ -190,26 +220,17 @@ export default function About() {
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
                   <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <div className="w-14 h-14 sm:w-16 sm:h-16 lg:w-24 lg:h-24 rounded-full bg-gray-500 flex items-center justify-center">
-                      <svg
-                        className="w-7 h-7 sm:w-8 sm:h-8 text-gray-300"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
+                    <img className="w-14 h-14 sm:w-16 sm:h-16 lg:w-24 lg:h-24 rounded-full bg-gray-500 flex items-center justify-center" src={member.image} alt="" />
                   </div>
 
                   {/* Name */}
-                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-3">
+                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
                     {member.name}
                   </h1>
-
+                  {/* Designation */}
+                  <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
+                    {member.designation}
+                  </h2>
                   {/* LinkedIn Link */}
                   <a
                     href={member.linkedin}

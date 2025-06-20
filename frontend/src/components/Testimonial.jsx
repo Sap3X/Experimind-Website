@@ -19,7 +19,7 @@ const Testimonials = () => {
       role: "Student of 9th grade",
       company: "NITK English Medium School",
       image: "https://placehold.co/46x46/FFD700/000000?text=Tanishka",
-      testimonial: "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!"
+      testimonial: "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!"
     },
     {
       id: 3,

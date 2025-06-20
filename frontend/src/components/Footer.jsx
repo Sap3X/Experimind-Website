@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img from "../image";
 
 export default function Footer() {
   return (
@@ -88,7 +89,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <img
-                src="/assets/instagram.png"
+                src={img.insta}
                 alt="Instagram"
                 className="w-12 h-12 rounded-xl hover:scale-110 transition-transform duration-300 bg-white p-1 shadow-lg"
               />
@@ -99,7 +100,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <img
-                src="/assets/twitter-x.png"
+                src={img.Twitter}
                 alt="Twitter-X"
                 className="w-12 h-12 rounded-xl hover:scale-110 transition-transform duration-300 bg-white p-1 shadow-lg"
               />
@@ -110,7 +111,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <img
-                src="/assets/linkedin.png"
+                src={img.linkedin}
                 alt="LinkedIn"
                 className="w-12 h-12 rounded-xl hover:scale-110 transition-transform duration-300 bg-white p-1 shadow-lg"
               />
@@ -121,7 +122,7 @@ export default function Footer() {
               rel="noreferrer"
             >
               <img
-                src="/assets/youtube.png"
+                src={img.youtube}
                 alt="YouTube"
                 className="w-12 h-12 rounded-xl hover:scale-110 transition-transform duration-300 bg-white p-1 shadow-lg"
               />

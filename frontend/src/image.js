@@ -1,7 +1,8 @@
+import { Twitter } from 'lucide-react';
+
 const image =
 {
     experimindlabs_logo: require('./assets/logo.png'),
-    heroimg: require('./assets/Experimindlabs-HeroImg.webp'),
     who_we_are_1: require('./assets/About-ExperimindLabs-1st-pic.webp'),
     who_we_are_2: require('./assets/About-ExperimindLabs-2nd-pic.webp'),
     arrow: require('./assets/arrow-right-circle.png'),
@@ -24,5 +25,19 @@ const image =
     mission_icons: require('./assets/briefcase-alt-2.png'),
     values_icons: require('./assets/community.png'),
     meeting2: require('./assets/Experimind-labs-Meeting-Room.webp'),
+    insta: require('./assets/instagram.png'),
+    Twitter: require('./assets/twitter-x.png'),
+    linkedin: require('./assets/linkedin.png'),
+    youtube: require('./assets/youtube.png'),
+    ceo: require('./assets/Akshay-Mashelkar.webp'),
+    cto: require('./assets/Adarsh-Devadiga.webp'),
+    techinical_engineer: require('./assets/Anand-J.webp'),
+    accountant: require('./assets/Shruthi.webp'),
+    intern1: require('./assets/Sapekcha-Bhandari.jpg'),
+    intern2: require('./assets/Kavan-Shetty.webp'),
+    intern3: require('./assets/Sagar_shanbhogue.webp'),
+    intern4: require('./assets/Harish-Vishwanath-Bhat.webp'),
+    intern5: require('./assets/Sandesh-Shripad-hegde.webp'),
+    intern6: require('./assets/Shramanth-P-Acharya.webp'),
 }
 export default image;
