@@ -33,11 +33,12 @@ const image =
     cto: require('./assets/Adarsh-Devadiga.webp'),
     techinical_engineer: require('./assets/Anand-J.webp'),
     accountant: require('./assets/Shruthi.webp'),
-    intern1: require('./assets/Sapekcha-Bhandari.jpg'),
+    intern1: require('./assets/Sapekcha-Bhandari.webp'),
     intern2: require('./assets/Kavan-Shetty.webp'),
-    intern3: require('./assets/Sagar_shanbhogue.webp'),
+    production: require('./assets/Sagar_shanbhogue.webp'),
     intern4: require('./assets/Harish-Vishwanath-Bhat.webp'),
     intern5: require('./assets/Sandesh-Shripad-hegde.webp'),
     intern6: require('./assets/Shramanth-P-Acharya.webp'),
+    intern7: require('./assets/Manish-Poojary.webp'),
 }
 export default image;
