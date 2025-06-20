@@ -106,21 +106,21 @@ const BecomePartner = () => {
             </div>
 
             <div className="relative z-10">
-              <h2 className="text-white text-2xl sm:text-3xl lg:text-5xl font-bold mb-6 lg:mb-8 leading-tight">
-                Want to make your School ready for change?
+              <h2 className="Utility-font-Montserrat text-white text-2xl sm:text-3xl lg:text-5xl font-bold mb-6 lg:mb-8 leading-tight">
+                Want to make your school ready for change?
                 <br className="hidden lg:block" />
                 <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
                   Want to make students future ready?
                 </span>
               </h2>
 
-              <p className="text-gray-300 text-lg lg:text-xl mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
+              <p className="Utility-font-Buenard text-gray-300 text-lg lg:text-xl mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
                 Join hundreds of forward-thinking schools that are transforming
                 education and preparing students for tomorrow's challenges.
               </p>
 
               {/* Statistics */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+              <div className="Utility-font-Montserrat grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 <div className="text-center">
                   <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">
                     {counters.partners}+
@@ -148,7 +148,7 @@ const BecomePartner = () => {
               </div>
 
               {/* Benefits Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="Utility-font-Montserrat grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 {partnershipBenefits.map((benefit, index) => (
                   <div
                     key={index}
@@ -167,7 +167,7 @@ const BecomePartner = () => {
 
               {/* CTA Button */}
               <button
-                className="group bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-lg lg:text-2xl font-bold py-4 px-8 lg:py-6 lg:px-12 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 inline-flex items-center gap-4 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
+                className="Utility-font-Montserrat group bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-lg lg:text-2xl font-bold py-4 px-8 lg:py-6 lg:px-12 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 inline-flex items-center gap-4 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
                 onClick={() => {
                   // Your existing form handler can go here
                   console.log("Become a Partner clicked");

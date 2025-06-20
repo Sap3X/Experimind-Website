@@ -57,9 +57,9 @@ export default function About() {
 
               <div className="flex-shrink-0 w-full lg:w-2/5">
                 <img
-                  src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/3l66zzxl_expires_30_days.png"
+                  src={img.meeting2}
                   alt="Education Research"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-contain shadow-lg rounded-3xl transform transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>

@@ -23,5 +23,6 @@ const image =
     vision_icons: require('./assets/file-detail.png'),
     mission_icons: require('./assets/briefcase-alt-2.png'),
     values_icons: require('./assets/community.png'),
+    meeting2: require('./assets/Experimind-labs-Meeting-Room.webp'),
 }
 export default image;
