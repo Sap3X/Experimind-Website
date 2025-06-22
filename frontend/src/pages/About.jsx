@@ -154,6 +154,11 @@ export default function About() {
                   linkedin: "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
                 },
                 {
+                  image: img.ceo,
+                  name: "Lata Mashelkar",
+                  designation: "Director",
+                },
+                {
                   image: img.cto,
                   name: "Adarsh Devadiga",
                   designation: "CTO",
@@ -176,6 +181,11 @@ export default function About() {
                   name: "Sagar Shanbhogue",
                   designation: "Production Management",
                   linkedin: "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
+                },
+                {
+                  image: img.intern3,
+                  name: "Sharath Dinesh",
+                  designation: "Production Executive",
                 },
                 {
                   image: img.intern1,
@@ -211,7 +221,7 @@ export default function About() {
                   image: img.intern7,
                   name: "Manish Poojary",
                   designation: "Mechanical Intern",
-                  linkedin: "hhttps://www.linkedin.com/in/manish-poojary-341154369/",
+                  linkedin: "https://www.linkedin.com/in/manish-poojary-341154369/",
                 },
               ].map((member, index) => (
                 <div

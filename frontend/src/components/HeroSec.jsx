@@ -1,16 +1,23 @@
 import React from "react";
-import img from "../image";
-import heroimg from "../assets/Hero.svg"
+import hero from "../assets/Experimind-Labs-Hero-Img.svg";
+import bg_hero from "../assets/Bg-of-Hero-img.svg";
 
 export default function HeroSec() {
   return (
     <>
       <div className="w-full h-screen min-h-[400px] max-h-[1024px] relative overflow-hidden">
         {/* Hero Background Image */}
-        <img
+
+        <img 
+          className="absolute left-1/3 inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100" 
+          src={hero} 
+          alt="" 
+        />
+
+        <img 
           className="absolute inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
-          src={heroimg}
-          alt="Hero Background"
+          src={bg_hero}
+          alt=""
           loading="lazy"
         />
 
