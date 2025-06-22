@@ -151,8 +151,7 @@ export default function About() {
                   image: img.ceo,
                   name: "Akshay Mashelkar",
                   designation: "Founder & CEO",
-                  linkedin:
-                    "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
+                  linkedin: "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
                 },
                 {
                   image: img.ceo,
@@ -175,15 +174,13 @@ export default function About() {
                   image: img.accountant,
                   name: "Shruthi",
                   designation: "Accountant",
-                  linkedin:
-                    "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
+                  linkedin: "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
                 },
                 {
                   image: img.production,
                   name: "Sagar Shanbhogue",
                   designation: "Production Management",
-                  linkedin:
-                    "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
+                  linkedin: "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
                 },
                 {
                   image: img.intern3,
@@ -200,15 +197,13 @@ export default function About() {
                   image: img.intern2,
                   name: "Kavan Shetty",
                   designation: "Electronics Intern",
-                  linkedin:
-                    "https://www.linkedin.com/in/kavan-shetty-008187293/",
+                  linkedin: "https://www.linkedin.com/in/kavan-shetty-008187293/",
                 },
                 {
                   image: img.intern4,
                   name: "Harish Vishwanath Bhat",
                   designation: "E&C Intern",
-                  linkedin:
-                    "https://www.linkedin.com/in/harish-bhat-b8a001250/",
+                  linkedin: "https://www.linkedin.com/in/harish-bhat-b8a001250/",
                 },
                 {
                   image: img.intern5,
@@ -220,15 +215,13 @@ export default function About() {
                   image: img.intern6,
                   name: "Sharamanth P Acharya",
                   designation: "Robotics Intern",
-                  linkedin:
-                    "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
+                  linkedin: "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
                 },
                 {
                   image: img.intern7,
                   name: "Manish Poojary",
                   designation: "Mechanical Intern",
-                  linkedin:
-                    "https://www.linkedin.com/in/manish-poojary-341154369/",
+                  linkedin: "https://www.linkedin.com/in/manish-poojary-341154369/",
                 },
               ].map((member, index) => (
                 <div
