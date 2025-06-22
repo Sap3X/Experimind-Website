@@ -40,6 +40,6 @@ const image =
     intern5: require('./assets/Sandesh-Shripad-hegde.webp'),
     intern6: require('./assets/Shramanth-P-Acharya.webp'),
     intern7: require('./assets/Manish-Poojary.webp'),
-    intern3: require('./assets/Sharath.webp')
+    intern3: require('./assets/Sharath.webp'),
 }
 export default image;

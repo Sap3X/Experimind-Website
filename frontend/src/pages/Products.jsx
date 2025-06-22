@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import img from "../image"
-import productsImage from "./assets/productspage/p.svg";
+import productsImage from "../assets/Psl whith rack 1.svg";
 
 const EducationalSolutions = () => {
   // Educational solutions data

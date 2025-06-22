@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import img from '../image';
+import img from "../image";
 import image from "../image";
 
 export default function About() {
@@ -28,7 +28,7 @@ export default function About() {
 
               <div className="flex justify-center mt-8 lg:mt-12">
                 <img
-                  src= {img.meeting}
+                  src={img.meeting}
                   alt="Experimind Labs Illustration"
                   className="w-full max-w-4xl h-auto object-contain rounded-3xl shadow-lg transform transition-transform duration-300 hover:scale-105"
                 />
@@ -151,7 +151,8 @@ export default function About() {
                   image: img.ceo,
                   name: "Akshay Mashelkar",
                   designation: "Founder & CEO",
-                  linkedin: "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
+                  linkedin:
+                    "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
                 },
                 {
                   image: img.ceo,
@@ -174,13 +175,15 @@ export default function About() {
                   image: img.accountant,
                   name: "Shruthi",
                   designation: "Accountant",
-                  linkedin: "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
+                  linkedin:
+                    "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
                 },
                 {
                   image: img.production,
                   name: "Sagar Shanbhogue",
                   designation: "Production Management",
-                  linkedin: "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
+                  linkedin:
+                    "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
                 },
                 {
                   image: img.intern3,
@@ -197,13 +200,15 @@ export default function About() {
                   image: img.intern2,
                   name: "Kavan Shetty",
                   designation: "Electronics Intern",
-                  linkedin: "https://www.linkedin.com/in/kavan-shetty-008187293/",
+                  linkedin:
+                    "https://www.linkedin.com/in/kavan-shetty-008187293/",
                 },
                 {
                   image: img.intern4,
                   name: "Harish Vishwanath Bhat",
                   designation: "E&C Intern",
-                  linkedin: "https://www.linkedin.com/in/harish-bhat-b8a001250/",
+                  linkedin:
+                    "https://www.linkedin.com/in/harish-bhat-b8a001250/",
                 },
                 {
                   image: img.intern5,
@@ -215,22 +220,28 @@ export default function About() {
                   image: img.intern6,
                   name: "Sharamanth P Acharya",
                   designation: "Robotics Intern",
-                  linkedin: "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
+                  linkedin:
+                    "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
                 },
                 {
                   image: img.intern7,
                   name: "Manish Poojary",
                   designation: "Mechanical Intern",
-                  linkedin: "https://www.linkedin.com/in/manish-poojary-341154369/",
+                  linkedin:
+                    "https://www.linkedin.com/in/manish-poojary-341154369/",
                 },
               ].map((member, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center"
+                  className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
                   <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                    <img className="w-14 h-14 sm:w-16 sm:h-16 lg:w-24 lg:h-24 rounded-full bg-gray-500 flex items-center justify-center" src={member.image} alt="" />
+                    <img
+                      className="w-24 h-24 rounded-full bg-gray-500 flex items-center justify-center"
+                      src={member.image}
+                      alt=""
+                    />
                   </div>
 
                   {/* Name */}
@@ -241,25 +252,27 @@ export default function About() {
                   <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
                     {member.designation}
                   </h2>
-                  {/* LinkedIn Link */}
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-4 mb-8 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
-                  >
-                    <svg
-                      className="w-8 h-8"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
+                  {/* LinkedIn Link - Conditionally rendered */}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
                     >
-                      <path
-                        fillRule="evenodd"
-                        d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
+                      <svg
+                        className="w-8 h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
