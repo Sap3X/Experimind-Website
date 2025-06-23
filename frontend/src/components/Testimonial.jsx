@@ -1,10 +1,10 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Testimonials = () => {
   const testimonials = [
@@ -14,7 +14,8 @@ const Testimonials = () => {
       role: "Head Master",
       company: "Srimad Bhuvanendra High School, Karkala",
       image: "https://placehold.co/46x46/FFD700/000000?text=Narayana+Shenoy",
-      testimonial: "Thanks to the PSL and its hands-on approach, our classrooms are now filled with curiosity, innovation, and excitement for STEM learning."
+      testimonial:
+        "Thanks to the PSL and its hands-on approach, our classrooms are now filled with curiosity, innovation, and excitement for STEM learning.",
     },
     {
       id: 2,
@@ -22,7 +23,8 @@ const Testimonials = () => {
       role: "Student of 9th grade",
       company: "NITK English Medium School",
       image: "https://placehold.co/46x46/FFD700/000000?text=Tanishka",
-      testimonial: "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!"
+      testimonial:
+        "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!",
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ const Testimonials = () => {
       role: "Teacher",
       company: "",
       image: "https://placehold.co/46x46/FFD700/000000?text=Kamakshi+Rao",
-      testimonial: "Shiksha Robot has transformed the way my students learn English! It makes practice engaging and interactive, helping them build confidence in speaking. The guided conversations and pronunciation support have are very useful."
+      testimonial:
+        "Shiksha Robot has transformed the way my students learn English! It makes practice engaging and interactive, helping them build confidence in speaking. The guided conversations and pronunciation support have are very useful.",
     },
     {
       id: 4,
@@ -38,7 +41,8 @@ const Testimonials = () => {
       role: "Student of 7th grade",
       company: "",
       image: "https://placehold.co/46x46/FFD700/000000?text=Adarsh+Hegde",
-      testimonial: "I used to feel shy about speaking English, but Shiksha has helped me practice without hesitation. The interactive lessons and real-time feedback make learning easy and enjoyable."
+      testimonial:
+        "I used to feel shy about speaking English, but Shiksha has helped me practice without hesitation. The interactive lessons and real-time feedback make learning easy and enjoyable.",
     },
     {
       id: 5,
@@ -46,8 +50,9 @@ const Testimonials = () => {
       role: "Student of 6th grade",
       company: "Premier Industries",
       image: "https://placehold.co/46x46/FFD700/000000?text=Ananya+Shetty",
-      testimonial: "I love using Shiksha! It feels like talking to a real person. I have improved my vocabulary and can now introduce myself fluently in English. Learning with the robot is so much fun!"
-    }
+      testimonial:
+        "I love using Shiksha! It feels like talking to a real person. I have improved my vocabulary and can now introduce myself fluently in English. Learning with the robot is so much fun!",
+    },
   ];
 
   return (
@@ -63,7 +68,7 @@ const Testimonials = () => {
       <div className="relative max-w-full overflow-hidden">
         {/* Left Gradient Fade */}
         <div className="absolute left-0 top-0 w-4 sm:w-6 md:w-8 lg:w-12 xl:w-16 h-full bg-gradient-to-r from-white via-white/90 to-transparent z-20 pointer-events-none"></div>
-        
+
         {/* Right Gradient Fade */}
         <div className="absolute right-0 top-0 w-4 sm:w-6 md:w-8 lg:w-12 xl:w-16 h-full bg-gradient-to-l from-white via-white/90 to-transparent z-20 pointer-events-none"></div>
 
@@ -72,8 +77,18 @@ const Testimonials = () => {
           className="swiper-button-prev-custom absolute left-2 sm:left-3 md:left-4 lg:left-6 xl:left-8 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-16 xl:h-16 bg-white/95 hover:bg-white border border-blue-200 hover:border-blue-400 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 z-30 backdrop-blur-sm"
           aria-label="Previous testimonial"
         >
-          <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+          <svg
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M15 19l-7-7 7-7"
+            />
           </svg>
         </button>
 
@@ -81,8 +96,18 @@ const Testimonials = () => {
           className="swiper-button-next-custom absolute right-2 sm:right-3 md:right-4 lg:right-6 xl:right-8 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 xl:w-16 xl:h-16 bg-white/95 hover:bg-white border border-blue-200 hover:border-blue-400 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 z-30 backdrop-blur-sm"
           aria-label="Next testimonial"
         >
-          <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+          <svg
+            className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-blue-600"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M9 5l7 7-7 7"
+            />
           </svg>
         </button>
 
@@ -91,15 +116,20 @@ const Testimonials = () => {
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             loop={true}
-            autoplay={{ delay: 4000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-            pagination={{ 
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            pagination={{
               clickable: true,
-              bulletClass: 'swiper-pagination-bullet custom-bullet',
-              bulletActiveClass: 'swiper-pagination-bullet-active custom-bullet-active'
+              bulletClass: "swiper-pagination-bullet custom-bullet",
+              bulletActiveClass:
+                "swiper-pagination-bullet-active custom-bullet-active",
             }}
             navigation={{
-              nextEl: '.swiper-button-next-custom',
-              prevEl: '.swiper-button-prev-custom',
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
             }}
             spaceBetween={12}
             slidesPerView={1}
@@ -109,65 +139,65 @@ const Testimonials = () => {
               320: {
                 slidesPerView: 1,
                 spaceBetween: 12,
-                centeredSlides: false
+                centeredSlides: false,
               },
               // Small phones (375px+)
               375: {
                 slidesPerView: 1,
                 spaceBetween: 14,
-                centeredSlides: false
+                centeredSlides: false,
               },
               // Large phones (425px+)
               425: {
                 slidesPerView: 1,
                 spaceBetween: 16,
-                centeredSlides: false
+                centeredSlides: false,
               },
               // Small tablets (480px+)
               480: {
                 slidesPerView: 1,
-                spaceBetween: 16
+                spaceBetween: 16,
               },
               // Tablets portrait (600px+)
               600: {
                 slidesPerView: 1,
-                spaceBetween: 18
+                spaceBetween: 18,
               },
               // Small tablets landscape (768px+)
               768: {
                 slidesPerView: 2,
-                spaceBetween: 20
+                spaceBetween: 20,
               },
               // Large tablets (900px+)
               900: {
                 slidesPerView: 2,
-                spaceBetween: 22
+                spaceBetween: 22,
               },
               // Small laptops (1024px+)
               1024: {
                 slidesPerView: 2,
-                spaceBetween: 24
+                spaceBetween: 24,
               },
               // Large laptops (1280px+)
               1280: {
                 slidesPerView: 2,
-                spaceBetween: 28
+                spaceBetween: 28,
               },
               // Desktop (1440px+)
               1440: {
                 slidesPerView: 3,
-                spaceBetween: 32
+                spaceBetween: 32,
               },
               // Large desktop (1600px+)
               1600: {
                 slidesPerView: 3.5,
-                spaceBetween: 36
+                spaceBetween: 36,
               },
               // Extra large desktop (1920px+)
               1920: {
                 slidesPerView: 4,
-                spaceBetween: 40
-              }
+                spaceBetween: 40,
+              },
             }}
             className="testimonials-swiper overflow-hidden"
           >
@@ -184,22 +214,32 @@ const Testimonials = () => {
                         loading="lazy"
                       />
                       <div className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-sm">
-                        <svg className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        <svg
+                          className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 text-white"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
                         </svg>
                       </div>
                     </div>
-                    
+
                     <h3 className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-1 sm:mb-2 leading-tight px-1">
                       {testimonial.name}
                     </h3>
-                    
+
                     <p className="text-blue-500 text-xs sm:text-sm md:text-base font-medium leading-tight px-2">
                       {testimonial.role}
                       {testimonial.company && (
                         <>
                           <br />
-                          <span className="text-blue-400 text-xs sm:text-sm">{testimonial.company}</span>
+                          <span className="text-blue-400 text-xs sm:text-sm">
+                            {testimonial.company}
+                          </span>
                         </>
                       )}
                     </p>
@@ -207,11 +247,15 @@ const Testimonials = () => {
 
                   {/* Testimonial Content */}
                   <div className="relative flex-grow flex items-center min-h-[120px] sm:min-h-[140px] md:min-h-[160px]">
-                    <div className="absolute -top-2 sm:-top-3 -left-2 sm:-left-3 text-2xl sm:text-3xl md:text-4xl text-blue-200 opacity-50 font-serif leading-none">"</div>
+                    <div className="absolute -top-2 sm:-top-3 -left-2 sm:-left-3 text-2xl sm:text-3xl md:text-4xl text-blue-200 opacity-50 font-serif leading-none">
+                      "
+                    </div>
                     <p className="text-gray-700 text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-center px-4 sm:px-5 md:px-6 py-2 sm:py-3 font-medium">
                       {testimonial.testimonial}
                     </p>
-                    <div className="absolute -bottom-2 sm:-bottom-3 -right-2 sm:-right-3 text-2xl sm:text-3xl md:text-4xl text-blue-200 opacity-50 font-serif leading-none rotate-180">"</div>
+                    <div className="absolute -bottom-2 sm:-bottom-3 -right-2 sm:-right-3 text-2xl sm:text-3xl md:text-4xl text-blue-200 opacity-50 font-serif leading-none rotate-180">
+                      "
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

@@ -8,20 +8,18 @@ export default function HeroSec() {
       <div className="w-full h-screen min-h-[400px] max-h-[1024px] relative overflow-hidden">
         {/* Hero Background Image */}
 
-        <img 
-          className="absolute left-1/3 inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100" 
-          src={hero} 
-          alt="" 
+        <img
+          className="absolute left-1/3 inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
+          src={hero}
+          alt=""
         />
 
-        <img 
+        <img
           className="absolute inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
           src={bg_hero}
           alt=""
           loading="lazy"
         />
-
-        
 
         {/* Content Area - Add your hero content here */}
         <div className="absolute inset-0 flex items-center justify-center z-10">

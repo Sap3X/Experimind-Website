@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { TrendingUp, Users, Award, ArrowRight } from "lucide-react";
 
 const BecomePartner = () => {
-
   // Animated counters
   const [counters, setCounters] = useState({
     partners: 0,
@@ -37,7 +36,6 @@ const BecomePartner = () => {
 
     animateCounters();
   }, []);
-
 
   const partnershipBenefits = [
     {
