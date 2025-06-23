@@ -3,7 +3,7 @@ const image =
     who_we_are_1: require('./assets/About-ExperimindLabs-1st-pic.webp'),
     who_we_are_2: require('./assets/About-ExperimindLabs-2nd-pic.webp'),
     arrow: require('./assets/arrow-right-circle.png'),
-    shiksha: require('./assets/Shiksha.webp'),
+    shiksha: require('./assets/Experimind-labs-Robot-Shiksha.webp'),
     psl: require('./assets/Experimind-PSL.webp'),
     prastuti: require('./assets/Experimind-Prastuti.webp'),
     geomagic: require('./assets/Experimind_GeoMagic.webp'),
