@@ -10,10 +10,10 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Narayana Shenoy",
+      name: " Narayana Shenoy",
       role: "Head Master",
       company: "Srimad Bhuvanendra High School, Karkala",
-      image: "https://placehold.co/46x46/3B82F6/FFFFFF?text=NS",
+      image: "https://placehold.co/46x46/FFD700/000000?text=Narayana+Shenoy",
       testimonial: "Thanks to the PSL and its hands-on approach, our classrooms are now filled with curiosity, innovation, and excitement for STEM learning."
     },
     {
@@ -21,40 +21,40 @@ const Testimonials = () => {
       name: "Tanishka",
       role: "Student of 9th grade",
       company: "NITK English Medium School",
-      image: "https://placehold.co/46x46/3B82F6/FFFFFF?text=T",
-      testimonial: "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!"
+      image: "https://placehold.co/46x46/FFD700/000000?text=Tanishka",
+      testimonial: "PSL has helped me understand STEM concepts in a fun way. Building models and experimenting with different ideas has made learning exciting. I look forward to every session with PSL!"
     },
     {
       id: 3,
       name: "Kamakshi Rao",
       role: "Teacher",
       company: "",
-      image: "https://placehold.co/46x46/3B82F6/FFFFFF?text=KR",
-      testimonial: "Shiksha Robot has transformed the way my students learn English! It makes practice engaging and interactive, helping them build confidence in speaking. The guided conversations and pronunciation support are very useful."
+      image: "https://placehold.co/46x46/FFD700/000000?text=Kamakshi+Rao",
+      testimonial: "Shiksha Robot has transformed the way my students learn English! It makes practice engaging and interactive, helping them build confidence in speaking. The guided conversations and pronunciation support have are very useful."
     },
     {
       id: 4,
       name: "Adarsh Hegde",
       role: "Student of 7th grade",
       company: "",
-      image: "https://placehold.co/46x46/3B82F6/FFFFFF?text=AH",
-      testimonial: "I used to feel shy about speaking English, but Shiksha has helped me practice without hesitation. The interactive lessons and real-time feedback make learning easy and enjoyable."
+      image: "https://placehold.co/46x46/FFD700/000000?text=Adarsh+Hegde",
+      testimonial: "I used to feel shy about speaking English, but Shiksha has helped me practice without hesitation. The interactive lessons and real-time feedback make learning easy and enjoyable."
     },
     {
       id: 5,
       name: "Ananya Shetty",
       role: "Student of 6th grade",
       company: "Premier Industries",
-      image: "https://placehold.co/46x46/3B82F6/FFFFFF?text=AS",
+      image: "https://placehold.co/46x46/FFD700/000000?text=Ananya+Shetty",
       testimonial: "I love using Shiksha! It feels like talking to a real person. I have improved my vocabulary and can now introduce myself fluently in English. Learning with the robot is so much fun!"
     }
   ];
 
   return (
-    <section className="w-full max-w-[125rem] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 py-6 sm:py-8 lg:py-12 xl:py-16 overflow-hidden">
-      {/* Title */}
-      <div className="text-center mb-6 sm:mb-8 lg:mb-12 xl:mb-16">
-        <h2 className="text-blue-600 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
+    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      {/* Header */}
+      <div className="text-center">
+        <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-3 lg:mb-10">
           Testimonials
         </h2>
       </div>
@@ -78,7 +78,7 @@ const Testimonials = () => {
         </button>
 
         <button
-          className="swiper-button-next-custom absolute right-2 sm:right-3 md:right-4 lg:right-6 xl:right-8 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:w-14 xl:w-16 xl:h-16 bg-white/95 hover:bg-white border border-blue-200 hover:border-blue-400 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 z-30 backdrop-blur-sm"
+          className="swiper-button-next-custom absolute right-2 sm:right-3 md:right-4 lg:right-6 xl:right-8 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 xl:w-16 xl:h-16 bg-white/95 hover:bg-white border border-blue-200 hover:border-blue-400 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 z-30 backdrop-blur-sm"
           aria-label="Next testimonial"
         >
           <svg className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-7 xl:h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

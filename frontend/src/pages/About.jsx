@@ -7,24 +7,24 @@ import image from "../image";
 export default function About() {
   return (
     <>
-      <div className="min-h-screen">
-        {/* Hero Section */}
-        <div className="Utility-bg-Blue px-4 sm:px-6 lg:px-8">
-          <Header />
-          <div className="max-w-7xl mx-auto py-8">
-            {/* Assuming Header component exists */}
+		<div className="min-h-screen">
+      {/* Hero Section */}
+      <div className="Utility-bg-Blue px-4 sm:px-6 lg:px-8">
+        <Header />
+        <div className="max-w-7xl mx-auto py-8">
+          {/* Assuming Header component exists */}
+          
+          <div className="flex flex-col py-8 lg:py-16">
+            <h1 className="text-center text-white text-3xl sm:text-4xl lg:text-6xl font-bold mt-4">
+              About{' '}
+              <span className="text-orange-500">Experimind Labs</span>
+            </h1>
 
-            <div className="flex flex-col py-8 lg:py-16">
-              <h1 className="text-center text-white text-3xl sm:text-4xl lg:text-6xl font-bold mt-4">
-                About <span className="text-orange-500">Experimind Labs</span>
-              </h1>
-
-              <div className="flex justify-center mt-6 lg:mt-8">
-                <p className="text-white text-lg sm:text-xl lg:text-2xl text-center max-w-4xl px-4">
-                  Empowering education through innovative tech solutions that
-                  inspire and engage learners globally
-                </p>
-              </div>
+            <div className="flex justify-center mt-6 lg:mt-8">
+              <p className="text-white text-lg sm:text-xl lg:text-2xl text-center max-w-4xl px-4">
+                Empowering education through innovative tech solutions that inspire and engage learners globally
+              </p>
+            </div>
 
               <div className="flex justify-center mt-8 lg:mt-12">
                 <img
@@ -37,24 +37,19 @@ export default function About() {
           </div>
         </div>
 
-        {/* Who Are We Section */}
-        <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-              <div className="flex-1 space-y-6">
-                <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center lg:text-left">
-                  Who are we?
-                </h2>
-
-                <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-justify">
-                  We are an organization dedicated to conducting research in the
-                  field of education. We focus on curriculum development,
-                  teaching aid design, student learning, methods, teacher
-                  training, innovation and more. Our aim is to improve education
-                  by developing impactful, modern solutions in partnership with
-                  learners and educators worldwide.
-                </p>
-              </div>
+      {/* Who Are We Section */}
+      <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+            <div className="flex-1 space-y-6">
+              <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center lg:text-left">
+                Who are we?
+              </h2>
+              
+              <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-center lg:text-left">
+                We are an organization dedicated to conducting research in the field of education. We focus on curriculum development, teaching aid design, student learning, methods, teacher training, innovation and more. Our aim is to improve education by developing impactful, modern solutions in partnership with learners and educators worldwide.
+              </p>
+            </div>
 
               <div className="flex-shrink-0 w-full lg:w-2/5">
                 <img
@@ -67,12 +62,12 @@ export default function About() {
           </div>
         </div>
 
-        {/* Core Values Section */}
-        <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-blue-600 text-center text-3xl sm:text-4xl lg:text-6xl font-bold mb-8 lg:mb-12">
-              Our Core Values
-            </h2>
+      {/* Core Values Section */}
+      <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="Utility-color-Blue text-center text-3xl sm:text-4xl lg:text-6xl font-bold mb-8 lg:mb-12">
+            Our Core Values
+          </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Vision Card */}
@@ -128,14 +123,13 @@ export default function About() {
                   Our Values
                 </h3>
 
-                <p className="text-gray-600 text-lg lg:text-xl leading-relaxed">
-                  Fostering innovation, demystifying science and math fears, and
-                  sharing knowledge with all.
-                </p>
-              </div>
+              <p className="text-gray-600 text-lg lg:text-xl leading-relaxed">
+                Fostering innovation, demystifying science and math fears, and sharing knowledge with all.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
         {/* Team Section */}
         <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
@@ -272,8 +266,9 @@ export default function About() {
           </div>
         </div>
       </div>
+    </div>
 
-      <Footer />
+		<Footer/>
     </>
-  );
+  )
 }
