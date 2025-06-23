@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import img from "../image";
 
@@ -13,9 +13,9 @@ const PartnerCarousel = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
   const statsRef = useRef(null);
   const carouselRef = useRef(null);
+  const animationRefs = useRef([]);
 
-  // Dummy partner data with placeholder images
-  const partners = [
+ const partners = [
     {
       id: 1,
       name: "AIM Innovation",
@@ -69,25 +69,27 @@ const PartnerCarousel = () => {
 
   const initialIndex = partnersPerView;
 
-  const animateCounter = (target, setter, duration = 2000) => {
+  const animateCounter = useCallback((target, setter, duration = 2000) => {
     let start = 0;
     const increment = target / (duration / 16);
+    let animationId;
 
     const animate = () => {
       start += increment;
       if (start < target) {
         setter(Math.floor(start));
-        requestAnimationFrame(animate);
+        animationId = requestAnimationFrame(animate);
+        animationRefs.current.push(animationId);
       } else {
         setter(target);
       }
     };
     animate();
-  };
+  }, []);
 
   useEffect(() => {
     setCurrentIndex(initialIndex);
-  }, []);
+  }, [initialIndex]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -122,10 +124,15 @@ const PartnerCarousel = () => {
       observer.observe(statsRef.current);
     }
 
-    return () => observer.disconnect();
-  }, [hasAnimated]);
+    return () => {
+      observer.disconnect();
+      // Cleanup animation frames
+      animationRefs.current.forEach(id => cancelAnimationFrame(id));
+      animationRefs.current = [];
+    };
+  }, [hasAnimated, animateCounter]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (isTransitioning) return;
 
     setIsTransitioning(true);
@@ -149,9 +156,9 @@ const PartnerCarousel = () => {
       });
       setIsTransitioning(false);
     }, 500);
-  };
+  }, [isTransitioning, initialIndex, partners.length]);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     if (isTransitioning) return;
 
     setIsTransitioning(true);
@@ -175,12 +182,27 @@ const PartnerCarousel = () => {
       });
       setIsTransitioning(false);
     }, 500);
-  };
+  }, [isTransitioning, initialIndex, partners.length]);
+
+  // Handle keyboard navigation
+  const handleKeyDown = useCallback((event) => {
+    if (event.key === 'ArrowLeft') {
+      handlePrev();
+    } else if (event.key === 'ArrowRight') {
+      handleNext();
+    }
+  }, [handleNext, handlePrev]);
 
   // Calculate the dot indicator position
   const getDotIndex = () => {
     return (currentIndex - initialIndex + partners.length) % partners.length;
   };
+
+  const goToSlide = useCallback((index) => {
+    if (!isTransitioning) {
+      setCurrentIndex(initialIndex + index);
+    }
+  }, [isTransitioning, initialIndex]);
 
   return (
     <div className="w-full max-w-7xl mt-11 mx-auto py-16">
@@ -194,13 +216,19 @@ const PartnerCarousel = () => {
       </div>
 
       {/* Carousel Container */}
-      <div className="relative px-8">
+      <div 
+        className="relative px-8" 
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+        role="region"
+        aria-label="Partner carousel"
+      >
         <div className="flex items-center justify-center gap-8">
           {/* Left Arrow */}
           <button
             onClick={handlePrev}
             disabled={isTransitioning}
-            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-gray-50 group disabled:opacity-50"
+            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-gray-50 group disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
             aria-label="Previous partners"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600 group-hover:text-gray-900" />
@@ -211,6 +239,8 @@ const PartnerCarousel = () => {
             <div
               ref={carouselRef}
               className="flex items-center justify-center gap-8 transition-transform duration-500 ease-in-out"
+              role="group"
+              aria-label="Partner logos"
               style={{
                 transform: `translateX(-${currentIndex * (320 + 32)}px)`,
                 width: `${extendedPartners.length * (320 + 32)}px`,
@@ -222,12 +252,16 @@ const PartnerCarousel = () => {
               {extendedPartners.map((partner, index) => (
                 <div
                   key={`${partner.id}-${index}`}
-                  className="flex-shrink-0 w-80 h-48 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 flex items-center justify-center group cursor-pointer"
+                  className="flex-shrink-0 w-80 h-48 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 flex items-center justify-center group cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  role="img"
+                  aria-label={`${partner.name} logo`}
+                  tabIndex={0}
                 >
                   <img
                     src={partner.logo}
-                    alt={partner.name}
+                    alt={`${partner.name} logo`}
                     className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
               ))}
@@ -238,7 +272,7 @@ const PartnerCarousel = () => {
           <button
             onClick={handleNext}
             disabled={isTransitioning}
-            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-gray-50 group disabled:opacity-50"
+            className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-gray-50 group disabled:opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
             aria-label="Next partners"
           >
             <ChevronRight className="w-6 h-6 text-gray-600 group-hover:text-gray-900" />
@@ -246,20 +280,18 @@ const PartnerCarousel = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center mt-8 gap-2">
+        <div className="flex justify-center mt-8 gap-2" role="tablist" aria-label="Carousel navigation">
           {partners.map((_, index) => (
             <button
               key={index}
-              onClick={() => {
-                if (!isTransitioning) {
-                  setCurrentIndex(initialIndex + index);
-                }
-              }}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              onClick={() => goToSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                 index === getDotIndex()
                   ? "bg-blue-600 scale-110"
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
+              role="tab"
+              aria-selected={index === getDotIndex()}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -270,21 +302,23 @@ const PartnerCarousel = () => {
       <div
         ref={statsRef}
         className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+        role="region"
+        aria-label="Partnership statistics"
       >
         <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
-          <div className="text-3xl font-bold text-blue-600 mb-2">
+          <div className="text-3xl font-bold text-blue-600 mb-2" aria-live="polite">
             {counters.partners}+
           </div>
           <div className="text-gray-600">Strategic Partners</div>
         </div>
         <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
-          <div className="text-3xl font-bold text-green-600 mb-2">
+          <div className="text-3xl font-bold text-green-600 mb-2" aria-live="polite">
             {counters.projects}+
           </div>
           <div className="text-gray-600">Collaborative Projects</div>
         </div>
         <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
-          <div className="text-3xl font-bold text-purple-600 mb-2">
+          <div className="text-3xl font-bold text-purple-600 mb-2" aria-live="polite">
             {counters.countries}
           </div>
           <div className="text-gray-600">Countries Reached</div>
