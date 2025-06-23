@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import careersImage from './assets/careerspage/careers.svg';
+import careersImage from '../assets/Career_Hero_img.svg';
 
 const Careers = () => {
   const [jobs, setJobs] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [showInternshipModal, setShowInternshipModal] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState({
     name: "",

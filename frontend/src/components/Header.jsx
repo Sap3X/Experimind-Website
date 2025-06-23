@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import img from "../assets/Experimind-labs-Logo.svg";
 
 export default function ResponsiveNavbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,9 +20,9 @@ export default function ResponsiveNavbar() {
           <a href="/">
             <div className="">
               <img
-                src="../assets/Experimind-labs-Logo.svg"
+                src={img}
                 alt="logo"
-                width="200"
+                width="250"
               />
             </div>
           </a>

@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img from "../image";
+import immg from "../assets/Experimind-labs-footer-logo.svg";
 
 export default function Footer() {
   return (
     <footer className="Utility-bg-Blue text-white px-6 py-10">
-      <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-[80rem] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section */}
         <div className="space-y-4">
           <img
-            src="../assets/Experimind-labs-footer-logo.svg"
+            src={immg}
             alt="Logo"
-            className="w-[120px] h-auto"
+            className="w-[7.5rem] h-auto"
           />
           <p className="text-[#FFDD15] text-sm leading-relaxed">
             Our Office Address
@@ -23,7 +24,7 @@ export default function Footer() {
           <p className="text-sm font-semibold">
             Call us For Support: +917483276508
           </p>
-          <div className="w-full h-[200px] border border-white rounded-lg overflow-hidden">
+          <div className="w-full h-[12.5rem] border border-white rounded-lg overflow-hidden">
             <iframe
               title="Google Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.1682632689611!2d74.93448396203883!3d13.183002603753025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbcab0bde64c4d5%3A0x8f9820f8a79c2de2!2sExperimind%20Labs!5e0!3m2!1sen!2sin!4v1749128235644!5m2!1sen!2sin"
@@ -38,7 +39,7 @@ export default function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div className="space-y-4">
+        <div className="space-y-4 pt-8">
           <h3 className="text-[#FFDD15] text-xl font-bold">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
@@ -70,7 +71,7 @@ export default function Footer() {
         </div>
 
         {/* Services & Socials */}
-        <div className="space-y-4">
+        <div className="space-y-4 pt-8">
           <h3 className="text-[#FFDD15] text-xl font-bold">Services</h3>
           <ul className="space-y-1 text-sm font-medium">
             <li>Workshop</li>
