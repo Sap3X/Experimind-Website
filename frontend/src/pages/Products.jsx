@@ -77,7 +77,7 @@ const EducationalSolutions = () => {
             <h3 className="text-3xl md:text-4xl font-bold text-[#2F327D]">
               {solution.title}
             </h3>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
               {solution.description}
             </p>
             <button className="bg-[#FFDD15] hover:bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-md text-xl font-semibold w-fit transition-colors duration-300">

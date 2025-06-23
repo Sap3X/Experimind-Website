@@ -21,6 +21,8 @@ export default function HeroSec() {
           loading="lazy"
         />
 
+        
+
         {/* Content Area - Add your hero content here */}
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center text-white px-4 sm:px-6 lg:px-8">
