@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Left Section */}
         <div className="space-y-4">
           <img
-            src="/assets/footer-logo.png"
+            src="../assets/Footerlogo.svg"
             alt="Logo"
             className="w-[120px] h-auto"
           />
