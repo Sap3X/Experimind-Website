@@ -4,8 +4,6 @@ import Footer from "../components/Footer";
 import "../index.css";
 import Testimonials from "../components/Testimonial";
 import HeroSec from "../components/HeroSec";
-import img1 from "./assets/home/1stwhower.JPG";
-import img2 from "./assets/home/2ndwhower.JPG";
 import ProductsSection from "../components/Product";
 import { useNavigate } from "react-router-dom";
 import PartnerCarousel from "../components/Ourparnter";
@@ -20,7 +18,7 @@ export default function Home() {
       <HeroSec />
 
       {/* Impact Section */}
-        <StatisticsComponent/>
+      <StatisticsComponent/>
 
       {/* Who Are We Section */}
       <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
