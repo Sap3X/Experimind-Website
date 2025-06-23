@@ -2,14 +2,6 @@ import { useState, useEffect } from "react";
 import { TrendingUp, Users, Award, ArrowRight } from "lucide-react";
 
 const BecomePartner = () => {
-  const [formData, setFormData] = useState({
-    schoolName: "",
-    contactPerson: "",
-    email: "",
-    phone: "",
-    studentsCount: "",
-    message: "",
-  });
 
   // Animated counters
   const [counters, setCounters] = useState({
@@ -46,12 +38,6 @@ const BecomePartner = () => {
     animateCounters();
   }, []);
 
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
 
   const partnershipBenefits = [
     {

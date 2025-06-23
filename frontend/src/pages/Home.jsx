@@ -1,12 +1,14 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import "../index.css";
-import Testimonials from "../components/Testimonial";
-import HeroSec from "../components/HeroSec";
-import ProductsSection from "../components/Product";
+import img from "../image";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import HeroSec from "../components/HeroSec";
+import StatisticsComponent from "../components/Impact";
+import ProductsSection from "../components/Product";
 import PartnerCarousel from "../components/Ourparnter";
+import Testimonials from "../components/Testimonial";
+import BecomePartner from "../components/BecomePartner";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -38,7 +40,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 mb-12">
             <div className="flex-1">
               <img
-                src={img1}
+                src={img.who_we_are_1}
                 alt="Educational Research"
                 className="w-full h-64 lg:h-96 object-cover rounded-lg shadow-lg"
               />
@@ -46,7 +48,7 @@ export default function Home() {
 
             <div className="flex-1 relative">
               <img
-                src={img2}
+                src={img.who_we_are_2}
                 alt="Learning Innovation"
                 className="w-full h-64 lg:h-96 object-cover rounded-lg shadow-lg"
               />
