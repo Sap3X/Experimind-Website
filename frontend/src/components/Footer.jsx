@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Left Section */}
         <div className="space-y-4">
           <img
-            src="../assets/Footerlogo.svg"
+            src="../assets/Experimind-labs-footer-logo.svg"
             alt="Logo"
             className="w-[120px] h-auto"
           />

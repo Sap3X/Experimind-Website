@@ -18,7 +18,7 @@ export default function ResponsiveNavbar() {
         <div className="">
           <a href="/">
             <div className="">
-              <img src="../assets/Experimind_logo.svg" alt="logo" width="200" />
+              <img src="../assets/Experimind-labs-Logo.svg" alt="logo" width="200" />
             </div>
           </a>
         </div>
