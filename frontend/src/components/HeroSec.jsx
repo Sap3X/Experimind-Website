@@ -9,7 +9,7 @@ export default function HeroSec() {
         {/* Hero Background Image */}
 
         <img
-          className="absolute left-1/3 inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
+          className="absolute left-[32rem] inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
           src={hero}
           alt=""
         />

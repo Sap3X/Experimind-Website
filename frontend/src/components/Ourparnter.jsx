@@ -252,7 +252,7 @@ const PartnerCarousel = () => {
               {extendedPartners.map((partner, index) => (
                 <div
                   key={`${partner.id}-${index}`}
-                  className="flex-shrink-0 w-80 h-48 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 flex items-center justify-center group cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="flex-shrink-0 w-80 h-48 sm: bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-6 flex items-center justify-center group cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
                   role="img"
                   aria-label={`${partner.name} logo`}
                   tabIndex={0}

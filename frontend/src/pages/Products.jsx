@@ -41,7 +41,7 @@ const EducationalSolutions = () => {
         <img
           src={productsImage}
           alt="Products Background"
-          className="w-full h-[500px] md:h-[600px] object-cover object-center"
+          className="w-full h-[900px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">Our Products</h1>

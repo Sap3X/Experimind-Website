@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import contactUsImage from './assets/productspage/p.svg';
+import contactUsImage from '../assets/Contact_Hero_img.svg';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
@@ -237,7 +237,7 @@ export default function Contact() {
         <img
           src={contactUsImage}
           alt="contact Background"
-          className="w-full h-[500px] md:h-[600px] object-cover object-center"
+          className="w-full h-[850px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>

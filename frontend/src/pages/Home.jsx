@@ -29,7 +29,7 @@ export default function Home() {
             Who are we?
           </h2>
 
-          <p className="text-[#696983] text-lg sm:text-xl lg:text-2xl text-center mb-12 lg:mb-16 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-[#696983] text-lg sm:text-xl lg:text-2xl text-center mb-12 lg:mb-16 leading-relaxed">
             We are Experimind Labs an innovative educational research center
             dedicated to transforming education through cutting-edge research,
             creative solutions, and impactful training programs. Our mission is

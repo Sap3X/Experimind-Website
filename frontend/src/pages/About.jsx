@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import img from "../image";
-import image from "../image";
 
 export default function About() {
   return (
@@ -148,7 +147,7 @@ export default function About() {
                   linkedin: "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
                 },
                 {
-                  image: img.ceo,
+                  image: img.director,
                   name: "Lata Mashelkar",
                   designation: "Director",
                 },
@@ -207,7 +206,7 @@ export default function About() {
                 },
                 {
                   image: img.intern6,
-                  name: "Sharamanth P Acharya",
+                  name: "Shramanth P Acharya",
                   designation: "Robotics Intern",
                   linkedin: "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
                 },
