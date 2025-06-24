@@ -29,7 +29,7 @@ export default function ResponsiveNavbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <ul className="flex justify-between items-center gap-8 text-black font-semibold text-lg">
             <li className="transition duration-300 ease-in-out hover:scale-125">
               <a href="/">Home</a>
@@ -55,8 +55,8 @@ export default function ResponsiveNavbar() {
           </ul>
         </div>
 
-        {/* Mobile Burger Menu Button */}
-        <div className="md:hidden">
+        {/* Mobile & Tablet Burger Menu Button */}
+        <div className="lg:hidden">
           <button
             onClick={toggleMobileMenu}
             className="text-black hover:text-gray-600 transition-colors duration-200"
@@ -66,14 +66,14 @@ export default function ResponsiveNavbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile & Tablet Menu Overlay */}
       {isMobileMenuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden"
+          className="fixed inset-0 z-40 bg-black bg-opacity-50 lg:hidden"
           onClick={closeMobileMenu}
         >
           <div
-            className="fixed top-20 left-4 right-4 bg-white rounded-xl shadow-lg p-4"
+            className="fixed top-20 left-4 right-4 md:left-auto md:right-4 md:w-1/3 bg-white rounded-xl shadow-lg p-4"
             onClick={(e) => e.stopPropagation()}
           >
             <ul className="flex flex-col gap-4 text-black font-semibold text-lg">
