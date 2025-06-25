@@ -148,7 +148,7 @@ export default function About() {
                 },
                 {
                   image: img.director,
-                  name: "Lata Mashelkar",
+                  name: "Latha Bhandari",
                   designation: "Director",
                 },
                 {
@@ -235,21 +235,20 @@ export default function About() {
               {[
                 {
                   image: img.contenthead,
-                  name: "Subramanya Hegde",
+                  name: "Subramanya L. Hegde",
                   designation: "Content Head",
-                  linkedin: "https://www.linkedin.com/in/sapekcha-bhandari/",
+                  linkedin: "https://www.linkedin.com/in/subrahmanya-l-hegde-91533563/",
                 },
                 {
                   image: img.mentor,
                   name: "Ganapati Hedge",
                   designation: "Mentor",
-                  linkedin: "https://www.linkedin.com/in/kavan-shetty-008187293/",
                 },
                 {
                   image: img.advisor,
                   name: "Sandesh Shetty",
                   designation: "Advisor",
-                  linkedin: "https://www.linkedin.com/in/harish-bhat-b8a001250/",
+                  linkedin: "https://www.linkedin.com/in/sandesh5979/",
                 },
               ].map((member, index) => (
                 <div
