@@ -1,6 +1,6 @@
 import React from "react";
 import bg_hero from "../assets/Bg-of-Hero-img.svg";
-import img from "../image";
+import heroimg from "../assets/Experimind-Labs-Hero-Img.svg"
 
 export default function HeroSec() {
   return (
@@ -20,8 +20,8 @@ export default function HeroSec() {
                   sm:object-bottom
                   md:object-right
                   xl:translate-x-24 xl:top-0 xl:left-80 
-                  2xl:translate-x-32 2xl:top-0 2xl:left-44 2xl:object-contain"
-          src={img.heroimg}
+                  2xl:translate-x-32 2xl:top-0 2xl:left-48 2xl:object-contain"
+          src={heroimg}
           alt="Experimind Labs Hero"
         />
 
