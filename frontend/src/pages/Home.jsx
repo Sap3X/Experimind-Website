@@ -134,7 +134,7 @@ export default function Home() {
         </div>
       </div>
 
-      {}
+      {/* Testimonial Section */}
       <Testimonials />
 
       {/* Call to Action Section */}
