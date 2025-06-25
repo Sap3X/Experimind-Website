@@ -1,30 +1,49 @@
 import React from "react";
-import hero from "../assets/Experimind-Labs-Hero-Img.svg";
 import bg_hero from "../assets/Bg-of-Hero-img.svg";
+import img from "../image";
 
 export default function HeroSec() {
   return (
     <>
-      <div className="w-full h-screen min-h-[400px] max-h-[1024px] relative overflow-hidden">
-        {/* Hero Background Image */}
-
+      <div className="w-full h-screen min-h-[500px] max-h-[1024px] relative overflow-hidden">
+        {/* Background Hero Image */}
         <img
-          className="absolute 2xl:left-[32rem] xl:left-[27rem] lg:left-[15rem] inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
-          src={hero}
-          alt=""
-        />
-
-        <img
-          className="absolute inset-0 w-full h-full object-cover scale-110 sm:scale-105 lg:scale-100"
+          className=" absolute inset-0 z-10 w-full h-full object-cover"
           src={bg_hero}
           alt=""
           loading="lazy"
         />
 
-        {/* Content Area - Add your hero content here */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-center text-white px-4 sm:px-6 lg:px-8">
-            {/* Your hero content goes here */}
+        {/* Main Hero Image - Positioned */}
+        <img
+          className="absolute inset-0 w-full h-full object-cover object-right
+                  sm:object-bottom
+                  md:object-right
+                  xl:translate-x-24 xl:top-0 xl:left-80 
+                  2xl:translate-x-32 2xl:top-0 2xl:left-44 2xl:object-contain"
+          src={img.heroimg}
+          alt="Experimind Labs Hero"
+        />
+
+        {/* Content Area - Left positioned */}
+        <div className="absolute inset-0 flex items-center z-10">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full lg:w-1/2 xl:w-2/5">
+              <div className="text-white space-y-6">
+                {/* Placeholder content - Replace with your actual content */}
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  Your Hero Title Here
+                </h1>
+                <p className="text-lg sm:text-xl md:text-2xl opacity-90 max-w-md">
+                  Your hero description will go here. This is just placeholder content.
+                </p>
+                <div className="pt-4">
+                  <button className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg text-white font-semibold transition-colors">
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

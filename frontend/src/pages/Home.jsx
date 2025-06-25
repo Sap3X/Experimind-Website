@@ -62,7 +62,7 @@ export default function Home() {
               onClick={() => navigate("/about")}
             >
               <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/k5j2gvsp_expires_30_days.png"
+                src= {img.arrow}
                 alt="Learn More Icon"
                 className="w-8 h-8 lg:w-12 lg:h-12 rounded-lg"
               />

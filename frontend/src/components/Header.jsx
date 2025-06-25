@@ -15,7 +15,7 @@ export default function ResponsiveNavbar() {
 
   return (
     <>
-      <nav className="container h-16 bg-[#ffffff] z-50 fixed top-0 left-0 right-0 mx-auto flex justify-between items-center py-2 px-4 shadow-sm my-3 rounded-xl">
+      <nav className="container mx-auto h-16 bg-[#ffffff] z-50 fixed top-0 left-0 right-0 flex justify-between items-center py-2 sm:px-4 shadow-sm my-3 sm:rounded-xl">
         <div className="">
           <a href="/">
             <div className="">

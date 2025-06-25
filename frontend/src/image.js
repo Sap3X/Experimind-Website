@@ -1,5 +1,6 @@
 const image =
 {
+    heroimg: require('./assets/Heroimg.webp'),
     who_we_are_1: require('./assets/About-ExperimindLabs-1st-pic.webp'),
     who_we_are_2: require('./assets/About-ExperimindLabs-2nd-pic.webp'),
     arrow: require('./assets/arrow-right-circle.png'),
