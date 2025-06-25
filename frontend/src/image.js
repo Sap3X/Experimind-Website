@@ -43,6 +43,15 @@ const image =
     contenthead: require('./assets/Subramanya-Hegde.webp'),
     mentor: require('./assets/Ganapathi-Hegde.webp'),
     advisor: require('./assets/Sandesh-Shetty.webp'),
-
+    gallery1: require('./assets/Experimind_Gallery_1.webp'),
+    gallery2: require('./assets/Experimind_Gallery_2.webp'),
+    gallery3: require('./assets/Experimind_Gallery_3.webp'),
+    gallery4: require('./assets/Experimind_Gallery_4.webp'),
+    gallery5: require('./assets/Experimind_Gallery_5.webp'),
+    gallery6: require('./assets/Experimind_Gallery_6.webp'),
+    gallery7: require('./assets/Experimind_Gallery_7.webp'),
+    gallery8: require('./assets/Experimind_Gallery_8.webp'),
+    gallery9: require('./assets/Experimind_Gallery_9.webp'),
+    gallery10: require('./assets/Experimind_Gallery_10.webp'),
 }
 export default image;

@@ -44,8 +44,8 @@ const EducationalSolutions = () => {
           className="w-full h-[900px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">Our Products</h1>
-          <p className="text-white text-lg md:text-2xl max-w-2xl mx-auto">
+          <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4">Our Products</h1>
+          <p className="Utility-font-Buenard text-white text-lg md:text-2xl max-w-2xl mx-auto">
             Transforming classrooms with innovative learning kits and robots.
           </p>
         </div>
@@ -57,7 +57,7 @@ const EducationalSolutions = () => {
 
       {/* Products Section */}
       <div className="bg-white px-12">
-      <h2 className="text-[#2F327D] text-center text-3xl md:text-5xl font-bold mt-16 mb-12">
+      <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mt-16">
         Our Educational Solutions
       </h2>
 
@@ -74,13 +74,13 @@ const EducationalSolutions = () => {
             className="w-full md:w-1/2 h-auto object-cover rounded-lg"
           />
           <div className="flex flex-col gap-6 md:w-1/2">
-            <h3 className="text-3xl md:text-4xl font-bold text-[#2F327D]">
+            <h3 className="Utility-font-Montserrat Utility-color-Blue text-3xl md:text-4xl font-bold">
               {solution.title}
             </h3>
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-justify text-lg md:text-xl text-gray-700 leading-relaxed">
               {solution.description}
             </p>
-            <button className="bg-[#FFDD15] hover:bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-md text-xl font-semibold w-fit transition-colors duration-300">
+            <button className="Utility-font-NunitoSans bg-[#FFDD15] hover:bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-md text-xl font-semibold w-fit transition-colors duration-300">
               Learn More →
             </button>
           </div>

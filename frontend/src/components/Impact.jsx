@@ -74,13 +74,12 @@ const StatisticsComponent = () => {
     <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-7xl mx-auto">
         <h2
-          style={{ color: "#2E3192" }}
-          className="text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16 tracking-tight"
+          className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16"
         >
-          THE IMPACT WE CREATE
+          The Impact We Create
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="Utility-font-Montserrat Utility-color-Blue grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {stats.map((item, index) => (
             <div
               key={index}

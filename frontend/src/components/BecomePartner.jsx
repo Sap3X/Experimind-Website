@@ -90,7 +90,7 @@ const BecomePartner = () => {
             </div>
 
             <div className="relative z-10">
-              <h2 className="Utility-font-Montserrat text-white text-2xl sm:text-3xl lg:text-5xl font-bold mb-6 lg:mb-8 leading-tight">
+              <h2 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
                 Want to make your school ready for change?
                 <br className="hidden lg:block" />
                 <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">

@@ -14,14 +14,14 @@ export default function Footer() {
             alt="Logo"
             className="w-[7.5rem] h-auto"
           />
-          <p className="text-[#FFDD15] text-sm leading-relaxed">
+          <p className="Utility-font-NunitoSans text-[#FFDD15] text-sm leading-relaxed">
             Our Office Address
             <br />
             2nd Floor Atal Block NMAMIT, Nitte, Karkala,
             <br />
             Udupi - 574110
           </p>
-          <p className="text-sm font-semibold">
+          <p className="Utility-font-NunitoSans text-sm font-semibold">
             Call us For Support: +917483276508
           </p>
           <div className="w-full h-[12.5rem] border border-white rounded-lg overflow-hidden">
@@ -40,8 +40,8 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className="space-y-4 pt-8">
-          <h3 className="text-[#FFDD15] text-xl font-bold">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold">Quick Links</h3>
+          <ul className="Utility-font-NunitoSans space-y-2 text-sm">
             <li>
               <Link to="/" className="hover:underline">
                 Home
@@ -72,8 +72,8 @@ export default function Footer() {
 
         {/* Services & Socials */}
         <div className="space-y-4 pt-8">
-          <h3 className="text-[#FFDD15] text-xl font-bold">Services</h3>
-          <ul className="space-y-1 text-sm font-medium">
+          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold">Services</h3>
+          <ul className="Utility-font-NunitoSans space-y-1 text-sm font-medium">
             <li>Workshop</li>
             <li>Web Development</li>
             <li>Training & Internships</li>
@@ -82,7 +82,7 @@ export default function Footer() {
             <li>Electronics & IoT</li>
           </ul>
 
-          <h3 className="text-[#FFDD15] text-xl font-bold mt-4">Follow Us</h3>
+          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold mt-4">Follow Us</h3>
           <div className="flex gap-4 items-center">
             <a
               href="https://www.instagram.com/experimindlabs"
@@ -133,7 +133,7 @@ export default function Footer() {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-white mt-6 pt-4 text-right text-sm">
+      <div className="Utility-font-NunitoSans border-t border-white mt-6 pt-4 text-right text-sm">
         © 2025 Experimind Labs Pvt. Ltd. All Rights Reserved
       </div>
     </footer>

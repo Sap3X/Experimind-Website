@@ -48,7 +48,7 @@ const Testimonials = () => {
       id: 5,
       name: "Ananya Shetty",
       role: "Student of 6th grade",
-      company: "Premier Industries",
+      company: "",
       image: "https://placehold.co/46x46/FFD700/000000?text=Ananya+Shetty",
       testimonial:
         "I love using Shiksha! It feels like talking to a real person. I have improved my vocabulary and can now introduce myself fluently in English. Learning with the robot is so much fun!",
@@ -59,7 +59,7 @@ const Testimonials = () => {
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
       {/* Header */}
       <div className="text-center">
-        <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-6 lg:mb-10">
+        <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
           Testimonials
         </h2>
       </div>

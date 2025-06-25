@@ -14,13 +14,13 @@ export default function About() {
           {/* Assuming Header component exists */}
           
           <div className="flex flex-col py-8 lg:py-16">
-            <h1 className="text-center text-white text-3xl sm:text-4xl lg:text-6xl font-bold mt-4">
+            <h1 className="Utility-font-Montserrat text-center text-white text-3xl sm:text-4xl lg:text-6xl font-bold mt-4">
               About{' '}
-              <span className="text-orange-500">Experimind Labs</span>
+              <span className="Utility-color-Orange">Experimind Labs</span>
             </h1>
 
             <div className="flex justify-center mt-6 lg:mt-8">
-              <p className="text-white text-lg sm:text-xl lg:text-2xl text-center max-w-4xl px-4">
+              <p className="Utility-font-Buenard text-white text-lg sm:text-xl lg:text-2xl text-center max-w-4xl px-4">
                 Empowering education through innovative tech solutions that inspire and engage learners globally
               </p>
             </div>
@@ -41,11 +41,11 @@ export default function About() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
             <div className="flex-1 space-y-6">
-              <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center lg:text-left">
+              <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-center lg:text-left">
                 Who are we?
               </h2>
               
-              <p className="text-gray-600 text-lg sm:text-xl leading-relaxed text-center lg:text-left">
+              <p className="Utility-font-NunitoSans text-gray-600 text-justify text-lg sm:text-xl">
                 We are an organization dedicated to conducting research in the field of education. We focus on curriculum development, teaching aid design, student learning, methods, teacher training, innovation and more. Our aim is to improve education by developing impactful, modern solutions in partnership with learners and educators worldwide.
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function About() {
       {/* Core Values Section */}
       <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="max-w-7xl mx-auto">
-          <h2 className="Utility-color-Blue text-center text-3xl sm:text-4xl lg:text-6xl font-bold mb-8 lg:mb-12">
+          <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
             Our Core Values
           </h2>
 
@@ -79,11 +79,11 @@ export default function About() {
                   />
                 </div>
 
-                <h3 className="text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
+                <h3 className="Utility-font-Montserrat text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
                   Our Vision
                 </h3>
 
-                <p className="text-gray-600 text-lg lg:text-xl leading-relaxed">
+                <p className="Utility-font-NunitoSans text-gray-600 text-lg lg:text-xl leading-relaxed">
                   Forge a society where science is accessible, inclusive, and an
                   essential part of daily life.
                 </p>
@@ -98,11 +98,11 @@ export default function About() {
                     className="w-12 h-12 lg:w-16 lg:h-16 object-contain transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
+                <h3 className="Utility-font-Montserrat text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
                   Our Mission
                 </h3>
 
-                <p className="text-gray-600 text-lg lg:text-xl leading-relaxed">
+                <p className="Utility-font-NunitoSans text-gray-600 text-lg lg:text-xl leading-relaxed">
                   Equity, connectivity, creativity, sustainability, inclusivity:
                   we embody these values to empower education and create
                   opportunity.
@@ -118,11 +118,11 @@ export default function About() {
                     className="w-12 h-12 lg:w-16 lg:h-16 object-contain transition-transform duration-300"
                   />
                 </div>
-                <h3 className="text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
+                <h3 className="Utility-font-Montserrat text-blue-600 text-2xl lg:text-3xl xl:text-4xl font-bold mb-4">
                   Our Values
                 </h3>
 
-              <p className="text-gray-600 text-lg lg:text-xl leading-relaxed">
+              <p className="Utility-font-NunitoSans text-gray-600 text-lg lg:text-xl leading-relaxed">
                 Fostering innovation, demystifying science and math fears, and sharing knowledge with all.
               </p>
             </div>
@@ -133,7 +133,7 @@ export default function About() {
         {/* Team Section */}
         <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
           <div className="max-w-7xl mx-auto">
-            <h2 className="Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-8 lg:mb-12">
+            <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-8 lg:mb-12">
               Meet Our Team
             </h2>
 
@@ -195,11 +195,11 @@ export default function About() {
                   </div>
 
                   {/* Name */}
-                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
+                  <h1 className="Utility-font-Montserrat text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
                     {member.name}
                   </h1>
                   {/* Designation */}
-                  <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
+                  <h2 className="Utility-font-NunitoSans text-gray-600 text-sm sm:text-base lg:text-base mb-4">
                     {member.designation}
                   </h2>
                   {/* LinkedIn Link - Conditionally rendered */}
@@ -265,11 +265,11 @@ export default function About() {
                   </div>
 
                   {/* Name */}
-                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
+                  <h1 className="Utility-font-Montserrat text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
                     {member.name}
                   </h1>
                   {/* Designation */}
-                  <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
+                  <h2 className="Utility-font-NunitoSans text-gray-600 text-sm sm:text-base lg:text-base mb-4">
                     {member.designation}
                   </h2>
                   {/* LinkedIn Link - Conditionally rendered */}
@@ -354,11 +354,11 @@ export default function About() {
                   </div>
 
                   {/* Name */}
-                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
+                  <h1 className="Utility-font-Montserrat text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
                     {member.name}
                   </h1>
                   {/* Designation */}
-                  <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
+                  <h2 className="Utility-font-NunitoSans text-gray-600 text-sm sm:text-base lg:text-base mb-4">
                     {member.designation}
                   </h2>
                   {/* LinkedIn Link - Conditionally rendered */}

@@ -208,8 +208,8 @@ const PartnerCarousel = () => {
     <div className="w-full max-w-7xl mt-11 mx-auto py-16">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-[#2E3192] mb-4">Our Partners</h2>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4">Our Partners</h2>
+        <p className="Utility-font-Buenard text-lg text-gray-600 mb-12 lg:mb-16 max-w-2xl mx-auto">
           We collaborate with leading organizations to drive innovation and
           create meaningful impact
         </p>
@@ -301,7 +301,7 @@ const PartnerCarousel = () => {
       {/* Partnership Stats with Counter Animation */}
       <div
         ref={statsRef}
-        className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+        className="Utility-font-Montserrat mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
         role="region"
         aria-label="Partnership statistics"
       >
