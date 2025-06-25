@@ -137,8 +137,8 @@ export default function About() {
               Meet Our Team
             </h2>
 
+            {/* Section 1 - First 7 members */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3">
-              {/* All team members in individual divs */}
               {[
                 {
                   image: img.ceo,
@@ -180,6 +180,130 @@ export default function About() {
                   name: "Sharath Dinesh",
                   designation: "Production Executive",
                 },
+              ].map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center min-h-[320px] justify-start"
+                >
+                  {/* Circular Image Placeholder - Updated to 7rem (112px) */}
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      className="w-24 h-24 rounded-full bg-gray-500 flex items-center justify-center"
+                      src={member.image}
+                      alt=""
+                    />
+                  </div>
+
+                  {/* Name */}
+                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
+                    {member.name}
+                  </h1>
+                  {/* Designation */}
+                  <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
+                    {member.designation}
+                  </h2>
+                  {/* LinkedIn Link - Conditionally rendered */}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
+                    >
+                      <svg
+                        className="w-8 h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Horizontal Divider */}
+            <div className="w-full h-px bg-gray-300 my-12 lg:my-16"></div>
+
+            {/* Section 2 - Next 3 members */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3">
+              {[
+                {
+                  image: img.contenthead,
+                  name: "Subramanya Hegde",
+                  designation: "Content Head",
+                  linkedin: "https://www.linkedin.com/in/sapekcha-bhandari/",
+                },
+                {
+                  image: img.mentor,
+                  name: "Ganapati Hedge",
+                  designation: "Mentor",
+                  linkedin: "https://www.linkedin.com/in/kavan-shetty-008187293/",
+                },
+                {
+                  image: img.advisor,
+                  name: "Sandesh Shetty",
+                  designation: "Advisor",
+                  linkedin: "https://www.linkedin.com/in/harish-bhat-b8a001250/",
+                },
+              ].map((member, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center text-center min-h-[320px] justify-start"
+                >
+                  {/* Circular Image Placeholder - Updated to 7rem (112px) */}
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <img
+                      className="w-24 h-24 rounded-full bg-gray-500 flex items-center justify-center"
+                      src={member.image}
+                      alt=""
+                    />
+                  </div>
+
+                  {/* Name */}
+                  <h1 className="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-800 mb-1">
+                    {member.name}
+                  </h1>
+                  {/* Designation */}
+                  <h2 className="text-gray-600 text-sm sm:text-base lg:text-base mb-4">
+                    {member.designation}
+                  </h2>
+                  {/* LinkedIn Link - Conditionally rendered */}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
+                    >
+                      <svg
+                        className="w-8 h-8"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            {/* Horizontal Divider */}
+            <div className="w-full h-px bg-gray-300 my-12 lg:my-16"></div>
+
+            {/* Section 3 - Remaining members */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3">
+              {[
                 {
                   image: img.intern1,
                   name: "Sapekcha Bhandari",

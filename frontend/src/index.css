@@ -23,11 +23,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.Utlity-font-Montserrat{
+.Utility-font-Montserrat{
     font-family: var(--main-font) !important;
 }
 
-.Utlity-font-Buenard{
+.Utility-font-Buenard{
     font-family: var(--secondary-font) !important;
 }
 

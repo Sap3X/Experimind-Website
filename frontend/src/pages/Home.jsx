@@ -6,6 +6,7 @@ import HeroSec from "../components/HeroSec";
 import StatisticsComponent from "../components/Impact";
 import ProductsSection from "../components/Product";
 import PartnerCarousel from "../components/Ourparnter";
+import InfiniteCarousel from "../components/Gallery";
 import Testimonials from "../components/Testimonial";
 import BecomePartner from "../components/BecomePartner";
 import Footer from "../components/Footer";
@@ -134,6 +135,8 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Gallery Section */}
+      <InfiniteCarousel />
       {/* Testimonial Section */}
       <Testimonials />
 

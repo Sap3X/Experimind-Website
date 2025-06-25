@@ -40,5 +40,9 @@ const image =
     intern6: require('./assets/Shramanth-P-Acharya.webp'),
     intern7: require('./assets/Manish-Poojary.webp'),
     intern3: require('./assets/Sharath-Dinesh.webp'),
+    contenthead: require('./assets/Subramanya-Hegde.webp'),
+    mentor: require('./assets/Ganapathi-Hegde.webp'),
+    advisor: require('./assets/Sandesh-Shetty.webp'),
+
 }
 export default image;
