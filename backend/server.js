@@ -5,12 +5,12 @@ import dotenv from "dotenv";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
+
 import contactRoute from "./routes/contact.js"; // contact form submission route
 import jobsRoute from "./routes/jobs.js";          // job listing routes
 import jobApplyRoute from "./routes/jobRoutes.js"; // job application form submission
-import internshipApplyRoute from "./routes/internships.js"; // job application form submission
-
-
+import internshipApplyRoute from "./routes/internships.js"; // internship form submission
+import internshipPosterRoutes from "./routes/internship_posters.js"; // poster upload/display/delete
 
 dotenv.config();
 
@@ -22,17 +22,19 @@ app.use(express.json());
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Ensure resume upload directory exists
+// Ensure resume and poster upload directories exist
 const resumesDir = path.join(__dirname, "uploads/resumes");
-fs.mkdirSync(resumesDir, { recursive: true });
+const postersDir = path.join(__dirname, "uploads/posters");
 
-// Serve static resumes for preview/download
+fs.mkdirSync(resumesDir, { recursive: true });
+fs.mkdirSync(postersDir, { recursive: true });
+
+// Serve static files
 app.use("/uploads/resumes", express.static(resumesDir));
+app.use("/uploads/posters", express.static(postersDir)); // 🔥 Serve poster images here
 
 // MongoDB connection
-mongoose.connect(process.env.MONGO, {
-  // Note: useNewUrlParser and useUnifiedTopology are no longer needed in Mongoose 6+
-}).then(() => {
+mongoose.connect(process.env.MONGO).then(() => {
   console.log("MongoDB connected");
 }).catch((err) => {
   console.error("MongoDB connection error:", err);
@@ -43,9 +45,10 @@ app.use("/api/jobs", jobsRoute);
 app.use("/api/jobs", jobApplyRoute); // handles POST /apply
 app.use("/api/internships", internshipApplyRoute); // handles POST /apply
 app.use("/api/contact", contactRoute); // handles POST /contact
+app.use("/api", internshipPosterRoutes); // 🔥 Poster upload/retrieve/delete
 
 // Start server
 const PORT = process.env.PORT || 9001;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`🚀 Server running on http://localhost:${PORT}`);
 });
