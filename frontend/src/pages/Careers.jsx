@@ -215,11 +215,11 @@ const Careers = () => {
           alt="Careers Background"
           className="w-full h-[900px] object-cover object-center"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 max-w-4xl mx-auto">
+          <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
             Why you should Choose Us?
           </h1>
-          <p className="text-white text-lg md:text-2xl max-w-2xl mx-auto">
+          <p className="Utility-font-Buenard text-white text-lg md:text-2xl max-w-2xl mx-auto">
             At Experimind Labs, we foster a culture of innovation, continuous learning,
             and meaningful impact through cutting-edge technology.
             Join us to work with brilliant minds on transformative projects that shape the future.
@@ -232,7 +232,7 @@ const Careers = () => {
 
       {/* URGENT HIRING Section */}
       <div className="py-16 md:py-24 bg-white relative">
-        <h3 className="text-center text-[#2F327D] text-5xl lg:text-6xl font-bold">
+        <h3 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
           URGENT HIRING
         </h3>
 
@@ -269,19 +269,19 @@ const Careers = () => {
 
       {/* Job Listings */}
       <div className="px-6 lg:px-40 mb-20">
-        <h2 className="text-[#2F327D] text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-20">
+        <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
           Join Our Growing Team
         </h2>
 
-        <div className="space-y-16">
+        <div className=" space-y-16">
           {jobs.length > 0 ? (
             jobs.map((job, idx) => (
               <div key={idx} className="bg-[#f5f5f5] rounded-2xl p-6 md:p-10 shadow-md">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                   <div className="flex-1 space-y-4">
-                    <h3 className="text-black text-2xl md:text-3xl font-bold">{job.title}</h3>
-                    <p className="text-black text-lg md:text-xl">{job.description}</p>
-                    <pre className="text-black whitespace-pre-wrap text-sm md:text-base">
+                    <h3 className="Utility-font-Montserrat text-black text-2xl md:text-3xl font-bold">{job.title}</h3>
+                    <p className="Utility-font-NunitoSans text-black text-lg md:text-xl">{job.description}</p>
+                    <pre className="Utility-font-NunitoSans text-black whitespace-pre-wrap text-sm md:text-base">
                       Key Requirements:
                       {job.requirements
                         ?.split(/,\s*|\.\s*/)
@@ -292,7 +292,7 @@ const Careers = () => {
                   </div>
                   <div className="mt-6 md:mt-0 md:ml-10">
                     <button
-                      className="bg-[#FFDD15] text-black text-lg lg:text-xl py-3 px-6 rounded-lg"
+                      className="Utility-font-NunitoSans bg-[#FFDD15] text-black text-lg lg:text-xl py-3 px-6 rounded-lg"
                       onClick={() => handleApplyClick(job)}
                     >
                       Apply Now →
@@ -333,14 +333,14 @@ const Careers = () => {
                 </svg>
               </button>
 
-              <div className="mb-6">
+              <div className="Utility-font-Montserrat mb-6">
                 <h2 className="text-2xl font-bold text-gray-800">Application Form</h2>
                 <p className="text-gray-600 text-sm">
                   Fields marked with <span className="text-red-500">*</span> are required
                 </p>
               </div>
 
-              <form onSubmit={handleInternshipSubmit}>
+              <form className="Utility-font-NunitoSans" onSubmit={handleInternshipSubmit}>
                 <div className="mb-4">
                   <label htmlFor="name" className="block font-medium text-gray-700 mb-1 after:content-['_*'] after:text-red-500">
                     Full Name
@@ -503,7 +503,7 @@ const Careers = () => {
               </button>
 
               <div className="mb-6">
-                <h2 className="text-2xl font-bold text-gray-800">
+                <h2 className="Utility-font-Montserrat text-2xl font-bold text-gray-800">
                   Apply for {selectedJob?.title || 'Position'}
                 </h2>
                 <p className="text-gray-600 text-sm">
@@ -511,7 +511,7 @@ const Careers = () => {
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit}>
+              <form className="Utility-font-NunitoSans" onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label htmlFor="name" className="block font-medium text-gray-700 mb-1 after:content-['_*'] after:text-red-500">
                     Full Name

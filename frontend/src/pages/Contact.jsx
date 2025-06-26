@@ -2,19 +2,27 @@ import React, { useState } from "react";
 import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import contactUsImage from '../assets/Contact_Hero_img.svg';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import contactUsImage from "../assets/Contact_Hero_img.svg";
+import {
+  FaYoutube,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaPaperPlane,
+  FaInstagram,
+} from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 // ContactUs Component
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    phone: '',
-    company: '',
-    websiteType: 'web-development',
-    message: ''
+    fullName: "",
+    email: "",
+    phone: "",
+    company: "",
+    websiteType: "web-development",
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -22,21 +30,19 @@ const ContactUs = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-    if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (errors[name]) setErrors((prev) => ({ ...prev, [name]: "" }));
   };
 
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.fullName.trim()) newErrors.fullName = 'Full name is required';
+    if (!formData.fullName.trim()) newErrors.fullName = "Full name is required";
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Please enter a valid email';
+      newErrors.email = "Please enter a valid email";
     }
-    if (!formData.phone.trim()) newErrors.phone = 'Phone is required';
-    if (!formData.company.trim()) newErrors.company = 'Company is required';
-    if (!formData.message.trim()) newErrors.message = 'Message is required';
+    if (!formData.phone.trim()) newErrors.phone = "Phone is required";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -45,7 +51,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
-    
+
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
@@ -54,17 +60,17 @@ const ContactUs = () => {
         email: formData.email,
         phone: Number(formData.phone),
         companyname: formData.company,
-        reason: formData.message
+        reason: formData.message,
       });
-      
-      alert('Thank you for your message! We will get back to you soon.');
+
+      alert("Thank you for your message! We will get back to you soon.");
       setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        company: '',
-        websiteType: 'web-development',
-        message: ''
+        fullName: "",
+        email: "",
+        phone: "",
+        company: "",
+        websiteType: "web-development",
+        message: "",
       });
     } catch (error) {
       console.error("Error submitting contact form:", error);
@@ -80,43 +86,78 @@ const ContactUs = () => {
         {/* Left Section - Contact Info */}
         <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8 md:w-2/5 relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Contact Information</h2>
-            <p className="text-blue-200 mb-8">Fill up the form and our Team will get back to you within 24 hours.</p>
-            
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Contact Information
+            </h2>
+            <p className="text-blue-200 mb-8">
+              Fill up the form and our Team will get back to you within 24
+              hours.
+            </p>
+
             <div className="space-y-6 mb-8">
-              <ContactInfoItem 
-                icon={<FaPhoneAlt />} 
-                title="Phone" 
-                text="+917483276508" 
+              <ContactInfoItem
+                icon={<FaPhoneAlt />}
+                title="Phone"
+                text="+917483276508"
               />
-              <ContactInfoItem 
-                icon={<FaEnvelope />} 
-                title="Email" 
-                text="info@experimindlabs.edu@gmail.com
-" 
+              <ContactInfoItem
+                icon={<FaEnvelope />}
+                title="Email"
+                text="info@experimindlabs.edu@gmail.com"
               />
-              <ContactInfoItem 
-                icon={<FaMapMarkerAlt />} 
-                title="Office" 
-                text="2nd Floor Atal Block NMAMIT, Nitte, Karkala, Udupi - 574110" 
+              <ContactInfoItem
+                icon={<FaMapMarkerAlt />}
+                title="Office"
+                text="2nd Floor Atal Block NMAMIT, Nitte, Karkala, Udupi - 574110"
               />
             </div>
-            
+
             <div className="mb-6">
               <h3 className="font-bold mb-3">Follow Us</h3>
               <div className="flex gap-3">
-                <SocialIcon icon={<FaFacebookF />} />
-                <SocialIcon icon={<FaTwitter />} />
-                <SocialIcon icon={<FaInstagram />} />
+                <a
+                  className="w-9 h-9 rounded-full bg-blue-500 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition-colors"
+                  href="https://www.instagram.com/experimindlabs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  className="w-9 h-9 rounded-full bg-blue-500 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition-colors"
+                  href="https://x.com/experimindlabs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaXTwitter />
+                </a>
+                <a
+                  className="w-9 h-9 rounded-full bg-blue-500 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition-colors"
+                  href="https://www.linkedin.com/company/experimind-labs-pvt-ltd/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  className="w-9 h-9 rounded-full bg-blue-500 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition-colors"
+                  href="https://www.youtube.com/@experimindlabs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube />
+                </a>
               </div>
             </div>
           </div>
         </div>
-        
+
         {/* Right Section - Contact Form */}
         <div className="p-6 md:p-8 md:w-3/5">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Get in Touch</h2>
-          
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            Get in Touch
+          </h2>
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <FormField
               label="Full Name *"
@@ -127,7 +168,7 @@ const ContactUs = () => {
               error={errors.fullName}
               placeholder="Enter your full name"
             />
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <FormField
                 label="Email *"
@@ -148,9 +189,9 @@ const ContactUs = () => {
                 placeholder="+90 543 779 94 64"
               />
             </div>
-            
+
             <FormField
-              label="Company *"
+              label="Company (optional)"
               name="company"
               type="text"
               value={formData.company}
@@ -158,20 +199,26 @@ const ContactUs = () => {
               error={errors.company}
               placeholder="Enter your company/institution name"
             />
-            
+
             <div>
-              <label className="block text-gray-700 font-medium mb-1">Message *</label>
+              <label className="block text-gray-700 font-medium mb-1">
+                Message (optional)
+              </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows="4"
-                className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
+                className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                  errors.message ? "border-red-500" : "border-gray-300"
+                }`}
                 placeholder="Write your message..."
               ></textarea>
-              {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+              {errors.message && (
+                <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+              )}
             </div>
-            
+
             <div className="pt-2">
               <button
                 type="submit"
@@ -179,7 +226,7 @@ const ContactUs = () => {
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
-                  'Sending...'
+                  "Sending..."
                 ) : (
                   <>
                     Send Message <FaPaperPlane className="ml-2" />
@@ -207,13 +254,15 @@ const ContactInfoItem = ({ icon, title, text }) => (
   </div>
 );
 
-const SocialIcon = ({ icon }) => (
-  <a href="#" className="w-9 h-9 rounded-full bg-blue-500 hover:bg-white hover:text-blue-500 text-white flex items-center justify-center transition-colors">
-    {icon}
-  </a>
-);
-
-const FormField = ({ label, name, type, value, onChange, error, placeholder }) => (
+const FormField = ({
+  label,
+  name,
+  type,
+  value,
+  onChange,
+  error,
+  placeholder,
+}) => (
   <div>
     <label className="block text-gray-700 font-medium mb-1">{label}</label>
     <input
@@ -221,7 +270,9 @@ const FormField = ({ label, name, type, value, onChange, error, placeholder }) =
       name={name}
       value={value}
       onChange={onChange}
-      className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${error ? 'border-red-500' : 'border-gray-300'}`}
+      className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+        error ? "border-red-500" : "border-gray-300"
+      }`}
       placeholder={placeholder}
     />
     {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
@@ -240,9 +291,12 @@ export default function Contact() {
           className="w-full h-[850px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
+          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+            Contact Us
+          </h1>
           <p className="text-white text-lg md:text-2xl max-w-2xl mx-auto">
-            Reach out to us for more information or any queries. We're here to help!
+            Reach out to us for more information or any queries. We're here to
+            help!
           </p>
         </div>
         <div className="absolute top-0 left-0 w-full z-20">
