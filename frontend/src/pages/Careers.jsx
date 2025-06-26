@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import careersImage from '../assets/Career_Hero_img.svg';
+import img from '../image';
 
 const Careers = () => {
   const [jobs, setJobs] = useState([]);
@@ -216,10 +217,10 @@ const Careers = () => {
           className="w-full h-[900px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 max-w-4xl mx-auto">
-          <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
+          <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4 pt-20">
             Why you should Choose Us?
           </h1>
-          <p className="Utility-font-Buenard text-white text-lg md:text-2xl max-w-2xl mx-auto">
+          <p className="Utility-font-Buenard text-[#ffffffbe] text-lg md:text-2xl max-w-2xl mx-auto">
             At Experimind Labs, we foster a culture of innovation, continuous learning,
             and meaningful impact through cutting-edge technology.
             Join us to work with brilliant minds on transformative projects that shape the future.
@@ -237,14 +238,11 @@ const Careers = () => {
         </h3>
 
         <div className="flex flex-wrap justify-center gap-6 px-2 mt-20">
-          {["p15gixj3", "y27pcn3y", "08ma2ijf", "u59rj6qj"].map((id, idx) => (
             <img
-              key={idx}
-              src={`https://storage.googleapis.com/tagjs-prod.appspot.com/v1/L7mZ4AdCtS/${id}_expires_30_days.png`}
-              className="w-full max-w-xs h-auto object-cover"
-              alt={`card-${idx}`}
+              src={img.ceo}
+              className="w-full max-w-xs h-auto rounded-lg object-cover"
+              alt={`card`}
             />
-          ))}
         </div>
       </div>
 

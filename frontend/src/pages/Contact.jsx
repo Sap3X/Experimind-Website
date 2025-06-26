@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import contactUsImage from "../assets/Contact_Hero_img.svg";
@@ -55,13 +54,6 @@ const ContactUs = () => {
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
-      const response = await axios.post("http://localhost:9001/api/contact", {
-        name: formData.fullName,
-        email: formData.email,
-        phone: Number(formData.phone),
-        companyname: formData.company,
-        reason: formData.message,
-      });
 
       alert("Thank you for your message! We will get back to you soon.");
       setFormData({
@@ -290,7 +282,7 @@ export default function Contact() {
           alt="contact Background"
           className="w-full h-[850px] object-cover object-center"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 pt-24 px-4 max-w-4xl mx-auto">
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
             Contact Us
           </h1>

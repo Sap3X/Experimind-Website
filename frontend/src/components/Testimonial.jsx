@@ -66,11 +66,6 @@ const Testimonials = () => {
 
       {/* Swiper Container with Navigation */}
       <div className="relative max-w-full overflow-hidden">
-        {/* Left Gradient Fade */}
-        <div className="absolute left-0 top-0 w-8 lg:w-12 h-full bg-gradient-to-r from-white via-white/90 to-transparent z-20 pointer-events-none"></div>
-
-        {/* Right Gradient Fade */}
-        <div className="absolute right-0 top-0 w-8 lg:w-12 h-full bg-gradient-to-l from-white via-white/90 to-transparent z-20 pointer-events-none"></div>
 
         {/* Navigation Buttons */}
         <button
@@ -145,10 +140,6 @@ const Testimonials = () => {
               1440: {
                 slidesPerView: 3,
                 spaceBetween: 32,
-              },
-              1920: {
-                slidesPerView: 4,
-                spaceBetween: 36,
               },
             }}
             className="testimonials-swiper"
