@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import img from "../image"
 import productsImage from "../assets/Psl whith rack 1.svg";
+import { useNavigate } from "react-router-dom";
 
 const EducationalSolutions = () => {
   // Educational solutions data
@@ -10,29 +11,36 @@ const EducationalSolutions = () => {
     {
       title: "Portable STEM Lab (PSL)",
       description: "Without the need for specialised equipment or qualified teachers, this small, all-in-one kit transforms any classroom into an interactive STEM lab in an instant. PSL enables universal access to high-quality STEM education.",
-      imageId: img.psl
+      imageId: img.psl,
+      route: "/psl"
     },
     {
       title: "Prastuti",
       description: "An NCERT-aligned science and maths demonstration kit for grades 8-10. With simple, practical exercises, Prastuti assists educators in bringing lessons to life; no laboratory or technical expertise is required.",
-      imageId: img.prastuti
+      imageId: img.prastuti,
+      route: "/prastuti"
     },
     {
       title: "Anubhav - Create, Learn, Innovate",
       description: "With interactive kits and guided video tutorials, Anubhav is a hands-on learning tool that makes STEM, AI, and robotics simple for students of all skill levels.",
-      imageId: img.anubhav
+      imageId: img.anubhav,
+      route: "/anubhav"
     },
     {
       title: "Geo-Magic",
       description: "Geo-Magic is a hands-on kit for learning geometry. It makes shapes, lines, angles, and trigonometry come alive through interactive assembly. The kit includes an instructional book and QR-coded video tutorials. Make learning geometry enjoyable, visual, and fun for everyone!",
-      imageId: img.geomagic
+      imageId: img.geomagic,
+      route: "/geomagic"
     },
-    // {
-    //   title: "Shiksha 2.0",
-    //   description: "Shiksha is an AI-powered teaching assistant built for early learners to build spoken English, vocabulary and conversation skills through chats, rhymes, poems, and stories.",
-    //   imageId: img.shiksha
-    // }
+    {
+      title: "Shiksha 2.0",
+      description: "Shiksha is an AI-powered teaching assistant built for early learners to build spoken English, vocabulary and conversation skills through chats, rhymes, poems, and stories.",
+      imageId: img.shiksha,
+      route: "/shiksha"
+   }
   ];
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col bg-white">
       
@@ -80,7 +88,9 @@ const EducationalSolutions = () => {
             <p className="text-justify text-lg md:text-xl text-gray-700 leading-relaxed">
               {solution.description}
             </p>
-            <button className="Utility-font-NunitoSans bg-[#FFDD15] hover:bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-md text-xl font-semibold w-fit transition-colors duration-300">
+            <button className="Utility-font-NunitoSans bg-[#FFDD15] hover:bg-yellow-400 text-black px-8 py-3 rounded-lg shadow-md text-xl font-semibold w-fit transition-colors duration-300"
+            onClick={() => navigate({pathname: solution.route})}
+            >
               Learn More →
             </button>
           </div>

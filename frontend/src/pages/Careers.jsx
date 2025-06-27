@@ -206,7 +206,23 @@ const Careers = () => {
   };
 
   // Remove handleSubmit1 as it's not being used and causes confusion
-  
+    const [posters, setPosters] = useState([]);
+
+useEffect(() => {
+  const fetchPosters = async () => {
+    try {
+      const res = await axios.get("http://localhost:9001/api/posters");
+      if (res.data.success) {
+        setPosters(res.data.posters);
+      }
+    } catch (err) {
+      console.error("Error fetching posters:", err);
+    }
+  };
+
+  fetchPosters();
+}, []);
+
   return (
     <div className="flex flex-col bg-white">
       {/* Banner */}
@@ -220,7 +236,7 @@ const Careers = () => {
           <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4 pt-20">
             Why you should Choose Us?
           </h1>
-          <p className="Utility-font-Buenard text-[#ffffffbe] text-lg md:text-2xl max-w-2xl mx-auto">
+          <p className="Utility-font-Buenard text-[#ffffff] text-lg md:text-2xl max-w-2xl mx-auto">
             At Experimind Labs, we foster a culture of innovation, continuous learning,
             and meaningful impact through cutting-edge technology.
             Join us to work with brilliant minds on transformative projects that shape the future.

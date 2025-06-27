@@ -40,7 +40,7 @@ const ProductsSection = () => {
     { title: "Prastuti", imageSrc: img.prastuti, route: "/prastuti" },
     { title: "Anubhav", imageSrc: img.anubhav, route: "/anubhav" },
     { title: "Geomagic", imageSrc: img.geomagic, route: "/geomagic" },
-    // { title: "Shiksha 2.0", imageSrc: img.shiksha, route: "/shiksha" }
+    { title: "Shiksha 2.0", imageSrc: img.shiksha, route: "/shiksha" }
   ];
 
   return (

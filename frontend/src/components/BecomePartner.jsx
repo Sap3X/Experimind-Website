@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { TrendingUp, Users, Award, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const BecomePartner = () => {
   // Animated counters
@@ -54,6 +55,7 @@ const BecomePartner = () => {
       desc: "Join our network of excellence partners",
     },
   ];
+   const navigate = useNavigate();
 
   return (
     <>
@@ -152,10 +154,7 @@ const BecomePartner = () => {
               {/* CTA Button */}
               <button
                 className="Utility-font-Montserrat group bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-lg lg:text-2xl font-bold py-4 px-8 lg:py-6 lg:px-12 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 inline-flex items-center gap-4 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
-                onClick={() => {
-                  // Your existing form handler can go here
-                  console.log("Become a Partner clicked");
-                }}
+                 onClick={() => navigate("/contact")}
               >
                 Become a Partner
                 <ArrowRight className="w-6 h-6 lg:w-8 lg:h-8 group-hover:translate-x-1 transition-transform duration-300" />

@@ -1,36 +1,80 @@
 import React from "react";
+import { ArrowRight } from "lucide-react";
 import img from "../assets/Experimind-Labs-Hero-Img.svg";
 
 export default function HeroSection() {
   return (
-    <div className="w-[1920px] h-[1024px] relative bg-gray-200/0 overflow-hidden">
-      {/* <img
-        className="w-[1920px] h-[1024px] left-[491px] top-0 absolute"
-        src="https://placehold.co/1920x1024"
-      /> */}
-      {/* <div className="w-32 h-96 left-[1690.47px] top-[271.67px] absolute origin-top-left rotate-[-144.36deg] bg-stone-300/40" /> */}
-      {/* <div className="w-32 h-96 left-[972.07px] top-[700.61px] absolute origin-top-left rotate-[41.24deg] bg-blue-800/70" /> */}
-      {/* <div className="w-32 h-96 left-[996.32px] top-[781.03px] absolute origin-top-left rotate-[41.24deg] bg-stone-300/40" /> */}
-      <div className="w-[1725px] h-[970px] left-[-500px] top-[-120px] absolute rotate-[-52deg] bg-gradient-to-l from-bg-[#1770C1] from-10% via-bg-[#00AEEF]  to-indigo-900" />
-      {/* <div className="w-[1725px] h-[970px] left-[-530px] top-[-120px] absolute rotate-[-52deg] bg-gradient-to-l from-sky-500 to-indigo-900" /> */}
-      {/* <div className="w-[1725px] h-[970px] left-[-560px] top-[-120px] absolute rotate-[-52deg] bg-gradient-to-l from-sky-500 to-indigo-900" /> */}
-      {/* <div className="w-[1629.20px] h-[819.41px] left-[1147px] top-[1151.84px] absolute origin-top-left rotate-[-56.33deg] opacity-90 bg-indigo-400/50" /> */}
-      {/* <div className="w-[991px] h-96 left-[218px] top-[307px] absolute">
-        <div className="w-[871px] left-0 top-0 absolute justify-start text-white text-6xl font-bold font-['Montserrat'] leading-[81px] tracking-[6px]">
-          Together Let Us Make Learning Fun And Experiential
-        </div>
-        <div className="w-[523px] left-0 top-[263px] absolute justify-start text-white text-2xl font-normal font-['Buenard'] leading-10">
-          Innovating Education for a Brighter Future
-        </div>
-        <div
-          data-state="Default"
-          className="px-6 py-5 left-0 top-[321px] absolute bg-amber-500 rounded-[10px] inline-flex justify-center items-center gap-2.5"
-        >
-          <div className="text-center justify-end text-black text-2xl font-normal font-['Nunito_Sans']">
-            Explore Our Products →
+    <section className="min-h-screen bg-gradient-to-br from-[#00AEEF] to-[#2E3192] relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 bg-white rounded-full blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-white rounded-full blur-lg"></div>
+      </div>
+
+      <div className="container mx-auto px-4 py-8 lg:py-16 relative z-10">
+        <div className="flex flex-col lg:flex-row items-center justify-between min-h-[80vh] gap-8 lg:gap-12">
+          {/* Left Content Section */}
+          <div className="flex-1 text-white space-y-6 lg:space-y-8 text-center lg:text-left order-2 lg:order-1">
+            {/* Main Heading */}
+            <h1 className="Utility-font-Montserrat text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight">
+              <span className="block">Together Let Us Make</span>
+              <span className="block "> Learning Fun And</span>
+              <span className="block bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+                Experiential
+              </span>
+            </h1>
+
+            {/* Subheading */}
+            <h3 className="Utility-font-Buenard text-lg sm:text-xl lg:text-2xl font-medium text-blue-100 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Innovating Education for a Brighter Future
+            </h3>
+
+            {/* CTA Button */}
+            <div className="pt-4">
+              <button
+                className="group relative Utility-font-NunitoSans inline-flex items-center gap-3 bg-white text-[#2E3192] px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-2xl hover:scale-105 active:scale-95 transform"
+              >
+                <span>Explore Our Products</span>
+                <ArrowRight
+                  size={20}
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                />
+
+                {/* Button glow effect */}
+                <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"></div>
+              </button>
+            </div>
+          </div>
+
+          {/* Right Image Placeholder Section */}
+          <div className="flex-1 max-w-lg w-full order-1 lg:order-2">
+            <div className="relative group">
+              {/* Main image placeholder */}
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 transition-all duration-300 group-hover:bg-white/15 group-hover:border-white/30 group-hover:scale-105 group-hover:shadow-2xl">
+                <div className="aspect-square bg-white/20 rounded-2xl flex flex-col items-center justify-center hover:text-white transition-colors duration-300">
+                  <img className="object-fill h-full" src={img} alt="" />
+                </div>
+              </div>
+
+              {/* Floating elements around image */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-white/20 rounded-full animate-bounce"></div>
+              <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-white/15 rounded-full animate-pulse"></div>
+              <div className="absolute top-1/2 -right-8 w-6 h-6 bg-white/25 rounded-full animate-ping"></div>
+            </div>
           </div>
         </div>
-      </div> */}     
-    </div> 
+      </div>
+
+      {/* Bottom wave decoration */}
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1200 120" className="w-full h-16 text-white/10">
+          <path
+            d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </section>
   );
 }
