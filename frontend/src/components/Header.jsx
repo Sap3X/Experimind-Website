@@ -34,7 +34,7 @@ export default function ResponsiveNavbar() {
     { name: "Prastuti", url: "/prastuti" },
     { name: "Anubhav", url: "/anubhav" },
     { name: "Geomagic", url: "/geomagic" },
-    { name: "Shiksha", url: "/shiksha" }
+    // { name: "Shiksha", url: "/shiksha" }
   ];
 
   // Get current path for active state (you can replace this with your routing logic)
