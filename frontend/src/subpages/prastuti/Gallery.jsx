@@ -1,12 +1,12 @@
 import React from "react";
 import img1 from "./assets/2.webp";
-import img2 from "./assets/27cddea8-81b9-46b4-9521-03bd1334001f.webp";
+import img2 from "./assets/pras.webp";
 import img3 from "./assets/DSC05363.webp";
 import img4 from "./assets/DSC05402.webp";
 import img5 from "./assets/Prastuti Hero Image.webp";
 import img6 from "./assets/Prastuti Hero Image 2.webp";
 import img7 from "./assets/Untitled-4.webp";
-import img8 from "./assets/WhatsApp Image 2025-04-23 at 6.20.30 PM.webp";
+import img8 from "./assets/abc.webp";
 
 const Gallery = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8];

@@ -32,12 +32,12 @@ const EducationalSolutions = () => {
       imageId: img.geomagic,
       route: "/geomagic"
     },
-    {
-      title: "Shiksha 2.0",
-      description: "Shiksha is an AI-powered teaching assistant built for early learners to build spoken English, vocabulary and conversation skills through chats, rhymes, poems, and stories.",
-      imageId: img.shiksha,
-      route: "/shiksha"
-   }
+  //   {
+  //     title: "Shiksha 2.0",
+  //     description: "Shiksha is an AI-powered teaching assistant built for early learners to build spoken English, vocabulary and conversation skills through chats, rhymes, poems, and stories.",
+  //     imageId: img.shiksha,
+  //     route: "/shiksha"
+  //  }
   ];
   const navigate = useNavigate();
 
