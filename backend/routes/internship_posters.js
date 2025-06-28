@@ -2,22 +2,25 @@ import express from 'express';
 import multer from 'multer';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+// For __dirname replacement in ES module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const router = express.Router();
 
 // ========== MULTER CONFIG ==========
+const uploadDir = path.join(__dirname, '..', 'uploads', 'posters');
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    const dir = 'uploads/posters';
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    cb(null, dir);
+    if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
+    cb(null, uploadDir);
   },
   filename: function (req, file, cb) {
-    const dir = 'uploads/posters';
     const ext = path.extname(file.originalname);
-    
-    // Read existing files to count how many images already exist
-    fs.readdir(dir, (err, files) => {
+    fs.readdir(uploadDir, (err, files) => {
       if (err) {
         cb(err);
       } else {
@@ -50,9 +53,7 @@ router.post('/upload/poster', upload.single('poster'), (req, res) => {
 
 // ========== RETRIEVE ==========
 router.get('/posters', (req, res) => {
-  const dir = path.join('uploads', 'posters');
-
-  fs.readdir(dir, (err, files) => {
+  fs.readdir(uploadDir, (err, files) => {
     if (err) {
       console.error('Error reading posters folder:', err);
       return res.status(500).json({ success: false, message: 'Could not read posters folder' });
@@ -82,7 +83,7 @@ router.get('/posters', (req, res) => {
 // ========== DELETE ==========
 router.delete('/posters/:filename', (req, res) => {
   const { filename } = req.params;
-  const filePath = path.join('uploads', 'posters', filename);
+  const filePath = path.join(uploadDir, filename);
 
   fs.unlink(filePath, (err) => {
     if (err) {
