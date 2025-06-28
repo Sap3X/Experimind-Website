@@ -5,15 +5,7 @@ import img from "../image";
 const PartnerCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [counters, setCounters] = useState({
-    partners: 0,
-    projects: 0,
-    countries: 0,
-  });
-  const [hasAnimated, setHasAnimated] = useState(false);
-  const statsRef = useRef(null);
   const carouselRef = useRef(null);
-  const animationRefs = useRef([]);
 
  const partners = [
     {
@@ -69,68 +61,9 @@ const PartnerCarousel = () => {
 
   const initialIndex = partnersPerView;
 
-  const animateCounter = useCallback((target, setter, duration = 2000) => {
-    let start = 0;
-    const increment = target / (duration / 16);
-    let animationId;
-
-    const animate = () => {
-      start += increment;
-      if (start < target) {
-        setter(Math.floor(start));
-        animationId = requestAnimationFrame(animate);
-        animationRefs.current.push(animationId);
-      } else {
-        setter(target);
-      }
-    };
-    animate();
-  }, []);
-
   useEffect(() => {
     setCurrentIndex(initialIndex);
   }, [initialIndex]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && !hasAnimated) {
-            setHasAnimated(true);
-            animateCounter(50, (val) =>
-              setCounters((prev) => ({ ...prev, partners: val }))
-            );
-            setTimeout(
-              () =>
-                animateCounter(100, (val) =>
-                  setCounters((prev) => ({ ...prev, projects: val }))
-                ),
-              200
-            );
-            setTimeout(
-              () =>
-                animateCounter(25, (val) =>
-                  setCounters((prev) => ({ ...prev, countries: val }))
-                ),
-              400
-            );
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (statsRef.current) {
-      observer.observe(statsRef.current);
-    }
-
-    return () => {
-      observer.disconnect();
-      // Cleanup animation frames
-      animationRefs.current.forEach(id => cancelAnimationFrame(id));
-      animationRefs.current = [];
-    };
-  }, [hasAnimated, animateCounter]);
 
   const handleNext = useCallback(() => {
     if (isTransitioning) return;
@@ -295,33 +228,6 @@ const PartnerCarousel = () => {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
-        </div>
-      </div>
-
-      {/* Partnership Stats with Counter Animation */}
-      <div
-        ref={statsRef}
-        className="Utility-font-Montserrat mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
-        role="region"
-        aria-label="Partnership statistics"
-      >
-        <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
-          <div className="text-3xl font-bold text-blue-600 mb-2" aria-live="polite">
-            {counters.partners}+
-          </div>
-          <div className="text-gray-600">Strategic Partners</div>
-        </div>
-        <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
-          <div className="text-3xl font-bold text-green-600 mb-2" aria-live="polite">
-            {counters.projects}+
-          </div>
-          <div className="text-gray-600">Collaborative Projects</div>
-        </div>
-        <div className="bg-white rounded-lg p-6 shadow-md transform hover:scale-105 transition-transform duration-300">
-          <div className="text-3xl font-bold text-purple-600 mb-2" aria-live="polite">
-            {counters.countries}
-          </div>
-          <div className="text-gray-600">Countries Reached</div>
         </div>
       </div>
     </div>

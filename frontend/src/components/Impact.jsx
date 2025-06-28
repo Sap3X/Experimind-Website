@@ -66,8 +66,8 @@ const StatisticsComponent = () => {
   const stats = [
     { number: 10000, suffix: "+", label: "Students" },
     { number: 25, suffix: "+", label: "School Reached" },
-    { number: 200, suffix: "+", label: "Workshops" },
-    { number: 1000, suffix: "+", label: "Awards Winning" },
+    { number: 300, suffix: "+", label: "Workshops" },
+    { number: 500, suffix: "+", label: "Teachers Trained" },
   ];
 
   return (
@@ -103,7 +103,7 @@ const StatisticsComponent = () => {
                     duration={2000 + index * 200} // Stagger animation
                   />
                 </div>
-                <div className="text-gray-700 text-sm sm:text-base lg:text-xl font-semibold uppercase tracking-wide">
+                <div className="text-gray-700 text-sm sm:text-base lg:text-lg font-semibold uppercase tracking-wide">
                   {item.label}
                 </div>
               </div>
