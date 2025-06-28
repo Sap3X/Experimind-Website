@@ -1,6 +1,6 @@
 import React from "react";
 import ProductShowcase from "./components/Comp";
-import TeamSection from "./components/Testimonial";
+
 import image from "./Images";
 import SmoothCoverflowCarousel from "./components/Gallery";
 import Header from "../../components/Header"
@@ -278,8 +278,6 @@ export default function GeoMagic() {
         <ProductShowcase />
         {/* { Gallery Section } */}
         <SmoothCoverflowCarousel />
-        {/* Team Section */}
-        <TeamSection />
         <div className="w-full max-w-7xl mx-auto p-4 md:p-6">
           <div className="relative bg-gradient-to-r from-green-600 via-green-400 to-yellow-500 rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
             {/* Background geometric shapes */}

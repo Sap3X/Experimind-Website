@@ -1,6 +1,5 @@
 import React from "react";
 import Gallery from "./Gallery.jsx";
-import Testimonials from "./testimonials.jsx";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import mainimg from "./assets/mainimage.webp";
@@ -226,12 +225,7 @@ export default function Prastuti() {
         <Gallery />
       </section>
 
-      {/* Testimonials Section */}
-      <div className="mb-10">
-        <Testimonials />
-      </div>
-
-      {/* Contact Section */}
+       {/* Contact Section */}
       <section
         id="contact"
         className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gradient-to-r from-blue-800 to-blue-600 "

@@ -3,7 +3,7 @@ import im1 from "./assets/image 89.webp"
 import im2 from "./assets/isolated-school-science-equipment-on-transparent-background-free-png.webp"
 import im3 from "./assets/images.webp"
 import im4 from "./assets/image 93.webp"
-import im5 from "./assets/image 89.jpg"
+import im5 from "./assets/image120.webp"
 import im6 from "./assets/image.webp"
 import im7 from "./assets/DSC05381.webp"
 
@@ -70,7 +70,7 @@ export default function GlimpseSection() {
       <div className="relative z-10 container mx-auto px-2 sm:px-4 lg:px-6 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-600 bg-clip-text text-transparent mb-4 sm:mb-6 tracking-wider drop-shadow-lg px-4">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-white bg-clip-text text-transparent mb-4 sm:mb-6 tracking-wider drop-shadow-lg px-4">
             GLIMPSE OF PSL
           </h1>
         </div>

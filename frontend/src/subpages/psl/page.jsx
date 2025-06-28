@@ -1,23 +1,22 @@
 import { useState, useEffect } from "react";
-import Testimonials from "./testimonial.jsx";
-import Image from "./Circular";
-import Prastuti from "./prastuti.jsx";
-import Anubhav from "./anubhav.jsx";
+import Image from "./Gallery.js";
+import Prastuti from "./prastuti.jsx"
+import Anubhav from "./anubhav.jsx"
 import Pradarshan from "./pradarshan.jsx";
-import Glimpse from "./glimpse.jsx";
-import Compo from "./compo.jsx";
-import im1 from "./assets/DSC05363.webp";
-import im2 from "./assets/Hero Image.webp";
-import im3 from "./assets/DSC05407.webp";
-import im4 from "./assets/Prastuti Hero Image 2.webp";
-import im5 from "./assets/feedback.webp";
-import im6 from "./assets/communication.webp";
-import im7 from "./assets/location.webp";
-import im8 from "./assets/monitor.webp";
-import gen from "./assets/generation-z.webp";
-import stem from "./assets/stem.webp";
-import policy from "./assets/policy.webp";
-import ai from "./assets/artificial-intelligence.webp";
+import Glimpse from "./glimpse.jsx"
+import Compo from "./compo.jsx"
+import im1 from "./assets/DSC05363.webp"
+import im2 from "./assets/Hero Image.webp"
+import im3 from "./assets/DSC05407.webp"
+import im4 from "./assets/Prastuti Hero Image 2.webp"
+import im5 from "./assets/feedback.webp"
+import im6 from "./assets/communication.webp"
+import im7 from "./assets/location.webp"
+import im8 from "./assets/monitor.webp"
+import gen from "./assets/generation-z.webp"
+import stem from "./assets/stem.webp"
+import policy from "./assets/policy.webp"
+import ai from "./assets/artificial-intelligence.webp"
 import Header from "../../components/Header.jsx";
 import Footer from "../../components/Footer.jsx";
 
@@ -54,7 +53,12 @@ export default function ResponsivePSLWebsite() {
     return () => observer.disconnect();
   }, []);
 
-  const heroImages = [im1, im2, im3, im4];
+  const heroImages = [
+    im1,
+    im2,
+    im3,
+    im4
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -65,8 +69,8 @@ export default function ResponsivePSLWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-amber-50">
-      {/* Hero Section */}
       <Header />
+      {/* Hero Section */}
       <section
         id="home"
         className="relative flex items-center min-h-[60vh] sm:min-h-[80vh] md:min-h-screen overflow-hidden"
@@ -97,9 +101,7 @@ export default function ResponsivePSLWebsite() {
             <button
               className="w-full max-w-xs xs:w-auto xs:max-w-none px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg bg-[#103f91] text-white hover:bg-[#46cbff] transition-all duration-300 shadow-lg"
               onClick={() => {
-                document
-                  .getElementById("about")
-                  ?.scrollIntoView({ behavior: "smooth" });
+                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               Discover PSL
@@ -107,9 +109,7 @@ export default function ResponsivePSLWebsite() {
             <button
               className="w-full max-w-xs xs:w-auto xs:max-w-none px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg border-2 border-white text-white hover:bg-white hover:text-[#103f91] transition-all duration-300"
               onClick={() => {
-                document
-                  .querySelector("section.bg-gray-100")
-                  ?.scrollIntoView({ behavior: "smooth" });
+                document.querySelector('section.bg-gray-100')?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               Watch Demo
@@ -123,10 +123,7 @@ export default function ResponsivePSLWebsite() {
         <div className="container mx-auto px-2 sm:px-4">
           <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
             <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-              <div
-                className="relative w-full"
-                style={{ paddingBottom: "56.25%" }}
-              >
+              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                 <video
                   className="absolute top-0 left-0 w-full h-full object-cover"
                   controls
@@ -174,17 +171,22 @@ export default function ResponsivePSLWebsite() {
       </section>
 
       {/* 3 Function */}
-      <Compo />
+      <Compo/>
 
       {/* Why Now Section */}
-      <section className="py-10 sm:py-20 bg-gradient-to-br from-[#103f91] to-[#46cbff]">
+      <section className="py-10 sm:py-20 bg-gradient-to-br from-[#3974db] to-[#46cbff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-16">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-8">
               Why PSL?
             </h2>
           </div>
-          <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
+          {/* 
+            grid-cols-2 for screens >= 320px (sm), 
+            grid-cols-4 for lg and above (laptop/desktop), 
+            grid-cols-1 for <320px (very small devices)
+          */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
             {[
               {
                 img: gen,
@@ -204,10 +206,10 @@ export default function ResponsivePSLWebsite() {
               },
             ].map((reason, index) => (
               <div key={index} className="text-center group flex">
-                <div className="bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 w-full flex flex-col items-center justify-center hover:bg-white/20 transition-all duration-300">
+                <div className="bg-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 w-full flex flex-col items-center justify-center hover:bg-white/20 transition-all duration-300">
                   <img
                     src={reason.img}
-                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4 rounded-lg sm:rounded-xl bg-white/75 object-cover"
+                    className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4  object-contain"
                     alt={reason.text}
                   />
                   <p className="text-sm sm:text-base md:text-lg font-medium text-white text-center px-2">
@@ -229,12 +231,12 @@ export default function ResponsivePSLWebsite() {
             </h2>
           </div>
           <section>
-            <Prastuti />
+            <Prastuti/>
           </section>
           <section>
-            <Anubhav />
+            <Anubhav/>
           </section>
-          <Pradarshan />
+          <Pradarshan/>
         </div>
       </section>
 
@@ -264,7 +266,7 @@ export default function ResponsivePSLWebsite() {
                 subtitle: "Instant Setup",
               },
               {
-                img: im8,
+                img:im8 ,
                 title: "Video Tutorials With AI",
                 subtitle: "Free Support",
               },
@@ -290,24 +292,17 @@ export default function ResponsivePSLWebsite() {
 
       {/* Glimpse Section */}
       <section className="py-10 sm:py-20 bg-white">
-        <Glimpse />
+        <Glimpse/>
       </section>
 
       {/* Gallery */}
       <section
         id="gallery"
         className="pb-10 sm:pb-20 bg-gradient-to-b from-slate-50 to-white"
-      >
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-center text-[#103f91] ">
-            Gallery
-          </h2>
-        </div>
+      > 
         <Image />
       </section>
-      <Testimonials />
-
-      {/* Call to Action Section */}
+           {/* Call to Action Section */}
       <section
         id="contact"
         className="py-10 sm:py-20 bg-gradient-to-br from-[#103f91] to-[#46cbff]"
@@ -344,7 +339,7 @@ export default function ResponsivePSLWebsite() {
           </div>
         </div>
       </section>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

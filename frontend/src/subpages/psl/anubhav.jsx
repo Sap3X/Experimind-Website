@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import im1 from "./assets/anu.webp"
+import im1 from "./assets/anu.webp";
 
 const features = [
   {
@@ -51,86 +51,80 @@ const levelData = [
   },
 ];
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-      delayChildren: 0.2,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut",
-    },
-  },
-};
+// --- Orange animated background particles ---
+function OrangeParticles() {
+  // Responsive: more particles on larger screens
+  const count = 12;
+  return (
+    <div className="absolute inset-0 pointer-events-none z-0">
+      {[...Array(count)].map((_, i) => {
+        const size = Math.random() * 14 + 8; // 8px to 22px
+        const left = `${Math.random() * 100}%`;
+        const top = `${Math.random() * 100}%`;
+        const delay = Math.random() * 3;
+        const duration = 3 + Math.random() * 3;
+        return (
+          <motion.div
+            key={i}
+            className="absolute rounded-full bg-gradient-to-br from-orange-400 via-orange-500 to-orange-300 opacity-30"
+            style={{
+              width: size,
+              height: size,
+              left,
+              top,
+              zIndex: 0,
+            }}
+            animate={{
+              y: [0, -10, 10, 0],
+              x: [0, 10, -10, 0],
+              opacity: [0.3, 0.6, 0.3],
+            }}
+            transition={{
+              duration,
+              repeat: Infinity,
+              delay,
+              ease: "easeInOut",
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+}
 
 export default function AnubhavSection() {
   return (
-    <>
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden mt-20 pointer-events-none">
-        <div className="absolute -top-40 -left-40 w-96 h-96 bg-gradient-to-r from-orange-400 to-orange-500 rounded-full blur-3xl opacity-15 animate-pulse"></div>
-        <div
-          className="absolute top-1/2 left-1/4 w-32 h-32 bg-gradient-to-r from-purple-400 to-purple-500 rounded-full blur-2xl opacity-10 animate-bounce"
-          style={{ animationDelay: "2s" }}
-        ></div>
-        <div
-          className="absolute top-1/4 right-1/4 w-24 h-24 bg-gradient-to-r from-orange-300 to-orange-400 rounded-full blur-xl opacity-15 animate-pulse"
-          style={{ animationDelay: "3s" }}
-        ></div>
-      </div>
+    <div className="relative">
+      {/* Orange animated background particles */}
+      <OrangeParticles />
 
-      {/* Floating Particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(8)].map((_, i) => {
-          const left = `${Math.random() * 100}%`;
-          const top = `${Math.random() * 100}%`;
-          return (
-            <motion.div
-              key={i}
-              className="absolute w-2 h-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full opacity-30"
-              style={{
-                left,
-                top,
-              }}
-              animate={{
-                y: [-20, 20, -20],
-                x: [-10, 10, -10],
-                opacity: [0.3, 0.6, 0.3],
-              }}
-              transition={{
-                duration: 4 + Math.random() * 2,
-                repeat: Infinity,
-                delay: Math.random() * 2,
-              }}
-            />
-          );
-        })}
-      </div>
+      {/* Decorative blurred orange blobs for extra style */}
+      <div className="absolute -top-32 -left-32 w-72 h-72 bg-orange-400/20 rounded-full blur-3xl z-0"></div>
+      <div className="absolute top-1/2 right-0 w-40 h-40 bg-orange-300/20 rounded-full blur-2xl z-0"></div>
+      <div className="absolute bottom-0 left-1/3 w-32 h-32 bg-orange-200/30 rounded-full blur-2xl z-0"></div>
 
-      <div className="max-w-6xl mx-auto relative ">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Main Content Block */}
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          variants={containerVariants}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.2, delayChildren: 0.1 },
+            },
+          }}
           className="relative"
         >
           {/* Glass Morphism Container */}
           <motion.div
-            variants={itemVariants}
-            className="relative bg-white/20 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/30 overflow-hidden"
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+            }}
+            className="relative bg-white/20 backdrop-blur-xl rounded-3xl shadow-xl border border-white/30 overflow-hidden"
           >
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-white/40 via-white/20 to-transparent pointer-events-none"></div>
@@ -138,174 +132,106 @@ export default function AnubhavSection() {
             {/* Content */}
             <div className="relative p-4 sm:p-8 lg:p-12">
               {/* Header Section */}
-              <motion.div variants={itemVariants} className="text-center mb-8 sm:mb-12">
-                <motion.div
-                  className="inline-block"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-600 via-orange-500 to-orange-700 bg-clip-text text-transparent mb-4">
-                    ANUBHAV
-                  </h2>
-                  <motion.div
-                    className="w-24 sm:w-32 h-1.5 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mb-6"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: 128 }}
-                    transition={{ duration: 1.2, delay: 0.5 }}
-                    viewport={{ once: true }}
-                  />
-                </motion.div>
-                <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto font-medium">
-                  Revolutionizing STEM education through hands-on learning experiences
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+                }}
+                className="text-center mb-8 sm:mb-12"
+              >
+                <h2 className="text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-600 via-orange-500 to-orange-700 bg-clip-text text-transparent mb-4">
+                  ANUBHAV
+                </h2>
+                <div className="w-20 sm:w-32 h-1.5 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mb-6" />
+                <p className="text-base xs:text-lg sm:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto font-medium">
+                  Revolutionizing STEM education through hands-on learning
+                  experiences
                 </p>
-                <p className="text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                <p className="text-sm xs:text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
                   For Students, stored in the PSL Trolley
                 </p>
               </motion.div>
 
-              {/* Main Content Section - Fixed Alignment */}
-              <motion.div variants={itemVariants} className="mb-8">
-                <h3 className="text-2xl sm:text-3xl font-bold mb-6 text-gray-800  text-center">
-                  Key Features
-                </h3>
-                
-                {/* Desktop Layout */}
-                <div className="hidden lg:block">
-                  <div className="flex gap-8 items-start">
-                    {/* Left Side: Image + Button - Fixed width to align with features */}
-                    <div className="w-96 flex-shrink-0">
-                      
-                      <div className="relative group">
-                       
-                        <motion.div
-                         
-                          className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-                          whileHover={{ scale: 1.05 }}
-                        />
-                        <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-orange-200/50 ">
-                          <div className="relative rounded-xl">
-                            <div className="w-full  bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center border-2 border-orange-300/30">
-                              <img src={im1} alt="Anubhav STEM kit" className="rounded-xl" />
-                            </div>
-                            <motion.div
-                              className="absolute top-3 right-3 w-3 h-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full"
-                              animate={{ scale: [1, 1.3, 1], opacity: [1, 0.6, 1] }}
-                              transition={{ duration: 2, repeat: Infinity }}
+              {/* Main Content Section - Responsive Alignment */}
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+                }}
+                className="mb-8"
+              >
+                {/* Desktop & Tablet Layout: Image and Features in same row */}
+                <div className="flex flex-col lg:flex-row gap-8 items-start">
+                  {/* Left Side: Image with button below */}
+                  <div className="w-full lg:w-80 xl:w-96 flex-shrink-0 flex flex-col items-center">
+                    <div className="relative group w-full flex flex-col items-center">
+                   
+                      <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-orange-200/50 flex flex-col items-center">
+                          <div className="w-full bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center border-2 border-orange-300/30">
+                            <img
+                              src={im1}
+                              alt="Anubhav STEM kit"
+                              className="w-96 h-40 sm:h-56 md:h-64 lg:h-56 xl:h-64 object-cover transition-transform duration-500 hover:scale-105 rounded-xl"
                             />
                           </div>
                         </div>
-                      </div>
-                      <div className="mt-4">
-                        <button className="w-full px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300">
-                          Learn More
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Right Side: Features Grid - Aligned height */}
-                    <div className="flex-1">
-                      <div className="grid grid-cols-1 gap-4  h-full">
-                        {features.map((feat, i) => (
-                          <motion.div
-                            key={i}
-                            className="bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/40 hover:bg-white/80 transition-all duration-300 group cursor-pointer flex items-center gap-4 h-16 "
-                            whileHover={{ scale: 1.02 }}
-                          >
-                            <motion.div
-                              className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300 border border-orange-300 flex-shrink-0"
-                              whileHover={{ rotate: 10, scale: 1.1 }}
-                            >
-                              <span className="text-xl">{feat.icon}</span>
-                            </motion.div>
-                            <div className="flex-1">
-                              <p className="text-gray-800 font-medium text-base leading-tight">
-                                {feat.text}
-                              </p>
-                            </div>
-                          </motion.div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Mobile/Tablet Layout */}
-                <div className="lg:hidden">
-                  {/* Image and Button - Centered */}
-                  <div className="flex flex-col items-center mb-8">
-                    <div className="w-full max-w-sm">
-                      <div className="relative group">
-                        <motion.div
-                          className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"
-                          whileHover={{ scale: 1.05 }}
-                        />
-                        <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-orange-200/50">
-                          <div className="relative rounded-xl">
-                            <div className="w-full h-full bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center border-2 border-orange-300/30">
-                               <img src={im1} alt="Anubhav STEM kit" className="rounded-xl relative" />
-                            </div>
-                            <motion.div
-                              className="absolute top-3 right-3 w-3 h-3 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl"
-                              animate={{ scale: [1, 1.3, 1], opacity: [1, 0.6, 1] }}
-                              transition={{ duration: 2, repeat: Infinity }}
-                            />
-                          </div>
+                      {/* Centered button below image */}
+                        <div className="w-full flex justify-center mt-4">
+                          <button className="px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300">
+                            Learn More
+                          </button>
                         </div>
-                      </div>
-                      <div className="mt-4">
-                        <button className="w-full px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300">
-                          Learn More
-                        </button>
-                      </div>
                     </div>
                   </div>
 
-                  {/* Features - Full width on mobile */}
-                  <div className="space-y-4">
-                    {features.map((feat, i) => (
-                      <motion.div
-                        key={i}
-                        className="bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/40 hover:bg-white/80 transition-all duration-300 group cursor-pointer flex items-center gap-4"
-                        whileHover={{ scale: 1.02 }}
-                      >
-                        <motion.div
-                          className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300 border border-orange-300 flex-shrink-0"
-                          whileHover={{ rotate: 10, scale: 1.1 }}
+                  {/* Right Side: Features Grid */}
+                  <div className="flex-1 w-full">
+                  
+                    <div className="grid grid-cols-1 gap-4 h-full">
+                      {features.map((feat, i) => (
+                        <div
+                          key={i}
+                          className="bg-white/60 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-white/40 hover:bg-white/80 transition-all duration-300 group cursor-pointer flex items-center gap-4 h-16"
                         >
-                          <span className="text-xl">{feat.icon}</span>
-                        </motion.div>
-                        <div className="flex-1">
-                          <p className="text-gray-800 font-medium text-sm sm:text-base leading-relaxed">
-                            {feat.text}
-                          </p>
+                          <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300 border border-orange-300 flex-shrink-0">
+                            <span className="text-xl">{feat.icon}</span>
+                          </div>
+                          <div className="flex-1">
+                            <p className="text-gray-800 font-medium text-base leading-tight">
+                              {feat.text}
+                            </p>
+                          </div>
                         </div>
-                      </motion.div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
                 </div>
               </motion.div>
 
               {/* Class Levels Section */}
-              <motion.div variants={itemVariants} className="w-full">
-                <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 30 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+                }}
+                className="w-full"
+              >
+                <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
                   Class Levels
                 </h3>
                 <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
                   {levelData.map((level, i) => (
-                    <motion.div
+                    <div
                       key={i}
                       className={`relative bg-gradient-to-br ${level.bgColor} rounded-xl p-4 shadow-lg border border-white/60 group transition-all duration-300 hover:shadow-xl flex-1 min-w-[180px] max-w-xs w-full flex flex-col items-center`}
-                      whileHover={{ scale: 1.04 }}
                     >
-                      <motion.div
+                      <div
                         className={`w-12 h-12 bg-gradient-to-r ${level.color} rounded-xl flex items-center justify-center flex-shrink-0 mb-2`}
-                        whileHover={{ rotate: 360 }}
-                        transition={{ duration: 0.6 }}
                       >
                         <span className="text-white font-bold text-lg">
                           {level.level}
                         </span>
-                      </motion.div>
+                      </div>
                       <div className="text-base font-semibold text-gray-800 text-center">
                         {level.class} Class
                       </div>
@@ -320,7 +246,7 @@ export default function AnubhavSection() {
                         Level-{level.level}
                       </div>
                       <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    </motion.div>
+                    </div>
                   ))}
                 </div>
               </motion.div>
@@ -328,6 +254,6 @@ export default function AnubhavSection() {
           </motion.div>
         </motion.div>
       </div>
-    </>
+    </div>
   );
 }

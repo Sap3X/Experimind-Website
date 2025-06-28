@@ -43,16 +43,6 @@ const prastutiFeatures = [
     ),
   },
   {
-    text: "Analytics and feedback tools",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
-        <line x1="12" y1="20" x2="12" y2="10"/>
-        <line x1="18" y1="20" x2="18" y2="4"/>
-        <line x1="6" y1="20" x2="6" y2="16"/>
-      </svg>
-    ),
-  },
-  {
     text: "Integration with classroom tech",
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
@@ -94,7 +84,7 @@ const EnhancedPrastutiSection = () => {
         <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-cyan-400 tracking-tight drop-shadow-lg">
           PRASTUTI
         </h2>
-        <p className="text-blue-900 text-sm sm:text-lg mt-2 font-medium">
+        <p className="text-blue-900 text-sm xs:text-base sm:text-lg mt-2 font-medium">
           Empowering Teachers with Tools & Demos
         </p>
       </div>
@@ -111,7 +101,7 @@ const EnhancedPrastutiSection = () => {
           </div>
           <button
             aria-label="Learn more about Prastuti"
-            className="mt-2 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-bold rounded-xl bg-gradient-to-r from-blue-900 to-cyan-400 text-white shadow-md hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 w-auto min-w-[140px] max-w-xs sm:max-w-sm mx-auto"
+            className="mt-2 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-bold rounded-xl bg-blue-900 text-white shadow-md hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 w-auto min-w-[140px] max-w-xs sm:max-w-sm mx-auto"
           >
             Learn More
           </button>

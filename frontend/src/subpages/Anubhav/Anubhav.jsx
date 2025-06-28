@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import img1 from "./assets/Anubhav_Kit-removebg-preview.webp";
 import img4 from "./assets/DSC05299.webp";
 import img5 from "./assets/DSC05347.webp";
-import TestimonialSlider from "./testimonnial";
+
 import AnubhavSection from "./trigerred";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -693,7 +693,6 @@ const AnubhavWebsite = () => {
         </div>
 
         <SmoothCoverflowCarousel />
-        <TestimonialSlider />
 
         {/* CTA Section */}
         <section className="py-12 lg:py-24 bg-gradient-to-r from-orange-500 to-amber-500">

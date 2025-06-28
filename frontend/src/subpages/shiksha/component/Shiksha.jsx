@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import UnifiedShikshaHero from "./hero";
 import RobotFeaturesDisplay from "./robot";
 import PointsToPonder from "./sir";
-import TestimonialsSection from "./testi";
 import Syllabus from "./Syllabus";
 import InfiniteGallery from "./gallery";
 import side_section from "../assest/side.webp";
@@ -322,8 +321,7 @@ const ShikshaWebsite = () => {
       <Syllabus />
       {/* Infinite Gallery Section */}
       <InfiniteGallery />
-      {/* Testimonials Section */}
-      <TestimonialsSection />
+
       {/* Contact Us Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8  ">
         <div className="max-w-7xl mx-auto z-10 bg-gradient-to-r from-indigo-900 to-blue-500 relative rounded-3xl shadow-lg p-8 lg:p-16">

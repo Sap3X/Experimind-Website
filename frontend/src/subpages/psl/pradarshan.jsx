@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaFlask, FaProjectDiagram, FaChalkboardTeacher, FaRocket, FaUsers, FaLightbulb, FaMedal, FaChartLine } from 'react-icons/fa';
-import im1 from "./assets/pradarshan.webp"
+import im1 from "./assets/image 89.webp"
 
 export default function Pradarshan() {
   const [hoveredFeature, setHoveredFeature] = useState(null);
   const [activeStage, ] = useState(null);
 
   const features = [
-    { text: "Hands-on Science Activities", icon: <FaFlask className="w-6 h-6 text-[#ffdd15] glow-icon" /> },
-    { text: "Project-based Learning", icon: <FaProjectDiagram className="w-6 h-6 text-[#ffdd15] glow-icon" /> },
-    { text: "Mentorship from Experts", icon: <FaChalkboardTeacher className="w-6 h-6 text-[#ffdd15] glow-icon" /> },
-    { text: "Showcase Opportunities", icon: <FaRocket className="w-6 h-6 text-[#ffdd15] glow-icon" /> },
-    { text: "Collaborative Environment", icon: <FaUsers className="w-6 h-6 text-[#ffdd15] glow-icon" /> },
+    { text: "Hands-on Science Activities", icon: <FaFlask className="w-6 h-6 text-[#111111]" /> },
+    { text: "Project-based Learning", icon: <FaProjectDiagram className="w-6 h-6 text-[#111111] " /> },
+    { text: "Mentorship from Experts", icon: <FaChalkboardTeacher className="w-6 h-6 text-[#111111" /> },
+    { text: "Showcase Opportunities", icon: <FaRocket className="w-6 h-6 text-[#111111] " /> },
+    { text: "Collaborative Environment", icon: <FaUsers className="w-6 h-6 text-[#111111] " /> },
   ];
 
   const progressionStages = [
@@ -55,18 +55,18 @@ export default function Pradarshan() {
   ];
 
   return (
-    <section className="py-16 px-6 sm:px-10 lg:px-20 bg-[#fff8dc] m-9 rounded-3xl max-w-6xl mx-auto  relative">
+    <section className="py-16 px-6 sm:px-10 lg:px-20 bg-white m-9 rounded-3xl max-w-6xl mx-auto relative shadow-2xl"> {/* <-- Added shadow-2xl */}
       <style>{`.glow-icon { filter: drop-shadow(0 0 8px rgba(255, 221, 21, 0.7)); }`}</style>
       <div className="text-center mb-14">
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#ffdd15] mb-4">PRADARSHAN</h1>
-        <p className="text-sm text-yellow-800 font-medium"> Self-sustained, portable tinkering lab</p>
+        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#f6bb33] mb-4">PRADARSHAN</h1>
+        <p className="text-sm xs:text-base sm:text-lg text-black font-medium"> Self-sustained, portable tinkering lab</p>
       </div>
       <div className="grid md:grid-cols-2 gap-10">
         <div className="bg-[#fff8cc] border border-[#ffdd15] rounded-xl p-6 shadow-lg flex items-center ">
-            <img className='rounded-xl h-96  w-full  items-center ' src={im1} alt=''></img>
+            <img className='rounded-xl h-96  w-full  items-center object-fill' src={im1} alt=''></img>
           </div>
         <div className="bg-[#fff8cc] border border-[#ffdd15] rounded-xl p-6 shadow-lg">
-          <h2 className="text-xl font-bold text-yellow-800 text-center mb-6">Key Highlights</h2>
+          <h2 className="text-xl font-bold text-black text-center mb-6">Key Highlights</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {features.map((feature, index) => (
               <motion.li
@@ -76,7 +76,7 @@ export default function Pradarshan() {
                 className={`flex flex-col items-center text-center p-4 rounded-xl transition-all duration-300 ${hoveredFeature === index ? 'bg-yellow-200 scale-105' : 'bg-[#fff8cc] hover:bg-yellow-200'}`}
               >
                 <div className="mb-3">{feature.icon}</div>
-                <p className="text-sm font-medium text-yellow-900 max-w-[140px]">{feature.text}</p>
+                <p className="text-sm font-medium text-black max-w-[140px]">{feature.text}</p>
               </motion.li>
             ))}
           </ul>
@@ -86,12 +86,12 @@ export default function Pradarshan() {
       
 
       <div className="mt-20 text-center">
-        <h3 className="text-yellow-800 font-bold text-2xl sm:text-3xl mb-10">Learning Journey by Class</h3>
+        <h3 className="text-black font-bold text-2xl sm:text-3xl mb-10">Learning Journey by Class</h3>
         <div className="flex flex-wrap justify-center items-stretch gap-6">
           {progressionStages.map((stage, i) => (
             <motion.div
               key={i}
-              className={`w-full sm:w-64 min-h-[16rem] p-4 ${stage.bg} border ${stage.border} rounded-2xl shadow-lg cursor-pointer`}
+              className={`w-full sm:w-64 min-h-48 p-4 ${stage.bg} border ${stage.border} rounded-2xl shadow-lg cursor-pointer`}
             >
               <div className="flex justify-center mb-4">{stage.icon}</div>
               <div className={`text-lg font-bold ${stage.text} mb-1`}>Level {stage.level}</div>

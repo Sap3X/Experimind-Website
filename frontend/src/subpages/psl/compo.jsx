@@ -1,136 +1,137 @@
 import { useState } from "react";
-import { Monitor, BookOpen, Star } from "lucide-react";
-import im1 from "./assets/Prastuti Hero Image 2.webp"
-import im2 from "./assets/anu.webp"
-import im3 from "./assets/pradarshan.webp"
+import { Monitor, BookOpen, Star, ChevronDown } from "lucide-react";
+import im1 from "./assets/Prastuti Hero Image.webp";
+import im2 from "./assets/anu.webp";
+import im3 from "./assets/image120.webp";
 
 const components = [
   {
     title: "Prastuti",
     subtitle: "Teacher's Toolkit",
     image: im1,
-    description:
-      "Chapter-wise teacher kits with interactive models, experiments, and video tutorials for easy science and math demonstrations for classes 8, 9 & 10.",
-    bg: "from-blue-100 to-blue-300",
-    ring: "ring-blue-400",
-    button: "bg-gradient-to-r from-blue-800 to-blue-600",
-    icon: <Monitor className="w-4 h-4 mr-2" />,
+    description: "Chapter-wise teacher kits with interactive models, experiments, and video tutorials for easy science and math demonstrations for classes 8, 9 & 10.",
+    bg: "from-blue-100 to-blue-200",
+    borderColor: "border-blue-300",
+    icon: <Monitor className="w-4 h-4" />,
+    dotColor: "bg-blue-500"
   },
   {
     title: "Anubhav",
-    subtitle: "Student Experience",
+    subtitle: "Student Experience", 
     image: im2,
-    description:
-      "Student kits with age-appropriate activities and guided videos for learning STEM, AI, and robotics.",
-    bg: "from-orange-100 to-orange-300",
-    ring: "ring-orange-300",
-    button: "bg-gradient-to-r from-orange-700 to-orange-500",
-    icon: <BookOpen className="w-4 h-4 mr-2" />,
+    description: "Student kits with age-appropriate activities and guided videos for learning STEM, AI, and robotics.",
+    bg: "from-orange-100 to-orange-200",
+    borderColor: "border-orange-300",
+    icon: <BookOpen className="w-4 h-4" />,
+    dotColor: "bg-orange-500"
   },
   {
     title: "Pradarshan",
     subtitle: "Innovation Showcase",
     image: im3,
-    description:
-      "A display and exhibition module for showcasing student innovations and fostering creativity.",
-    bg: "from-yellow-100 to-yellow-300",
-    ring: "ring-yellow-300",
-    button: "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black",
-    icon: <Star className="w-4 h-4 mr-2" />,
+    description: "A display and exhibition module for showcasing student innovations and fostering creativity.",
+    bg: "from-yellow-100 to-yellow-200", 
+    borderColor: "border-yellow-300",
+    icon: <Star className="w-4 h-4" />,
+    dotColor: "bg-yellow-500"
   },
 ];
 
-export default function ImprovedCompo() {
-  const [hoveredImage, setHoveredImage] = useState(null);
-  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
+export default function STEMComponentsLayout() {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <section>
-      <div className="my-10 sm:my-20">
-        <div className="bg-blue-800 text-white rounded-2xl p-4 sm:p-6 text-center font-bold text-2xl sm:text-3xl mb-6 w-full max-w-2xl mx-auto shadow-xl">
-          3 Main Components of Portable STEM Lab
+    <div className="min-h-screen bg-gray-50 p-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            3 Main Components of Portable STEM Lab
+          </h1>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center p-4 sm:p-8 gap-8 rounded-2xl">
+        {/* Components Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
           {components.map((component, index) => {
-            const showPopover = hoveredImage === index;
-
+            const isActive = activeIndex === index;
+            const isHovered = hoveredIndex === index;
+            
             return (
               <div
                 key={index}
-                className={`relative group cursor-pointer transition-transform duration-300 hover:scale-105 flex flex-col items-center bg-gradient-to-br ${component.bg} rounded-2xl p-5 shadow-lg ring-2 ${component.ring}`}
-                onMouseEnter={() => isDesktop && setHoveredImage(index)}
-                onMouseLeave={() => isDesktop && setHoveredImage(null)}
-                onClick={() => !isDesktop && setHoveredImage(hoveredImage === index ? null : index)}
+                className={`relative bg-gradient-to-b ${component.bg} rounded-3xl border-2 ${component.borderColor} shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
               >
-                <div className="relative overflow-hidden rounded-xl shadow-xl border border-white/30">
-                  <img
-                    src={component.image}
-                    alt={component.title}
-                    className={`w-40 sm:w-56 h-48 sm:h-72 object-cover transition duration-700 ease-in-out rounded-xl ${
-                      hoveredImage === index
-                        ? "scale-110 brightness-110 shadow-2xl"
-                        : hoveredImage !== null
-                        ? "opacity-60 scale-98"
-                        : "opacity-100 scale-100"
-                    }`}
-                  />
-                  <div className="absolute top-4 right-4 w-3 h-3 rounded-full bg-gradient-to-r from-[#2563eb] to-[#60a5fa] shadow-lg animate-ping" />
+                {/* Image Container */}
+                <div className="p-6 pb-0">
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white">
+                    <img
+                      src={component.image}
+                      alt={component.title}
+                      className="w-full h-64 object-cover"
+                    />
+                    {/* Blue dot indicator */}
+                    <div className={`absolute top-4 right-4 w-3 h-3 ${component.dotColor} rounded-full shadow-md`}></div>
+                  </div>
                 </div>
 
-                {showPopover && (
-                  <div className="mt-4 w-full transition-all duration-500 ease-in-out transform animate-slide-in-from-bottom bg-white/90 rounded-xl shadow-inner p-4 text-center backdrop-blur-md border border-white/30">
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      {component.title}
-                      <span className="inline-block w-2 h-2 ml-2 rounded-full bg-[#2563eb] animate-pulse"></span>
-                    </h3>
-                    {component.subtitle && (
-                      <p className="text-xs text-gray-600 italic mb-2">{component.subtitle}</p>
-                    )}
-                    <p className="text-sm text-gray-800 leading-relaxed font-medium">
+                {/* Content Area */}
+                <div className="p-6">
+                  {/* Title Section */}
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-xl font-bold text-gray-800">{component.title}</h3>
+                    <div className={`w-2 h-2 ${component.dotColor} rounded-full`}></div>
+                  </div>
+                  
+                  <p className="text-sm text-gray-600 italic mb-4">{component.subtitle}</p>
+
+                  {/* Description - Show on hover for large screens */}
+                  <div className={`hidden md:block transition-all duration-300 ${
+                    isHovered ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0 overflow-hidden'
+                  }`}>
+                    <p className="text-sm text-gray-700 leading-relaxed mb-4">
                       {component.description}
                     </p>
                   </div>
-                )}
 
-                <button
-                  className={`lg:hidden mt-3 px-4 py-2 text-xs font-semibold rounded-lg flex items-center justify-center transition ${
-                    component.button
-                  } text-white hover:opacity-90`}
-                  type="button"
-                >
-                  {component.icon}
-                  {showPopover ? "Hide Info" : "Show Info"}
-                </button>
+                  {/* Toggle Button for Mobile */}
+                  <button
+                    className={`w-full md:hidden flex items-center justify-center gap-2 px-4 py-2 bg-white/80 hover:bg-white text-gray-700 rounded-xl border ${component.borderColor} transition-all duration-200`}
+                    onClick={() => setActiveIndex(isActive ? null : index)}
+                  >
+                    {component.icon}
+                    <span className="text-sm font-medium">
+                      {isActive ? "Hide Details" : "Show Details"}
+                    </span>
+                    <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isActive ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {/* Expandable Content for Mobile */}
+                  <div className={`md:hidden overflow-hidden transition-all duration-300 ${
+                    isActive ? 'max-h-96 mt-4' : 'max-h-0'
+                  }`}>
+                    <div className="bg-white/60 rounded-xl p-4 border border-white/40">
+                      <p className="text-sm text-gray-700 leading-relaxed">
+                        {component.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}
         </div>
 
-        <div className="text-center mt-6 text-blue-700 text-xs sm:text-sm">
-          <span className="inline-flex items-center gap-1 bg-white/70 px-3 py-1 rounded-full shadow">
-            <svg className="w-4 h-4 text-blue-400 animate-bounce" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-            </svg>
-            Hover or tap each component to learn more
-          </span>
+        {/* Bottom Instruction */}
+        <div className="text-center mt-8">
+          <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 shadow-sm">
+            <ChevronDown className="w-4 h-4 text-blue-500" />
+            <span className="text-sm text-gray-600">Tap or hover each component to learn more</span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
-
-// Tailwind animation class (add this to global styles if using Tailwind CSS)
-// @keyframes slide-in-from-bottom {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(20px);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
-// .animate-slide-in-from-bottom {
-//   animation: slide-in-from-bottom 0.5s ease-out forwards;
-// }

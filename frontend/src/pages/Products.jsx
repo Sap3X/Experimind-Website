@@ -51,8 +51,8 @@ const EducationalSolutions = () => {
           alt="Products Background"
           className="w-full h-[900px] object-cover object-center"
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4 max-w-4xl mx-auto">
-          <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4">Our Products</h1>
+        <div className="absolute inset-0 flex flex-col justify-center text-center sm:mb-96 lg:mb-0  z-10 max-w-4xl mx-auto">
+          <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-1">Our Products</h1>
           <p className="Utility-font-Buenard text-white text-lg md:text-2xl max-w-2xl mx-auto">
             Transforming classrooms with innovative learning kits and robots.
           </p>
