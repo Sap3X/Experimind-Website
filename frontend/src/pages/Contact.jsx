@@ -49,7 +49,7 @@ const ContactUs = () => {
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
-      const response = await axios.post("http://localhost:9001/api/contact", {
+      await axios.post("https://experimind-website-1.onrender.com/api/contact", {
         name: formData.fullName,
         email: formData.email,
         phone: Number(formData.phone),
