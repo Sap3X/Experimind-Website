@@ -17,8 +17,6 @@ import gen from "./assets/generation-z.webp"
 import stem from "./assets/stem.webp"
 import policy from "./assets/policy.webp"
 import ai from "./assets/artificial-intelligence.webp"
-import Header from "../../components/Header.jsx";
-import Footer from "../../components/Footer.jsx";
 
 export default function ResponsivePSLWebsite() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -69,7 +67,6 @@ export default function ResponsivePSLWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-amber-50">
-      <Header />
       {/* Hero Section */}
       <section
         id="home"
@@ -302,7 +299,8 @@ export default function ResponsivePSLWebsite() {
       > 
         <Image />
       </section>
-           {/* Call to Action Section */}
+      
+      {/* Call to Action Section */}
       <section
         id="contact"
         className="py-10 sm:py-20 bg-gradient-to-br from-[#103f91] to-[#46cbff]"
@@ -316,13 +314,14 @@ export default function ResponsivePSLWebsite() {
               <p className="text-base sm:text-xl font-light leading-relaxed">
                 Transform the way STEM, AI, and Robotics are taught. Contact us
                 to bring PSL to your school today!
+                <br />
+                <p className="font-normal"> Book a Free Demo</p>
               </p>
+             
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-                <button className="w-full max-w-xs sm:w-auto sm:max-w-none px-4 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg font-semibold rounded-lg bg-white text-[#103f91] hover:bg-amber-100 hover:scale-105 transition-all duration-300 shadow-lg">
-                  Order Now
-                </button>
+                
                 <button className="w-full max-w-xs sm:w-auto sm:max-w-none px-4 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg font-semibold rounded-lg border-2 border-white text-white hover:bg-white hover:text-[#103f91] transition-all duration-300">
-                  Contact Us
+                  Free Demo
                 </button>
               </div>
             </div>
@@ -339,7 +338,6 @@ export default function ResponsivePSLWebsite() {
           </div>
         </div>
       </section>
-      <Footer/>
     </div>
   );
 }

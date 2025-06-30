@@ -15,7 +15,7 @@ const Image = () => {
   return (
     <div className="w-full py-12 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+        <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl  font-bold text-center mb-8 text-gray-800">
           Our Products Gallery
         </h2>
 

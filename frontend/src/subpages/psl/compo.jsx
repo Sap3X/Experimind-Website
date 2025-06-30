@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Monitor, BookOpen, Star, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import im1 from "./assets/Prastuti Hero Image.webp";
 import im2 from "./assets/anu.webp";
 import im3 from "./assets/image120.webp";
@@ -12,7 +12,6 @@ const components = [
     description: "Chapter-wise teacher kits with interactive models, experiments, and video tutorials for easy science and math demonstrations for classes 8, 9 & 10.",
     bg: "from-blue-100 to-blue-200",
     borderColor: "border-blue-300",
-    icon: <Monitor className="w-4 h-4" />,
     dotColor: "bg-blue-500"
   },
   {
@@ -22,17 +21,15 @@ const components = [
     description: "Student kits with age-appropriate activities and guided videos for learning STEM, AI, and robotics.",
     bg: "from-orange-100 to-orange-200",
     borderColor: "border-orange-300",
-    icon: <BookOpen className="w-4 h-4" />,
     dotColor: "bg-orange-500"
   },
   {
     title: "Pradarshan",
     subtitle: "Innovation Showcase",
     image: im3,
-    description: "A display and exhibition module for showcasing student innovations and fostering creativity.",
+    description: "A display and exhibition module for converting ideas into projects and showcasing students innovations and fostering creativity.",
     bg: "from-yellow-100 to-yellow-200", 
     borderColor: "border-yellow-300",
-    icon: <Star className="w-4 h-4" />,
     dotColor: "bg-yellow-500"
   },
 ];
@@ -42,7 +39,7 @@ export default function STEMComponentsLayout() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className=" bg-gray-50 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

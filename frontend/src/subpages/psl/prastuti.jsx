@@ -1,83 +1,139 @@
 import React from "react";
-import im2 from "./assets/Prastuti Hero Image 2.webp"
+import im2 from "./assets/Prastuti Hero Image 2.webp";
 
 const prastutiFeatures = [
   {
     text: "Interactive teaching demos",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
-        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-        <line x1="8" y1="21" x2="16" y2="21"/>
-        <line x1="12" y1="17" x2="12" y2="21"/>
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-blue-900"
+      >
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+        <line x1="8" y1="21" x2="16" y2="21" />
+        <line x1="12" y1="17" x2="12" y2="21" />
       </svg>
     ),
   },
   {
     text: "Customizable lesson templates",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
-        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-        <polyline points="14,2 14,8 20,8"/>
-        <line x1="16" y1="13" x2="8" y2="13"/>
-        <line x1="16" y1="17" x2="8" y2="17"/>
-        <polyline points="10,9 9,9 8,9"/>
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-blue-900"
+      >
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14,2 14,8 20,8" />
+        <line x1="16" y1="13" x2="8" y2="13" />
+        <line x1="16" y1="17" x2="8" y2="17" />
+        <polyline points="10,9 9,9 8,9" />
       </svg>
     ),
   },
   {
     text: "Real-time collaboration",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
-        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-        <circle cx="12" cy="7" r="4"/>
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-blue-900"
+      >
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+        <circle cx="12" cy="7" r="4" />
       </svg>
     ),
   },
   {
     text: "Easy-to-use interface",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
-        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-        <path d="M9 9h6v6H9z"/>
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-blue-900"
+      >
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+        <path d="M9 9h6v6H9z" />
       </svg>
     ),
   },
   {
     text: "Integration with classroom tech",
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-900">
-        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-        <path d="M2 17l10 5 10-5"/>
-        <path d="M2 12l10 5 10-5"/>
+      <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="text-blue-900"
+      >
+        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+        <path d="M2 17l10 5 10-5" />
+        <path d="M2 12l10 5 10-5" />
       </svg>
     ),
   },
 ];
 
-const classOptions = [
+const levelData = [
   {
-    grade: "8th",
-    bgColor: "bg-sky-400",
-    borderColor: "border-sky-400",
-    shadowColor: "shadow-sky-200"
+    class: "8th",
+    name: "Science + Maths",
+    level: 1,
+    color: "from-cyan-500 to-teal-500",
+    bgColor: "from-cyan-50 to-teal-50",
+    textColor: "text-cyan-700",
   },
   {
-    grade: "9th",
-    bgColor: "bg-green-500",
-    borderColor: "border-green-500",
-    shadowColor: "shadow-green-200"
+    class: "9th",
+    name: "Science + Maths",
+    level: 2,
+    color: "from-emerald-500 to-green-500",
+    bgColor: "from-emerald-50 to-green-50",
+    textColor: "text-emerald-700",
   },
   {
-    grade: "10th",
-    bgColor: "bg-purple-600",
-    borderColor: "border-purple-600",
-    shadowColor: "shadow-purple-200"
+    class: "10th",
+    name: "Science + Maths",
+    level: 3,
+    color: "from-purple-500 to-purple-600",
+    bgColor: "from-purple-50 to-purple-100",
+    textColor: "text-purple-700",
   },
 ];
 
 const EnhancedPrastutiSection = () => {
   return (
-    <div className="max-w-6xl mx-auto bg-white border border-cyan-100 rounded-2xl sm:rounded-3xl shadow-xl p-2 sm:p-6 md:p-10 relative overflow-hidden m-9">
+    <div className="max-w-6xl mx-auto bg-white border border-cyan-400 rounded-3xl sm:rounded-3xl shadow-xl p-2 sm:p-6 md:p-10 relative overflow-hidden m-9">
       <div className="absolute -top-16 -left-16 w-24 h-24 sm:w-40 sm:h-40 bg-cyan-100 opacity-20 rounded-full blur-2xl z-0"></div>
       <div className="absolute bottom-0 -right-16 w-16 h-16 sm:w-32 sm:h-32 bg-blue-200 opacity-20 rounded-full blur-2xl z-0"></div>
       <div className="text-center mb-6 sm:mb-10 relative z-10">
@@ -122,39 +178,41 @@ const EnhancedPrastutiSection = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center mt-10 sm:mt-14 relative z-10">
-        <div className="flex flex-col items-center gap-6">
-          <div className="text-blue-900 font-bold text-lg sm:text-xl mb-2">
-           Class Levels
-          </div>
-          <div className="flex gap-6 sm:gap-8 flex-wrap justify-center">
-            {classOptions.map((option, idx) => (
+      <div
+        variants={{
+          hidden: { opacity: 0, y: 30 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+        }}
+        className="w-full"
+      >
+        <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+          Class Levels
+        </h3>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+          {levelData.map((level, i) => (
+            <div
+              key={i}
+              className={`relative bg-gradient-to-br ${level.bgColor} rounded-xl p-4 shadow-lg border border-white/60 group transition-all duration-300 hover:shadow-xl flex-1 min-w-[180px] max-w-xs w-full flex flex-col items-center mb-4`}
+            >
               <div
-                key={idx}
-                className={`rounded-2xl p-4 bg-white bg-opacity-80 backdrop-blur-sm border-2 ${option.borderColor} ${option.shadowColor} shadow-xl transform transition duration-500  cursor-pointer group
-                  w-40 sm:w-52 md:w-60 lg:w-64 xl:w-72
-                  min-w-[140px] sm:min-w-[180px] md:min-w-[210px]
-                  max-w-full
-                `}
+                className={`w-12 h-12 bg-gradient-to-r ${level.color} rounded-xl flex items-center justify-center flex-shrink-0 mb-2`}
               >
-                <div className="text-center relative">
-                  <div className="bg-white rounded-full w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-3 mx-auto shadow-lg transition-shadow duration-300">
-                    <span className="text-gray-700 font-bold text-sm sm:text-base">
-                      {option.grade}
-                    </span>
-                  </div>
-                  <div className="text-gray-700 font-semibold text-sm mb-2">
-                    Class
-                  </div>
-                  <div className={`${option.bgColor} text-white rounded-xl px-4 py-3 text-sm font-bold shadow-lg  transition-all duration-300 `}>
-                    <div>Science</div>
-                    <div className="text-xs opacity-90 my-1">+</div>
-                    <div>Maths</div>
-                  </div>
-                </div>
+                <span className="text-white font-bold text-lg">
+                  {level.level}
+                </span>
               </div>
-            ))}
-          </div>
+              <div className="text-base font-semibold text-gray-800 text-center">
+                {level.class} Class
+              </div>
+              <div
+                className={`text-lg font-bold bg-gradient-to-r ${level.color} bg-clip-text text-transparent text-center`}
+              >
+                {level.name}
+              </div>
+              <div className="h-2"> </div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -42,7 +42,7 @@ export default function GeoMagic() {
               <div className="text-center max-w-4xl mx-auto">
                 {/* Subtitle */}
                 <div className="mb-8 md:mb-16">
-                  <p className="text-white/90 text-sm md:text-base lg:text-lg font-medium tracking-wide uppercase mb-2">
+                  <p className="text-white/90 text-base md:text-[1.25rem] lg:text-[1.50rem] font-semibold tracking-wide uppercase mb-2">
                     Experiential Geometry Learning
                   </p>
                   <p className="text-white text-xs md:text-sm lg:text-base font-light tracking-wider uppercase">

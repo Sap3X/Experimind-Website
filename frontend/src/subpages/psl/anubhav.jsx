@@ -94,7 +94,7 @@ function OrangeParticles() {
 
 export default function AnubhavSection() {
   return (
-    <div className="relative">
+    <div className="relative ">
       {/* Orange animated background particles */}
       <OrangeParticles />
 
@@ -103,7 +103,7 @@ export default function AnubhavSection() {
       <div className="absolute top-1/2 right-0 w-40 h-40 bg-orange-300/20 rounded-full blur-2xl z-0"></div>
       <div className="absolute bottom-0 left-1/3 w-32 h-32 bg-orange-200/30 rounded-full blur-2xl z-0"></div>
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 rounded-3xl border border-orange-500">
         {/* Main Content Block */}
         <motion.div
           initial="hidden"
@@ -143,12 +143,9 @@ export default function AnubhavSection() {
                   ANUBHAV
                 </h2>
                 <div className="w-20 sm:w-32 h-1.5 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mb-6" />
-                <p className="text-base xs:text-lg sm:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto font-medium">
-                  Revolutionizing STEM education through hands-on learning
-                  experiences
-                </p>
-                <p className="text-sm xs:text-base sm:text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-                  For Students, stored in the PSL Trolley
+                <p className=" text-gray-700 max-w-3xl mx-auto font-medium text-sm xs:text-base sm:text-lg mt-2 ">
+                  Revolutionizing STEM Education Through Hands-on Learning
+                  Experiences
                 </p>
               </motion.div>
 
@@ -223,7 +220,7 @@ export default function AnubhavSection() {
                   {levelData.map((level, i) => (
                     <div
                       key={i}
-                      className={`relative bg-gradient-to-br ${level.bgColor} rounded-xl p-4 shadow-lg border border-white/60 group transition-all duration-300 hover:shadow-xl flex-1 min-w-[180px] max-w-xs w-full flex flex-col items-center`}
+                      className={`relative bg-gradient-to-br ${level.bgColor} rounded-xl p-4 shadow-lg border border-white/60 group transition-all duration-300 hover:shadow-xl flex-1 min-w-[180px] max-w-xs w-full flex flex-col items-center mb-4`}
                     >
                       <div
                         className={`w-12 h-12 bg-gradient-to-r ${level.color} rounded-xl flex items-center justify-center flex-shrink-0 mb-2`}
