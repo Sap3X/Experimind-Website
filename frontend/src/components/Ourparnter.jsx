@@ -7,7 +7,7 @@ const PartnerCarousel = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const carouselRef = useRef(null);
 
- const partners = [
+  const partners = [
     {
       id: 1,
       name: "AIM Innovation",
@@ -118,30 +118,38 @@ const PartnerCarousel = () => {
   }, [isTransitioning, initialIndex, partners.length]);
 
   // Handle keyboard navigation
-  const handleKeyDown = useCallback((event) => {
-    if (event.key === 'ArrowLeft') {
-      handlePrev();
-    } else if (event.key === 'ArrowRight') {
-      handleNext();
-    }
-  }, [handleNext, handlePrev]);
+  const handleKeyDown = useCallback(
+    (event) => {
+      if (event.key === "ArrowLeft") {
+        handlePrev();
+      } else if (event.key === "ArrowRight") {
+        handleNext();
+      }
+    },
+    [handleNext, handlePrev]
+  );
 
   // Calculate the dot indicator position
   const getDotIndex = () => {
     return (currentIndex - initialIndex + partners.length) % partners.length;
   };
 
-  const goToSlide = useCallback((index) => {
-    if (!isTransitioning) {
-      setCurrentIndex(initialIndex + index);
-    }
-  }, [isTransitioning, initialIndex]);
+  const goToSlide = useCallback(
+    (index) => {
+      if (!isTransitioning) {
+        setCurrentIndex(initialIndex + index);
+      }
+    },
+    [isTransitioning, initialIndex]
+  );
 
   return (
     <div className="w-full max-w-7xl mt-11 mx-auto py-16">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4">Our Partners</h2>
+        <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4">
+          Our Partners
+        </h2>
         <p className="Utility-font-Buenard text-lg text-gray-600 mb-12 lg:mb-16 max-w-2xl mx-auto">
           We collaborate with leading organizations to drive innovation and
           create meaningful impact
@@ -149,8 +157,8 @@ const PartnerCarousel = () => {
       </div>
 
       {/* Carousel Container */}
-      <div 
-        className="relative px-8" 
+      <div
+        className="relative px-8"
         onKeyDown={handleKeyDown}
         tabIndex={0}
         role="region"
@@ -213,7 +221,11 @@ const PartnerCarousel = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center mt-8 gap-2" role="tablist" aria-label="Carousel navigation">
+        <div
+          className="flex justify-center mt-8 gap-2"
+          role="tablist"
+          aria-label="Carousel navigation"
+        >
           {partners.map((_, index) => (
             <button
               key={index}

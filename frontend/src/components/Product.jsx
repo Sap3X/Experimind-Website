@@ -24,7 +24,7 @@ const ProductCard = ({ title, imageSrc, className = "", route }) => {
       <h3 className="Utility-font-Montserrat Utility-color-Blue text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold font-sans text-center mb-3 sm:mb-4 lg:mb-6 flex-grow flex items-center justify-center leading-tight">
         {title}
       </h3>
-      <button 
+      <button
         onClick={handleButtonClick}
         className="Utility-font-NunitoSans w-full px-4 py-2.5 sm:px-6 sm:py-3 lg:py-3.5 bg-orange-600 hover:bg-orange-700 active:bg-orange-800 rounded-lg text-white text-sm sm:text-base lg:text-lg font-medium font-sans transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 hover:shadow-md"
       >

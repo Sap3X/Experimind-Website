@@ -32,9 +32,7 @@ export default function HeroSection() {
 
             {/* CTA Button */}
             <div className="pt-4">
-              <button
-                className="group relative Utility-font-NunitoSans inline-flex items-center gap-3 bg-white text-[#2E3192] px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-2xl hover:scale-105 active:scale-95 transform"
-              >
+              <button className="group relative Utility-font-NunitoSans inline-flex items-center gap-3 bg-white text-[#2E3192] px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:bg-blue-50 hover:shadow-2xl hover:scale-105 active:scale-95 transform">
                 <span>Explore Our Products</span>
                 <ArrowRight
                   size={20}

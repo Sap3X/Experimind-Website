@@ -596,7 +596,6 @@ const AnubhavWebsite = () => {
                 </div>
               </div>
 
-
               {/* Interactive Timeline */}
               <div className="bg-gradient-to-r from-[#FFA500] to-[#FF8C00] rounded-2xl lg:rounded-3xl p-6 lg:p-12 text-white">
                 <div className="text-center mb-8 lg:mb-12">

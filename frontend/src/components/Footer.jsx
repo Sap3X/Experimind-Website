@@ -9,11 +9,7 @@ export default function Footer() {
       <div className="max-w-[80rem] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Section */}
         <div className="space-y-4">
-          <img
-            src={immg}
-            alt="Logo"
-            className="w-[7.5rem] h-auto"
-          />
+          <img src={immg} alt="Logo" className="w-[7.5rem] h-auto" />
           <p className="Utility-font-NunitoSans text-[#FFDD15] text-sm leading-relaxed">
             Our Office Address
             <br />
@@ -40,7 +36,9 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className="space-y-4 pt-8">
-          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold">Quick Links</h3>
+          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold">
+            Quick Links
+          </h3>
           <ul className="Utility-font-NunitoSans space-y-2 text-sm">
             <li>
               <Link to="/" className="hover:underline">
@@ -72,7 +70,9 @@ export default function Footer() {
 
         {/* Services & Socials */}
         <div className="space-y-4 pt-8">
-          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold">Services</h3>
+          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold">
+            Services
+          </h3>
           <ul className="Utility-font-NunitoSans space-y-1 text-sm font-medium">
             <li>Workshop</li>
             <li>Web Development</li>
@@ -82,7 +82,9 @@ export default function Footer() {
             <li>Electronics & IoT</li>
           </ul>
 
-          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold mt-4">Follow Us</h3>
+          <h3 className="Utility-font-Montserrat text-[#FFDD15] text-xl font-bold mt-4">
+            Follow Us
+          </h3>
           <div className="flex gap-4 items-center">
             <a
               href="https://www.instagram.com/experimindlabs"

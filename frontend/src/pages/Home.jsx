@@ -21,7 +21,7 @@ export default function Home() {
       <HeroSec />
 
       {/* Impact Section */}
-      <StatisticsComponent/>
+      <StatisticsComponent />
 
       {/* Who Are We Section */}
       <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
@@ -63,7 +63,7 @@ export default function Home() {
               onClick={() => navigate("/about")}
             >
               <img
-                src= {img.arrow}
+                src={img.arrow}
                 alt="Learn More Icon"
                 className="w-8 h-8 lg:w-12 lg:h-12 rounded-lg"
               />
@@ -77,7 +77,7 @@ export default function Home() {
       <ProductsSection />
 
       {/* Partners Section */}
-      <PartnerCarousel/>
+      <PartnerCarousel />
 
       {/* Why Choose Us Section */}
       <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
@@ -141,8 +141,8 @@ export default function Home() {
       <Testimonials />
 
       {/* Call to Action Section */}
-      <BecomePartner/>
-      
+      <BecomePartner />
+
       {/* Footer component would go here */}
       <Footer />
     </div>

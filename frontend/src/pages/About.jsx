@@ -6,24 +6,25 @@ import img from "../image";
 export default function About() {
   return (
     <>
-		<div className="min-h-screen">
-      {/* Hero Section */}
-      <div className="Utility-bg-Blue px-4 sm:px-6 lg:px-8">
-        <Header />
-        <div className="max-w-7xl mx-auto py-8">
-          {/* Assuming Header component exists */}
-          
-          <div className="flex flex-col py-8 lg:py-16">
-            <h1 className="Utility-font-Montserrat text-center text-white text-3xl sm:text-4xl lg:text-6xl font-bold mt-4">
-              About{' '}
-              <span className="Utility-color-Orange">Experimind Labs</span>
-            </h1>
+      <div className="min-h-screen">
+        {/* Hero Section */}
+        <div className="Utility-bg-Blue px-4 sm:px-6 lg:px-8">
+          <Header />
+          <div className="max-w-7xl mx-auto py-8">
+            {/* Assuming Header component exists */}
 
-            <div className="flex justify-center mt-6 lg:mt-8">
-              <p className="Utility-font-Buenard text-white text-lg sm:text-xl lg:text-2xl text-center max-w-4xl px-4">
-                Empowering education through innovative tech solutions that inspire and engage learners globally
-              </p>
-            </div>
+            <div className="flex flex-col py-8 lg:py-16">
+              <h1 className="Utility-font-Montserrat text-center text-white text-3xl sm:text-4xl lg:text-6xl font-bold mt-4">
+                About{" "}
+                <span className="Utility-color-Orange">Experimind Labs</span>
+              </h1>
+
+              <div className="flex justify-center mt-6 lg:mt-8">
+                <p className="Utility-font-Buenard text-white text-lg sm:text-xl lg:text-2xl text-center max-w-4xl px-4">
+                  Empowering education through innovative tech solutions that
+                  inspire and engage learners globally
+                </p>
+              </div>
 
               <div className="flex justify-center mt-8 lg:mt-12">
                 <img
@@ -36,19 +37,24 @@ export default function About() {
           </div>
         </div>
 
-      {/* Who Are We Section */}
-      <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-            <div className="flex-1 space-y-6">
-              <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-center lg:text-left">
-                Who are we?
-              </h2>
-              
-              <p className="Utility-font-NunitoSans text-gray-600 text-justify text-lg sm:text-xl">
-                We are an organization dedicated to conducting research in the field of education. We focus on curriculum development, teaching aid design, student learning, methods, teacher training, innovation and more. Our aim is to improve education by developing impactful, modern solutions in partnership with learners and educators worldwide.
-              </p>
-            </div>
+        {/* Who Are We Section */}
+        <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+              <div className="flex-1 space-y-6">
+                <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 text-center lg:text-left">
+                  Who are we?
+                </h2>
+
+                <p className="Utility-font-NunitoSans text-gray-600 text-justify text-lg sm:text-xl">
+                  We are an organization dedicated to conducting research in the
+                  field of education. We focus on curriculum development,
+                  teaching aid design, student learning, methods, teacher
+                  training, innovation and more. Our aim is to improve education
+                  by developing impactful, modern solutions in partnership with
+                  learners and educators worldwide.
+                </p>
+              </div>
 
               <div className="flex-shrink-0 w-full lg:w-2/5">
                 <img
@@ -61,12 +67,12 @@ export default function About() {
           </div>
         </div>
 
-      {/* Core Values Section */}
-      <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-            Our Core Values
-          </h2>
+        {/* Core Values Section */}
+        <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
+              Our Core Values
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {/* Vision Card */}
@@ -122,13 +128,14 @@ export default function About() {
                   Our Values
                 </h3>
 
-              <p className="Utility-font-NunitoSans text-gray-600 text-lg lg:text-xl leading-relaxed">
-                Fostering innovation, demystifying science and math fears, and sharing knowledge with all.
-              </p>
+                <p className="Utility-font-NunitoSans text-gray-600 text-lg lg:text-xl leading-relaxed">
+                  Fostering innovation, demystifying science and math fears, and
+                  sharing knowledge with all.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
         {/* Team Section */}
         <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
@@ -144,7 +151,8 @@ export default function About() {
                   image: img.ceo,
                   name: "Akshay Mashelkar",
                   designation: "Founder & CEO",
-                  linkedin: "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
+                  linkedin:
+                    "https://www.linkedin.com/in/akshay-mashelkar-2430b9180/",
                 },
                 {
                   image: img.director,
@@ -167,13 +175,15 @@ export default function About() {
                   image: img.accountant,
                   name: "Shruthi",
                   designation: "Accountant",
-                  linkedin: "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
+                  linkedin:
+                    "https://www.linkedin.com/in/shruthi-kulal-ba21a7316/",
                 },
                 {
                   image: img.production,
                   name: "Sagar Shanbhogue",
                   designation: "Production Management",
-                  linkedin: "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
+                  linkedin:
+                    "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
                 },
                 {
                   image: img.intern3,
@@ -237,7 +247,8 @@ export default function About() {
                   image: img.contenthead,
                   name: "Subramanya L. Hegde",
                   designation: "Content Head",
-                  linkedin: "https://www.linkedin.com/in/subrahmanya-l-hegde-91533563/",
+                  linkedin:
+                    "https://www.linkedin.com/in/subrahmanya-l-hegde-91533563/",
                 },
                 {
                   image: img.mentor,
@@ -313,13 +324,15 @@ export default function About() {
                   image: img.intern2,
                   name: "Kavan Shetty",
                   designation: "Electronics Intern",
-                  linkedin: "https://www.linkedin.com/in/kavan-shetty-008187293/",
+                  linkedin:
+                    "https://www.linkedin.com/in/kavan-shetty-008187293/",
                 },
                 {
                   image: img.intern4,
                   name: "Harish Vishwanath Bhat",
                   designation: "E&C Intern",
-                  linkedin: "https://www.linkedin.com/in/harish-bhat-b8a001250/",
+                  linkedin:
+                    "https://www.linkedin.com/in/harish-bhat-b8a001250/",
                 },
                 {
                   image: img.intern5,
@@ -331,13 +344,15 @@ export default function About() {
                   image: img.intern6,
                   name: "Shramanth P Acharya",
                   designation: "Robotics Intern",
-                  linkedin: "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
+                  linkedin:
+                    "https://www.linkedin.com/in/shramanth-p-acharya-727172297/",
                 },
                 {
                   image: img.intern7,
                   name: "Manish Poojary",
                   designation: "Mechanical Intern",
-                  linkedin: "https://www.linkedin.com/in/manish-poojary-341154369/",
+                  linkedin:
+                    "https://www.linkedin.com/in/manish-poojary-341154369/",
                 },
               ].map((member, index) => (
                 <div
@@ -389,7 +404,7 @@ export default function About() {
         </div>
       </div>
 
-		<Footer/>
+      <Footer />
     </>
-  )
+  );
 }

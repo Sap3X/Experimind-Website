@@ -5,9 +5,9 @@ import { TrendingUp, Users, Award, ArrowRight } from "lucide-react";
 const BecomePartner = () => {
   // Define your target values here - change these to reflect your desired numbers
   const targetValues = {
-    partners: 25,      // Change this to your desired partner count
-    students: 10000,   // Change this to your desired student count
-    satisfaction: 98
+    partners: 25, // Change this to your desired partner count
+    students: 10000, // Change this to your desired student count
+    satisfaction: 98,
   };
 
   const navigate = useNavigate();
@@ -39,10 +39,10 @@ const BecomePartner = () => {
         if (step >= steps) {
           clearInterval(timer);
           // Set final values to exact target values
-          setCounters({ 
-            partners: targetValues.partners, 
-            students: targetValues.students, 
-            satisfaction: targetValues.satisfaction 
+          setCounters({
+            partners: targetValues.partners,
+            students: targetValues.students,
+            satisfaction: targetValues.satisfaction,
           });
         }
       }, stepDuration);

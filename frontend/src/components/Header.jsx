@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, ChevronRight} from "lucide-react";
+import { Menu, X, ChevronRight } from "lucide-react";
 import img from "../assets/Experimind-labs-Logo.svg";
 
 export default function ResponsiveNavbar() {
@@ -46,11 +46,7 @@ export default function ResponsiveNavbar() {
         <div className="">
           <a href="/">
             <div className="">
-              <img
-                src= {img}
-                alt="logo"
-                width="250"
-              />
+              <img src={img} alt="logo" width="250" />
             </div>
           </a>
         </div>
@@ -59,7 +55,7 @@ export default function ResponsiveNavbar() {
         <div className="hidden lg:block">
           <ul className="flex justify-between items-center gap-8 text-black font-semibold text-lg">
             <li className="transition duration-300 ease-in-out hover:scale-125">
-              <a 
+              <a
                 href="/"
                 className={currentPath === "/" ? "text-[#00AEEF]" : ""}
               >
@@ -68,7 +64,7 @@ export default function ResponsiveNavbar() {
             </li>
 
             <li className="transition duration-300 ease-in-out hover:scale-125">
-              <a 
+              <a
                 href="/about"
                 className={currentPath === "/about" ? "text-[#00AEEF]" : ""}
               >
@@ -77,28 +73,29 @@ export default function ResponsiveNavbar() {
             </li>
 
             {/* Products Dropdown */}
-            <li 
+            <li
               className="relative transition duration-300 ease-in-out hover:scale-125"
               onMouseEnter={handleProductsMouseEnter}
               onMouseLeave={handleProductsMouseLeave}
             >
-              <a 
+              <a
                 href="/products"
                 className={`flex items-center gap-1 ${
-                  currentPath === "/products" || products.some(product => currentPath === product.url) 
-                    ? "text-[#00AEEF]" 
+                  currentPath === "/products" ||
+                  products.some((product) => currentPath === product.url)
+                    ? "text-[#00AEEF]"
                     : ""
                 }`}
               >
                 Products
-                <ChevronRight 
-                  size={16} 
+                <ChevronRight
+                  size={16}
                   className={`transition-transform duration-200 ${
                     isProductsDropdownOpen ? "rotate-90" : ""
                   }`}
                 />
               </a>
-              
+
               {/* Desktop Dropdown Menu */}
               {isProductsDropdownOpen && (
                 <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
@@ -107,7 +104,9 @@ export default function ResponsiveNavbar() {
                       key={index}
                       href={product.url}
                       className={`block px-4 py-2 text-sm font-medium transition-colors duration-200 hover:bg-gray-50 hover:text-[#00AEEF] ${
-                        currentPath === product.url ? "text-[#00AEEF] bg-blue-50" : "text-gray-700"
+                        currentPath === product.url
+                          ? "text-[#00AEEF] bg-blue-50"
+                          : "text-gray-700"
                       }`}
                     >
                       {product.name}
@@ -118,7 +117,7 @@ export default function ResponsiveNavbar() {
             </li>
 
             <li className="transition duration-300 ease-in-out hover:scale-125">
-              <a 
+              <a
                 href="/careers"
                 className={currentPath === "/careers" ? "text-[#00AEEF]" : ""}
               >
@@ -127,10 +126,12 @@ export default function ResponsiveNavbar() {
             </li>
 
             <li>
-              <a 
+              <a
                 className={`hover:text-gray-600 ${
-                  currentPath === "/contact" ? "text-[#00AEEF]" : "text-[#f05a28]"
-                }`} 
+                  currentPath === "/contact"
+                    ? "text-[#00AEEF]"
+                    : "text-[#f05a28]"
+                }`}
                 href="/contact"
               >
                 Contact Us
@@ -191,20 +192,21 @@ export default function ResponsiveNavbar() {
                   <button
                     onClick={toggleMobileProducts}
                     className={`flex items-center justify-between w-full p-2 text-left hover:text-gray-600 transition-colors duration-200 ${
-                      currentPath === "/products" || products.some(product => currentPath === product.url)
-                        ? "text-[#00AEEF]" 
+                      currentPath === "/products" ||
+                      products.some((product) => currentPath === product.url)
+                        ? "text-[#00AEEF]"
                         : ""
                     }`}
                   >
                     Products
-                    <ChevronRight 
-                      size={16} 
+                    <ChevronRight
+                      size={16}
                       className={`transition-transform duration-200 ${
                         isMobileProductsOpen ? "rotate-90" : ""
                       }`}
                     />
                   </button>
-                  
+
                   {/* Mobile Nested Products List */}
                   {isMobileProductsOpen && (
                     <ul className="ml-4 mt-2 space-y-2 border-l-2 border-gray-200 pl-4">
@@ -214,7 +216,9 @@ export default function ResponsiveNavbar() {
                             href={product.url}
                             onClick={closeMobileMenu}
                             className={`block py-1 text-base hover:text-gray-600 transition-colors duration-200 ${
-                              currentPath === product.url ? "text-[#00AEEF]" : ""
+                              currentPath === product.url
+                                ? "text-[#00AEEF]"
+                                : ""
                             }`}
                           >
                             {product.name}
@@ -243,8 +247,8 @@ export default function ResponsiveNavbar() {
                   href="/contact"
                   onClick={closeMobileMenu}
                   className={`block py-2 transition-colors duration-200 ${
-                    currentPath === "/contact" 
-                      ? "text-[#00AEEF]" 
+                    currentPath === "/contact"
+                      ? "text-[#00AEEF]"
                       : "text-[#f05a28] hover:text-gray-600"
                   }`}
                 >
