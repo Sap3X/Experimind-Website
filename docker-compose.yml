@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "9001:9001"
+    volumes:
+      - uploads-data:/app/uploads           # ✅ Named volume
+      - ./backend/.env:/app/.env            # ✅ Still uses local .env file
+    networks:
+      - mern-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - mern-network
+    depends_on:
+      - backend
+
+networks:
+  mern-network:
+    driver: bridge
+
+volumes:
+  uploads-data:                             # ✅ Declare the named volume

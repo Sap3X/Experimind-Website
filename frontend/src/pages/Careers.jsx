@@ -30,7 +30,7 @@ const Careers = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get("http://localhost:9001/api/jobs");
+        const res = await axios.get("https://experimind-website-1.onrender.com/api/jobs");
         const sortedJobs = res.data.sort((a, b) => {
           const getNumber = (id) => parseInt(id.split('-')[1]);
           return getNumber(b.jobId) - getNumber(a.jobId);
@@ -123,7 +123,7 @@ const Careers = () => {
     data.append("resume", internFormData.resume);
 
     try {
-      await axios.post("http://localhost:9001/api/internships/apply", data, {
+      await axios.post("https://experimind-website-1.onrender.com/api/internships/apply", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -192,7 +192,7 @@ const Careers = () => {
     data.append("resume", formData.resume);
 
     try {
-      await axios.post("http://localhost:9001/api/jobs/apply", data, {
+      await axios.post("https://experimind-website-1.onrender.com/api/jobs/apply", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -206,12 +206,12 @@ const Careers = () => {
   };
 
   // Remove handleSubmit1 as it's not being used and causes confusion
-    const [posters, setPosters] = useState([]);
+  const [posters, setPosters] = useState([]);
 
 useEffect(() => {
   const fetchPosters = async () => {
     try {
-      const res = await axios.get("http://localhost:9001/api/posters");
+      const res = await axios.get("https://experimind-website-1.onrender.com/api/posters");
       if (res.data.success) {
         setPosters(res.data.posters);
       }
@@ -253,14 +253,22 @@ useEffect(() => {
           URGENT HIRING
         </h3>
 
-        <div className="flex flex-wrap justify-center gap-6 px-2 mt-20">
+      <div className="flex flex-wrap justify-center gap-6 px-2 mt-20">
+        {posters.length > 0 ? (
+          posters.map((poster, idx) => (
             <img
-              src={img.ceo}
-              className="w-full max-w-xs h-auto rounded-lg object-cover"
-              alt={`card`}
+              key={idx}
+              src={poster.url}
+              className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md"
+              alt={`poster-${idx}`}
             />
-        </div>
+          ))
+        ) : (
+          <p className="text-gray-500 text-lg">No posters available at the moment.</p>
+        )}
       </div>
+    </div>
+
 
       {/* CTA */}
       <div className="flex justify-center mb-16 px-4">
@@ -288,11 +296,14 @@ useEffect(() => {
         </h2>
 
         <div className=" space-y-16">
+        <div className=" space-y-16">
           {jobs.length > 0 ? (
             jobs.map((job, idx) => (
               <div key={idx} className="bg-[#f5f5f5] rounded-2xl p-6 md:p-10 shadow-md">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                   <div className="flex-1 space-y-4">
+                    <h3 className="Utility-font-Montserrat text-black text-2xl md:text-3xl font-bold">{job.title}</h3>
+                    <p className="Utility-font-NunitoSans text-black text-lg md:text-xl">{job.description}</p>
                     <h3 className="Utility-font-Montserrat text-black text-2xl md:text-3xl font-bold">{job.title}</h3>
                     <p className="Utility-font-NunitoSans text-black text-lg md:text-xl">{job.description}</p>
                     <pre className="Utility-font-NunitoSans text-black whitespace-pre-wrap text-sm md:text-base">
@@ -319,6 +330,7 @@ useEffect(() => {
             <p className="text-center text-gray-500">No job openings currently.</p>
           )}
         </div>
+      </div>
       </div>
 
       {/* Enhanced Internship Application Modal */}

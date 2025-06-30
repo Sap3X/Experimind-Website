@@ -54,8 +54,15 @@ const ContactUs = () => {
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
-
-      alert("Thank you for your message! We will get back to you soon.");
+      await axios.post("https://experimind-website-1.onrender.com/api/contact", {
+        name: formData.fullName,
+        email: formData.email,
+        phone: Number(formData.phone),
+        companyname: formData.company,
+        reason: formData.message
+      });
+      
+      alert('Thank you for your message! We will get back to you soon.');
       setFormData({
         fullName: "",
         email: "",
