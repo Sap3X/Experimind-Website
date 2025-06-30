@@ -11,6 +11,7 @@ import {
   FaPaperPlane,
   FaInstagram,
 } from "react-icons/fa";
+import axios from 'axios';
 import { FaXTwitter } from "react-icons/fa6";
 
 // ContactUs Component
