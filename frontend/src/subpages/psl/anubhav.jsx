@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import im1 from "./assets/anu.webp";
+import { useNavigate } from "react-router-dom";
 
 const features = [
   {
@@ -93,6 +94,7 @@ function OrangeParticles() {
 }
 
 export default function AnubhavSection() {
+  const navigate = useNavigate();
   return (
     <div className="relative ">
       {/* Orange animated background particles */}
@@ -174,7 +176,7 @@ export default function AnubhavSection() {
                         </div>
                       {/* Centered button below image */}
                         <div className="w-full flex justify-center mt-4">
-                          <button className="px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300">
+                          <button className="px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300" onClick={() => navigate("/anubhav")}>
                             Learn More
                           </button>
                         </div>

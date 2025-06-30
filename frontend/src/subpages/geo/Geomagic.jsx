@@ -1,12 +1,13 @@
 import React from "react";
 import ProductShowcase from "./components/Comp";
-
+import { useNavigate } from "react-router-dom";
 import image from "./Images";
 import SmoothCoverflowCarousel from "./components/Gallery";
 import Header from "../../components/Header"
 import Footer from "../../components/Footer";
 
 export default function GeoMagic() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="">
@@ -300,7 +301,7 @@ export default function GeoMagic() {
                   Discover how fun—and surprising—geometry can be!
                 </p>
                 <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
-                  <span className="flex items-center justify-center">
+                  <span className="flex items-center justify-center" onClick={() => navigate("/contact")}>
                     Book a Free Demo
                   </span>
                 </button>

@@ -243,7 +243,7 @@ export default function Prastuti() {
               className="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-black text-sm sm:text-base md:text-lg lg:text-xl font-bold py-3 px-6 sm:py-4 sm:px-8 lg:py-5 lg:px-10 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg"
               onClick={() => alert("Contact form coming soon!")}
             >
-              Order Now
+              Book a Free Demo
             </button>
           </div>
         </div>

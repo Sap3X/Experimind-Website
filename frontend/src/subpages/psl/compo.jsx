@@ -40,7 +40,7 @@ export default function STEMComponentsLayout() {
 
   return (
     <div className=" bg-gray-50 p-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto h-[630px]">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -121,13 +121,7 @@ export default function STEMComponentsLayout() {
           })}
         </div>
 
-        {/* Bottom Instruction */}
-        <div className="text-center mt-8">
-          <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 shadow-sm">
-            <ChevronDown className="w-4 h-4 text-blue-500" />
-            <span className="text-sm text-gray-600">Tap or hover each component to learn more</span>
-          </div>
-        </div>
+      
       </div>
     </div>
   );

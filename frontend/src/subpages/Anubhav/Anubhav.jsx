@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, use } from "react";
 import img1 from "./assets/Anubhav_Kit-removebg-preview.webp";
 import img4 from "./assets/DSC05299.webp";
 import img5 from "./assets/DSC05347.webp";
-
+import { useNavigate } from "react-router-dom";
 import AnubhavSection from "./trigerred";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -58,7 +58,7 @@ const AnubhavWebsite = () => {
   };
 
   const currentContent = getBoxContent();
-
+  const navigate = useNavigate();
   return (
     <>
       <div className="min-h-screen bg-gray-200">
@@ -662,7 +662,7 @@ const AnubhavWebsite = () => {
               Transform the way STEM, AI, and Robotics are taught. Contact us to
               bring Anubhav to your school today!
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-xl text-lg lg:text-xl font-medium font-['Nunito_Sans'] border-2  transform hover:scale-105 transition-all duration-200 shadow-lg">
+            <button className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 lg:px-8 py-3 lg:py-4 rounded-xl text-lg lg:text-xl font-medium font-['Nunito_Sans'] border-2  transform hover:scale-105 transition-all duration-200 shadow-lg" onClick={() => navigate("/contact")}>
               Book a free Demo
             </button>
           </div>

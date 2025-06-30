@@ -1,5 +1,6 @@
 import React from "react";
 import im2 from "./assets/Prastuti Hero Image 2.webp";
+import { useNavigate } from "react-router-dom";
 
 const prastutiFeatures = [
   {
@@ -132,6 +133,7 @@ const levelData = [
 ];
 
 const EnhancedPrastutiSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="max-w-6xl mx-auto bg-white border border-cyan-400 rounded-3xl sm:rounded-3xl shadow-xl p-2 sm:p-6 md:p-10 relative overflow-hidden m-9">
       <div className="absolute -top-16 -left-16 w-24 h-24 sm:w-40 sm:h-40 bg-cyan-100 opacity-20 rounded-full blur-2xl z-0"></div>
@@ -157,7 +159,7 @@ const EnhancedPrastutiSection = () => {
           </div>
           <button
             aria-label="Learn more about Prastuti"
-            className="mt-2 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-bold rounded-xl bg-blue-900 text-white shadow-md hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 w-auto min-w-[140px] max-w-xs sm:max-w-sm mx-auto"
+            className="mt-2 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-bold rounded-xl bg-blue-900 text-white shadow-md hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 w-auto min-w-[140px] max-w-xs sm:max-w-sm mx-auto" onClick={() => navigate("/prastuti")}
           >
             Learn More
           </button>
@@ -218,5 +220,4 @@ const EnhancedPrastutiSection = () => {
     </div>
   );
 };
-
 export default EnhancedPrastutiSection;
