@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import axios from "axios";
 import contactUsImage from "../assets/Contact_Hero_img.svg";
 import {
   FaYoutube,
@@ -54,7 +55,7 @@ const ContactUs = () => {
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
-      await axios.post("https://experimind-website-1.onrender.com/api/contact", {
+      await axios.post("http://localhost:9001/api/contact", {
         name: formData.fullName,
         email: formData.email,
         phone: Number(formData.phone),
