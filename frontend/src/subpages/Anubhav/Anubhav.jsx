@@ -217,7 +217,7 @@ const AnubhavWebsite = () => {
                 className={`
                 flex justify-center order-2 lg:order-1 opacity-0
                 ${isLoaded ? "animate-slide-in-left" : ""}
-                mt-8 sm:mt-0
+                mt-20 sm:mt-12
               `}
               >
                 <div className="relative">
@@ -255,14 +255,14 @@ const AnubhavWebsite = () => {
               <div className="text-center lg:text-left order-1 lg:order-2">
                 <h1
                   className={`
-                  text-4xl
-                  sm:text-5xl
-                  md:text-6xl
-                  lg:text-7xl
-                  xl:text-8xl
-                  font-black font-['Montserrat'] tracking-tight mb-6 leading-tight break-words opacity-0
-                  ${isLoaded ? "animate-slide-in-right" : ""}
-                `}
+    text-4xl
+    sm:text-5xl
+    md:text-6xl
+    lg:text-7xl
+    xl:text-8xl
+    font-bold font-['Montserrat'] tracking-tight mb-6 leading-tight break-words opacity-0
+    ${isLoaded ? "animate-slide-in-right" : ""}
+  `}
                 >
                   <span className="Utility-font-Montserrat text-transparent bg-clip-text bg-gradient-to-r from-[#FFA500] to-[#FF8C00]">
                     ANUBHAV
@@ -277,7 +277,7 @@ const AnubhavWebsite = () => {
                   <span className="block">Innovate Create Learn</span>
                 </div>
                 <p
-                  className={`text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl font-medium max-w-lg mx-auto lg:mx-0 mb-8 opacity-0 ${
+                  className={`text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium max-w-lg mx-auto lg:mx-0 mb-8 opacity-0 ${
                     isLoaded ? "animate-slide-in-up animation-delay-400" : ""
                   }`}
                 >
@@ -302,7 +302,7 @@ const AnubhavWebsite = () => {
                     px-8 py-4
                     text-lg
                     sm:text-xl
-                    rounded-full font-semibold
+                    rounded-2xl font-semibold
                     transition-all duration-300 transform hover:scale-105 shadow-lg
                     max-w-xs
                   "
@@ -596,47 +596,6 @@ const AnubhavWebsite = () => {
                 </div>
               </div>
 
-              {/* Interactive Stats Counter */}
-              <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-12 shadow-xl mb-12 lg:mb-20">
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 text-center">
-                  <div className="group cursor-pointer">
-                    <div className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFA500] mb-2 transform group-hover:scale-110 transition-transform duration-300">
-                      50+
-                    </div>
-                    <div className="text-gray-600 text-sm lg:text-base xl:text-lg font-medium group-hover:text-gray-800 transition-colors duration-300">
-                      Partner Schools
-                    </div>
-                    <div className="w-12 lg:w-16 h-1 bg-[#FFA500] mx-auto mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-                  </div>
-                  <div className="group cursor-pointer">
-                    <div className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFA500] mb-2 transform group-hover:scale-110 transition-transform duration-300">
-                      1000+
-                    </div>
-                    <div className="text-gray-600 text-sm lg:text-base xl:text-lg font-medium group-hover:text-gray-800 transition-colors duration-300">
-                      Students Reached
-                    </div>
-                    <div className="w-12 lg:w-16 h-1 bg-[#FFA500] mx-auto mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-                  </div>
-                  <div className="group cursor-pointer">
-                    <div className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFA500] mb-2 transform group-hover:scale-110 transition-transform duration-300">
-                      25
-                    </div>
-                    <div className="text-gray-600 text-sm lg:text-base xl:text-lg font-medium group-hover:text-gray-800 transition-colors duration-300">
-                      Countries
-                    </div>
-                    <div className="w-12 lg:w-16 h-1 bg-[#FFA500] mx-auto mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-                  </div>
-                  <div className="group cursor-pointer">
-                    <div className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#FFA500] mb-2 transform group-hover:scale-110 transition-transform duration-300">
-                      95%
-                    </div>
-                    <div className="text-gray-600 text-sm lg:text-base xl:text-lg font-medium group-hover:text-gray-800 transition-colors duration-300">
-                      Satisfaction Rate
-                    </div>
-                    <div className="w-12 lg:w-16 h-1 bg-[#FFA500] mx-auto mt-2 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-                  </div>
-                </div>
-              </div>
 
               {/* Interactive Timeline */}
               <div className="bg-gradient-to-r from-[#FFA500] to-[#FF8C00] rounded-2xl lg:rounded-3xl p-6 lg:p-12 text-white">
@@ -700,12 +659,12 @@ const AnubhavWebsite = () => {
             <h2 className="text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold font-['Montserrat'] mb-4 lg:mb-8">
               Ready to Empower Your Classroom?
             </h2>
-            <p className="text-white text-lg md:text-2xl lg:text-3xl xl:text-4xl font-semibold font-['Nunito_Sans'] mb-6 lg:mb-12 max-w-4xl mx-auto">
+            <p className="text-white text-base md:text-xl lg:text-2xl xl:text-3xl font-semibold font-['Nunito_Sans'] mb-6 lg:mb-12 max-w-4xl mx-auto">
               Transform the way STEM, AI, and Robotics are taught. Contact us to
               bring Anubhav to your school today!
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-full text-lg lg:text-xl font-medium font-['Nunito_Sans'] border-2  transform hover:scale-105 transition-all duration-200 shadow-lg">
-              Order Now
+            <button className="bg-yellow-400 hover:bg-yellow-300 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-xl text-lg lg:text-xl font-medium font-['Nunito_Sans'] border-2  transform hover:scale-105 transition-all duration-200 shadow-lg">
+              Book a free Demo
             </button>
           </div>
         </section>

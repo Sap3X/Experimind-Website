@@ -186,9 +186,9 @@ export default function About() {
                   className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
-                      className="w-24 h-24 rounded-full bg-gray-500 flex items-center justify-center"
+                      className="sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-500 flex items-center justify-center"
                       src={member.image}
                       alt=""
                     />
@@ -208,7 +208,7 @@ export default function About() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
+                      className="inline-flex items-center gap-2 px-2 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
                     >
                       <svg
                         className="w-8 h-8"
@@ -256,9 +256,9 @@ export default function About() {
                   className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
-                      className="w-24 h-24 rounded-full bg-gray-500 flex items-center justify-center"
+                      className="sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-500 flex items-center justify-center"
                       src={member.image}
                       alt=""
                     />
@@ -278,7 +278,7 @@ export default function About() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
+                      className="inline-flex items-center gap-2 px-2 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
                     >
                       <svg
                         className="w-8 h-8"
@@ -345,9 +345,9 @@ export default function About() {
                   className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-28 lg:h-28 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
-                      className="w-24 h-24 rounded-full bg-gray-500 flex items-center justify-center"
+                      className="sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-500 flex items-center justify-center"
                       src={member.image}
                       alt=""
                     />
@@ -367,7 +367,7 @@ export default function About() {
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
+                      className="inline-flex items-center gap-2 px-2 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors duration-300 text-sm sm:text-base"
                     >
                       <svg
                         className="w-8 h-8"

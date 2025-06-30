@@ -81,7 +81,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-gray-50 font-poppins">
+    <div className="Utility-font-NunitoSans min-h-screen flex items-center justify-center p-4 bg-gray-50 font-poppins">
       <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
         {/* Left Section - Contact Info */}
         <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8 md:w-2/5 relative overflow-hidden">
@@ -89,7 +89,7 @@ const ContactUs = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Contact Information
             </h2>
-            <p className="text-blue-200 mb-8">
+            <p className=" text-blue-200 mb-8">
               Fill up the form and our Team will get back to you within 24
               hours.
             </p>
@@ -291,10 +291,10 @@ export default function Contact() {
           className="w-full h-[850px] object-cover object-center"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 pt-24 px-4 max-w-4xl mx-auto">
-          <h1 className="text-white text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="Utility-font-Montserrat text-white text-4xl md:text-6xl font-bold mb-6">
             Contact Us
           </h1>
-          <p className="text-white text-lg md:text-2xl max-w-2xl mx-auto">
+          <p className="Utility-font-Buenard text-white text-lg md:text-2xl max-w-2xl mx-auto">
             Reach out to us for more information or any queries. We're here to
             help!
           </p>

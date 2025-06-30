@@ -15,8 +15,10 @@ import im7 from "./assets/location.webp"
 import im8 from "./assets/monitor.webp"
 import gen from "./assets/generation-z.webp"
 import stem from "./assets/stem.webp"
+import Header from "../../components/Header.jsx"
 import policy from "./assets/policy.webp"
 import ai from "./assets/artificial-intelligence.webp"
+import Footer from "../../components/Footer.jsx";
 
 export default function ResponsivePSLWebsite() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -67,6 +69,7 @@ export default function ResponsivePSLWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-amber-50">
+      <Header/>
       {/* Hero Section */}
       <section
         id="home"
@@ -338,6 +341,7 @@ export default function ResponsivePSLWebsite() {
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }

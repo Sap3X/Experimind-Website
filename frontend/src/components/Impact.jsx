@@ -65,9 +65,9 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "" }) => {
 const StatisticsComponent = () => {
   const stats = [
     { number: 10000, suffix: "+", label: "Students" },
-    { number: 25, suffix: "+", label: "School Reached" },
+    { number: 25, suffix: "+", label: "Schools Reached" },
     { number: 300, suffix: "+", label: "Workshops" },
-    { number: 500, suffix: "+", label: "Teachers Trained" },
+    { number: 2000, suffix: "+", label: "Teachers Trained" },
   ];
 
   return (

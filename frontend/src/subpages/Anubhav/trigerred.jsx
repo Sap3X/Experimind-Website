@@ -151,11 +151,11 @@ const AnubhavSection = () => {
                     }
                   `}
                 >
-                  <p className="text-gray-700 text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium leading-relaxed text-center">
+                  <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed text-center">
                     Anubhav empowers students and educators with hands-on STEM,
                     AI, and Robotics experiences. Our kits are designed to spark
                     curiosity, foster creativity, and build real-world
-                    problem-solving skills—making learning engaging, practical,
+                    problem-solving skills making learning engaging, practical,
                     and future-ready for every classroom.
                   </p>
                 </div>

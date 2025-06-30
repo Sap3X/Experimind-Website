@@ -335,7 +335,7 @@ function ProductCard({ product, index }) {
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[280px] md:max-w-[325px] lg:max-w-[800px] xl:max-w-[900px] h-auto min-h-[80px] sm:min-h-[100px] md:min-h-[120px] lg:min-h-[140px] xl:min-h-[160px] object-cover z-[-1]"
             />
             <div className="relative z-10  px-4 sm:px-6 md:px-8 lg:px-8">
-              <h2 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center font-mont leading-tight ">
+              <h2 className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center font-mont leading-tight m-0 md:m-2">
                 {product.name}
               </h2>
               <h3 className="text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold text-center font-['Nunito_Sans'] opacity-80 leading-tight">

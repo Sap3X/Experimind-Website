@@ -1,4 +1,5 @@
 import { useState } from "react";
+import im1 from "./assets/image 89.webp"
 import { motion } from "framer-motion";
 import {
   FaFlask,
@@ -72,7 +73,7 @@ export default function Pradarshan() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
         <div className="bg-[#fff8cc] border border-[#ffdd15] rounded-xl p-2 xs:p-4 sm:p-6 shadow-lg flex items-center">
           <div className="rounded-xl h-48 xs:h-64 sm:h-80 md:h-96 w-full bg-gradient-to-br from-yellow-200 to-yellow-300 flex items-center justify-center">
-            <span className="text-gray-600 text-lg">Image Placeholder</span>
+            <img src={im1} alt="" className="object-fit h-full w-full rounded-xl"/>
           </div>
         </div>
         <div className="bg-[#fff8cc] border border-[#ffdd15] rounded-xl p-2 xs:p-4 sm:p-6 shadow-lg">

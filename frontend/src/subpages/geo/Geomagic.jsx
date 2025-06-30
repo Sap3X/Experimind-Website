@@ -42,16 +42,16 @@ export default function GeoMagic() {
               <div className="text-center max-w-4xl mx-auto">
                 {/* Subtitle */}
                 <div className="mb-8 md:mb-16">
-                  <p className="text-white/90 text-base md:text-[1.25rem] lg:text-[1.50rem] font-semibold tracking-wide uppercase mb-2">
+                  <p className="text-white/90 text-base md:text-[1.25rem] lg:text-[1.75rem]    font-semibold tracking-wide uppercase mb-2">
                     Experiential Geometry Learning
                   </p>
-                  <p className="text-white text-xs md:text-sm lg:text-base font-light tracking-wider uppercase">
+                  <p className="text-white text-xs md:text-[1.25rem] lg:text-[1.5rem] font-light tracking-wider uppercase">
                     Integrated with 1 - 10th Grade Curriculum
                   </p>
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 leading-tight drop-shadow-lg">
+                  <h1 className="text-white text-3xl md:text-[3rem] lg:text-[3.75rem] font-bold mb-6 md:mb-8 leading-tight drop-shadow-lg" style={{lineheight: "1.25rem",}} >
                   GeoMagic Where Geometry
                   <br />
                   <span className="bg-clip-text text-white">
@@ -66,7 +66,7 @@ export default function GeoMagic() {
                 </p>
 
                 {/* Tagline */}
-                <p className="text-white text-xl md:text-2xl lg:text-3xl font-semibold mb-8 md:mb-12 drop-shadow-lg">
+                <p className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 md:mb-12 drop-shadow-lg">
                   Fun. Simple. <span className="text-yellow-300">Magical.</span>
                 </p>
               </div>
@@ -301,7 +301,7 @@ export default function GeoMagic() {
                 </p>
                 <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
                   <span className="flex items-center justify-center">
-                    Order Now
+                    Book a Free Demo
                   </span>
                 </button>
               </div>

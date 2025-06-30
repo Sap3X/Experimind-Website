@@ -1,8 +1,16 @@
 import { useState, useEffect } from "react";
-import { TrendingUp, Users, Award, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { TrendingUp, Users, Award, ArrowRight } from "lucide-react";
 
 const BecomePartner = () => {
+  // Define your target values here - change these to reflect your desired numbers
+  const targetValues = {
+    partners: 25,      // Change this to your desired partner count
+    students: 10000,   // Change this to your desired student count
+    satisfaction: 98
+  };
+
+  const navigate = useNavigate();
   // Animated counters
   const [counters, setCounters] = useState({
     partners: 0,
@@ -23,14 +31,19 @@ const BecomePartner = () => {
         const progress = step / steps;
 
         setCounters({
-          partners: Math.floor(500 * progress),
-          students: Math.floor(50000 * progress),
-          satisfaction: Math.floor(98 * progress),
+          partners: Math.floor(targetValues.partners * progress),
+          students: Math.floor(targetValues.students * progress),
+          satisfaction: Math.floor(targetValues.satisfaction * progress),
         });
 
         if (step >= steps) {
           clearInterval(timer);
-          setCounters({ partners: 500, students: 50000, satisfaction: 98 });
+          // Set final values to exact target values
+          setCounters({ 
+            partners: targetValues.partners, 
+            students: targetValues.students, 
+            satisfaction: targetValues.satisfaction 
+          });
         }
       }, stepDuration);
     };
@@ -55,7 +68,11 @@ const BecomePartner = () => {
       desc: "Join our network of excellence partners",
     },
   ];
-   const navigate = useNavigate();
+
+  const handleBecomePartner = () => {
+    // Navigation logic would go here
+    console.log("Navigate to contact page");
+  };
 
   return (
     <>
@@ -92,21 +109,21 @@ const BecomePartner = () => {
             </div>
 
             <div className="relative z-10">
-              <h2 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-                Want to make your school ready for change?
+              <h2 className="text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
+                Want to make your school ready for a change?
                 <br className="hidden lg:block" />
                 <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
                   Want to make students future ready?
                 </span>
               </h2>
 
-              <p className="Utility-font-Buenard text-gray-300 text-lg lg:text-xl mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-gray-300 text-lg lg:text-xl mb-8 lg:mb-12 max-w-3xl mx-auto leading-relaxed">
                 Join hundreds of forward-thinking schools that are transforming
                 education and preparing students for tomorrow's challenges.
               </p>
 
               {/* Statistics */}
-              <div className="Utility-font-Montserrat grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 <div className="text-center">
                   <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">
                     {counters.partners}+
@@ -134,7 +151,7 @@ const BecomePartner = () => {
               </div>
 
               {/* Benefits Grid */}
-              <div className="Utility-font-Montserrat grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 {partnershipBenefits.map((benefit, index) => (
                   <div
                     key={index}
@@ -153,8 +170,8 @@ const BecomePartner = () => {
 
               {/* CTA Button */}
               <button
-                className="Utility-font-Montserrat group bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-lg lg:text-2xl font-bold py-4 px-8 lg:py-6 lg:px-12 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 inline-flex items-center gap-4 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
-                 onClick={() => navigate("/contact")}
+                className="group bg-gradient-to-r from-yellow-400 to-orange-500 text-black text-lg lg:text-2xl font-bold py-4 px-8 lg:py-6 lg:px-12 rounded-2xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 inline-flex items-center gap-4 shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
+                onClick={() => navigate("/contact")}
               >
                 Become a Partner
                 <ArrowRight className="w-6 h-6 lg:w-8 lg:h-8 group-hover:translate-x-1 transition-transform duration-300" />
