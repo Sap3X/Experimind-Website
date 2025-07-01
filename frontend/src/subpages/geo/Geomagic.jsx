@@ -68,7 +68,7 @@ export default function GeoMagic() {
 
                 {/* Tagline */}
                 <p className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 md:mb-12 drop-shadow-lg">
-                  Fun. Simple. <span className="text-yellow-300">Magical.</span>
+                  Fun. <span className="text-yellow-300">Simple.</span> Magical.
                 </p>
               </div>
             </div>
@@ -146,24 +146,23 @@ export default function GeoMagic() {
                 src={image.vid_shape}
                 alt="shapes"
                 className="w-full h-full rotate-12"
-              ></img>
+              />
             </div>
             <div className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4 lg:-bottom-8 lg:-right-8 w-12 h-12 md:w-24 md:h-24">
               <img
                 src={image.vid_shape}
                 alt="shapes"
                 className="w-full h-full rotate-[24deg]"
-              ></img>
+              />
             </div>
-            <video
-              src="/videos/haha.mp4"
-              controls
-              loop
-              className="w-full h-full object-cover rounded-2xl "
-              // poster="/videos/geomagic-poster.jpg"
-            >
-              Sorry, your browser doesn't support embedded videos.
-            </video>
+            <iframe
+              className="w-full h-full object-cover rounded-2xl"
+              src="https://www.youtube.com/embed/zxt8Dy7iaRc"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
         {/* The section below is the "Why Geomagic?" section */}

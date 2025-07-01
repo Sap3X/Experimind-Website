@@ -288,26 +288,32 @@ const AnubhavWebsite = () => {
                 {/* CTA Buttons */}
                 <div
                   className={`
-                  flex flex-col sm:flex-row gap-4
-                  ${isLoaded ? "animate-fade-in-scale animation-delay-600" : ""}
-                  opacity-0
-                  justify-center
-                  items-center
-                  lg:justify-start lg:items-start
-                `}
+                    flex flex-col sm:flex-row gap-4
+                    ${isLoaded ? "animate-fade-in-scale animation-delay-600" : ""}
+                    opacity-0
+                    justify-center
+                    items-center
+                    lg:justify-start lg:items-start
+                  `}
                 >
                   <button
                     className="
-                    bg-[#FFA500] hover:bg-[#FF8C00] text-white
-                    px-8 py-4
-                    text-lg
-                    sm:text-xl
-                    rounded-2xl font-semibold
-                    transition-all duration-300 transform hover:scale-105 shadow-lg
-                    max-w-xs
-                  "
+              bg-[#FFA500] hover:bg-[#FF8C00] text-white
+              px-8 py-4
+              text-lg
+              sm:text-xl
+              rounded-2xl font-semibold
+              transition-all duration-300 transform hover:scale-105 shadow-lg
+              max-w-xs
+            "
                     style={{
                       width: "auto",
+                    }}
+                    onClick={() => {
+                      const kitsSection = document.getElementById("anubhav-kits");
+                      if (kitsSection) {
+                        kitsSection.scrollIntoView({ behavior: "smooth" });
+                      }
                     }}
                   >
                     Explore Kits
@@ -333,7 +339,7 @@ const AnubhavWebsite = () => {
           `}
           >
             {/* Video Content */}
-            <div className="bg-slate-600 py-10">
+            <div className="bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200 py-10">
               <div className=" relative z-10 container mx-auto px-2 sm:px-4">
                 <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
                   <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
@@ -357,7 +363,10 @@ const AnubhavWebsite = () => {
           </section>
           <AnubhavSection />
           {/* Product Kits Section */}
-          <section className="py-16 sm:py-24 lg:py-32 px-2 sm:px-6 lg:px-24 bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200">
+          <section
+            id="anubhav-kits"
+            className="py-16 sm:py-24 lg:py-32 px-2 sm:px-6 lg:px-24 bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200"
+          >
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-12 lg:mb-20">
                 <h2 className="text-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold font-['Nunito_Sans'] mb-6 tracking-tight">

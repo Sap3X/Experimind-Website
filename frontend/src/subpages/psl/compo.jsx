@@ -9,7 +9,7 @@ const components = [
     title: "Prastuti",
     subtitle: "Teacher's Toolkit",
     image: im1,
-    description: "Chapter-wise teacher kits with interactive models, experiments, and video tutorials for easy science and math demonstrations for classes 8, 9 & 10.",
+    description: "Chapter-wise teacher kits with interactive models, experiments and video tutorials for easy science and math demonstrations for classes 8, 9 & 10.",
     bg: "from-blue-100 to-blue-200",
     borderColor: "border-blue-300",
     dotColor: "bg-blue-500"
@@ -18,7 +18,7 @@ const components = [
     title: "Anubhav",
     subtitle: "Student Experience", 
     image: im2,
-    description: "Student kits with age-appropriate activities and guided videos for learning STEM, AI, and robotics.",
+    description: "Student kits with age-appropriate activities and guided videos for learning STEM, AI and robotics.",
     bg: "from-orange-100 to-orange-200",
     borderColor: "border-orange-300",
     dotColor: "bg-orange-500"
@@ -40,7 +40,7 @@ export default function STEMComponentsLayout() {
 
   return (
     <div className=" bg-gray-50 p-6">
-      <div className="max-w-7xl mx-auto h-[630px]">
+      <div className="max-w-7xl mx-auto xl:h-[600px] lg:h-[650px] md:h-[650px] sm:h-[1600px] h-[1700px] ">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -49,7 +49,7 @@ export default function STEMComponentsLayout() {
         </div>
 
         {/* Components Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start ">
           {components.map((component, index) => {
             const isActive = activeIndex === index;
             const isHovered = hoveredIndex === index;
@@ -57,13 +57,13 @@ export default function STEMComponentsLayout() {
             return (
               <div
                 key={index}
-                className={`relative bg-gradient-to-b ${component.bg} rounded-3xl border-2 ${component.borderColor} shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden`}
+                className={`relative bg-gradient-to-b ${component.bg} rounded-3xl border-2 ${component.borderColor} shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden `}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
                 {/* Image Container */}
                 <div className="p-6 pb-0">
-                  <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white">
+                  <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white ">
                     <img
                       src={component.image}
                       alt={component.title}

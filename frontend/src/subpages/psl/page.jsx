@@ -122,19 +122,19 @@ export default function ResponsivePSLWebsite() {
       </section>
 
       {/* Video Section */}
-      <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-gray-100">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-100">
         <div className="container mx-auto px-2 sm:px-4">
           <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
             <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
               <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <video
-                  className="absolute top-0 left-0 w-full h-full object-cover"
-                  controls
-                  poster="https://via.placeholder.com/800x450/333/fff?text=Video+Thumbnail"
-                >
-                  <source src="your-video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/zxt8Dy7iaRc"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </div>

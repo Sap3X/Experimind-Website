@@ -207,22 +207,26 @@ const Careers = () => {
 
   // Remove handleSubmit1 as it's not being used and causes confusion
   const [posters, setPosters] = useState([]);
+  const [isPosterAvai, setIsPosterAvai] = useState(false);
 
   useEffect(() => {
     const fetchPosters = async () => {
       try {
         const res = await axios.get("http://localhost:9001/api/posters");
-        if (res.data.success) {
+        if (res.data.success && res.data.posters.length > 0) {
           setPosters(res.data.posters);
+          setIsPosterAvai(true);
+        } else {
+          setIsPosterAvai(false);
         }
       } catch (err) {
         console.error("Error fetching posters:", err);
+        setIsPosterAvai(false);
       }
     };
 
     fetchPosters();
   }, []);
-
   return (
     <div className="flex flex-col bg-white">
       {/* Banner */}
@@ -234,7 +238,7 @@ const Careers = () => {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10 max-w-4xl mx-auto">
           <h1 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-4 pt-20">
-            Why you should Choose Us?
+            Why Choose Us?
           </h1>
           <p className="Utility-font-Buenard text-[#ffffff] text-lg md:text-2xl max-w-2xl mx-auto">
             At Experimind Labs, we foster a culture of innovation, continuous
@@ -249,47 +253,43 @@ const Careers = () => {
       </div>
 
       {/* URGENT HIRING Section */}
-      <div className="py-16 md:py-24 bg-white relative">
-        <h3 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-          URGENT HIRING
-        </h3>
+      <div className="bg-white">
+        <div className="py-16 md:py-24 relative">
+          <h3 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
+            URGENT HIRING
+          </h3>
 
-        <div className="flex flex-wrap justify-center gap-6 px-2 mt-20">
-          {posters.length > 0 ? (
-            posters.map((poster, idx) => (
+          <div className="flex flex-wrap justify-center gap-6 px-2 mt-20">
+            {posters.map((poster, idx) => (
               <img
                 key={idx}
                 src={poster.url}
                 className="w-full max-w-xs h-auto object-cover rounded-lg shadow-md"
                 alt={`poster-${idx}`}
               />
-            ))
+            ))}
+          </div>
+
+          {/* CTA or No Internship Message */}
+          {isPosterAvai ? (
+            <div className="flex justify-center mb-16 px-4">
+              <button
+                className="bg-[#FFDD15] text-black text-lg md:text-xl lg:text-2xl py-4 px-6 rounded-lg"
+                onClick={handleApplyInternshipClick}
+              >
+                Start Your Internship Journey
+              </button>
+            </div>
           ) : (
-            <p className="text-gray-500 text-lg">
-              No posters available at the moment.
-            </p>
+            <div className="text-center text-gray-500 text-lg">
+              No Internship Opening Available
+            </div>
           )}
         </div>
       </div>
 
-      {/* CTA */}
-      <div className="flex justify-center mb-16 px-4">
-        <button
-          className="bg-[#FFDD15] text-black text-lg md:text-xl lg:text-2xl py-4 px-6 rounded-lg"
-          onClick={handleApplyInternshipClick}
-        >
-          Start Your Internship Journey
-        </button>
-      </div>
-
       {/* Divider */}
-      <div className="px-4 mb-20">
-        <img
-          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/L7mZ4AdCtS/yo1r5ok9_expires_30_days.png"
-          className="w-full h-px object-cover"
-          alt="divider"
-        />
-      </div>
+      <div class="w-auto mx-10 h-px bg-gray-300 mt-4 mb-20"></div>
 
       {/* Job Listings */}
       <div className="px-6 lg:px-40 mb-20">

@@ -37,7 +37,7 @@ const products = [
         "Spacers - 10",
       ],
     ],
-    gradient: "from-blue-400 via-cyan-500 to-teal-500",
+    gradient: " from-indigo-500 via-sky-500 to-emerald-500",
   },
   {
     id: 3,
@@ -171,7 +171,7 @@ const productShapePositions = [
     },
     {
       shapeIndex: 3,
-      position: "bottom-1/4 left-[25%] ",
+      position: "bottom-1/4 left-[42%] ",
       rotation: "-45deg",
     },
   ],

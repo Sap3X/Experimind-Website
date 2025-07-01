@@ -21,15 +21,16 @@ const image =
     ssrvm: require('./assets/Ravishankar_Logo.webp'),
     sbc: require('./assets/SBC_Logo.webp'),
     yfs: require('./assets/YFS_Logo.webp'),
+    snm: require('./assets/SNM.webp'),
 
     whychooseus: require('./assets/Experimindlabs-kids-studing.webp'),
 
     meeting: require('./assets/Experimindlabs-meeting.webp'),
     meeting2: require('./assets/Experimind-labs-Meeting-Room.webp'),
 
-    vision_icons: require('./assets/file-detail.png'),
+    vision_icons: require('./assets/eye.png'),
     mission_icons: require('./assets/briefcase-alt-2.png'),
-    values_icons: require('./assets/community.png'),
+    values_icons: require('./assets/handshake.png'),
     
     insta: require('./assets/instagram.png'),
     Twitter: require('./assets/twitter-x.png'),

@@ -48,6 +48,11 @@ const PartnerCarousel = () => {
       name: "Youth For Seva",
       logo: img.yfs,
     },
+    {
+      id: 9,
+      name: "S N M Polytechnic",
+      logo: img.snm,
+    },
   ];
 
   const partnersPerView = 3;

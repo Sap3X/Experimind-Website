@@ -125,7 +125,7 @@ const BecomePartner = () => {
               {/* Statistics */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">
+                  <div className="text-3xl lg:text-4xl font-bold text-orange-600 mb-2">
                     {counters.partners}+
                   </div>
                   <div className="text-gray-300 text-sm lg:text-base">
@@ -133,7 +133,7 @@ const BecomePartner = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl lg:text-4xl font-bold text-orange-400 mb-2">
+                  <div className="text-3xl lg:text-4xl font-bold text-white mb-2">
                     {counters.students.toLocaleString()}+
                   </div>
                   <div className="text-gray-300 text-sm lg:text-base">
