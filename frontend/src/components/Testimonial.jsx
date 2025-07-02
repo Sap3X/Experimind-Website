@@ -60,7 +60,7 @@ const Testimonials = () => {
       {/* Header */}
       <div className="text-center">
         <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-          Testimonials
+          What People Say About Us
         </h2>
       </div>
 

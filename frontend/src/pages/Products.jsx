@@ -58,7 +58,7 @@ const EducationalSolutions = () => {
             Our Products
           </h1>
           <p className="Utility-font-Buenard text-white text-lg md:text-2xl max-w-2xl mx-auto">
-            Transforming classrooms with innovative learning and teaching kits.
+            Transforming classrooms with innovative learning and <br /> teaching kits.
           </p>
         </div>
         <div className="absolute top-0 left-0 w-full z-20">

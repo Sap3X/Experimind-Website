@@ -23,11 +23,11 @@ export default function Home() {
       {/* Impact Section */}
       <StatisticsComponent />
 
-      {/* Who Are We Section */}
+      {/* Who We Are Section */}
       <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-            Who are we?
+            Who We Are
           </h2>
 
           <p className="text-[#696983] Utility-font-NunitoSans text-lg sm:text-xl lg:text-2xl text-center mb-12 lg:mb-16 leading-relaxed">
@@ -126,9 +126,9 @@ export default function Home() {
 
             <div className="flex-1">
               <img
-                src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/DNUv3AGIo8/57t6z3y1_expires_30_days.png"
+                src={img.whychooseus}
                 alt="Why Choose Us"
-                className="w-full h-100% object-contain"
+                className="w-full h-100% object-contain rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               />
             </div>
           </div>
@@ -137,6 +137,7 @@ export default function Home() {
 
       {/* Gallery Section */}
       <InfiniteCarousel />
+      
       {/* Testimonial Section */}
       <Testimonials />
 

@@ -117,7 +117,7 @@ export default function About() {
 
               {/* Values Card */}
               <div className="flex flex-col items-center bg-blue-400 bg-opacity-40 p-8 lg:p-12 rounded-3xl text-center md:col-span-2 lg:col-span-1 transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-                <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-blue-400 rounded-full mb-6">
+                <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-green-500 rounded-full mb-6">
                   <img
                     src={img.values_icons}
                     alt="Values Icon"
@@ -196,9 +196,9 @@ export default function About() {
                   className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
-                      className="sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-500 flex items-center justify-center"
+                      className="sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-full bg-gray-500 flex items-center justify-center"
                       src={member.image}
                       alt=""
                     />
@@ -267,9 +267,9 @@ export default function About() {
                   className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
-                      className="sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-500 flex items-center justify-center"
+                      className="sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-full bg-gray-500 flex items-center justify-center"
                       src={member.image}
                       alt=""
                     />
@@ -360,9 +360,9 @@ export default function About() {
                   className="flex flex-col items-center text-center min-h-[320px] justify-start"
                 >
                   {/* Circular Image Placeholder - Updated to 7rem (112px) */}
-                  <div className="w-28 h-28 sm:w-32 sm:h-32 lg:w-36 lg:h-36 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="w-32 h-32 sm:w-36 sm:h-36 lg:w-40 lg:h-40 rounded-full bg-gray-300 flex items-center justify-center mb-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <img
-                      className="sm:w-28 sm:h-28 lg:w-32 lg:h-32 rounded-full bg-gray-500 flex items-center justify-center"
+                      className="sm:w-28 sm:h-28 lg:w-36 lg:h-36 rounded-full bg-gray-500 flex items-center justify-center"
                       src={member.image}
                       alt=""
                     />

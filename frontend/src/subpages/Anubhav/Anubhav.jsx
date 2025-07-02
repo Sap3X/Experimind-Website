@@ -646,8 +646,8 @@ const AnubhavWebsite = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                   <div className="group text-center cursor-pointer">
-                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
-                      <div className="text-2xl lg:text-3xl font-bold">1</div>
+                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white text-orange-500 group-hover:text-white rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
+                      <div className="text-2xl lg:text-3xl font-bold ">1</div>
                     </div>
                     <h4 className="text-lg lg:text-xl font-semibold mb-2 lg:mb-3">
                       Unbox & Explore
@@ -659,7 +659,7 @@ const AnubhavWebsite = () => {
                   </div>
 
                   <div className="group text-center cursor-pointer">
-                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
+                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white text-orange-500 group-hover:text-white rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
                       <div className="text-2xl lg:text-3xl font-bold">2</div>
                     </div>
                     <h4 className="text-lg lg:text-xl font-semibold mb-2 lg:mb-3">
@@ -671,7 +671,7 @@ const AnubhavWebsite = () => {
                   </div>
 
                   <div className="group text-center cursor-pointer">
-                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
+                    <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white text-orange-500 group-hover:text-white rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
                       <div className="text-2xl lg:text-3xl font-bold">3</div>
                     </div>
                     <h4 className="text-lg lg:text-xl font-semibold mb-2 lg:mb-3">
