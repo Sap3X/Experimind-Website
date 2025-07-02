@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, use } from "react";
-import img1 from "./assets/Anubhav_Kit-removebg-preview.webp";
+import img1 from "../../assets/Experimind-Anubhav-Kit.webp";
 import img4 from "./assets/DSC05299.webp";
 import img5 from "./assets/DSC05347.webp";
+import img from "../../image";
 import { useNavigate } from "react-router-dom";
 import AnubhavSection from "./trigerred";
 import Header from "../../components/Header";
@@ -224,7 +225,7 @@ const AnubhavWebsite = () => {
                   {/* Product image with glow effect */}
                   <div className="relative bg-gradient-to-br from-[#FFA500] to-[#FF8C00] p-4 sm:p-8 rounded-3xl shadow-2xl transform hover:rotate-2 transition-transform duration-500">
                     <img
-                      src={img1}
+                      src={img.anubhav}
                       alt="Anubhav Kit"
                       className="
                       w-72 h-96
@@ -255,14 +256,14 @@ const AnubhavWebsite = () => {
               <div className="text-center lg:text-left order-1 lg:order-2">
                 <h1
                   className={`
-    text-4xl
-    sm:text-5xl
-    md:text-6xl
-    lg:text-7xl
-    xl:text-8xl
-    font-bold font-['Montserrat'] tracking-tight mb-6 leading-tight break-words opacity-0
-    ${isLoaded ? "animate-slide-in-right" : ""}
-  `}
+                  text-4xl
+                  sm:text-5xl
+                  md:text-6xl
+                  lg:text-7xl
+                  xl:text-8xl
+                  font-bold font-['Montserrat'] tracking-tight mb-6 leading-tight break-words opacity-0
+                  ${isLoaded ? "animate-slide-in-right" : ""}
+                `}
                 >
                   <span className="Utility-font-Montserrat text-transparent bg-clip-text bg-gradient-to-r from-[#FFA500] to-[#FF8C00]">
                     ANUBHAV
@@ -289,7 +290,11 @@ const AnubhavWebsite = () => {
                 <div
                   className={`
                     flex flex-col sm:flex-row gap-4
-                    ${isLoaded ? "animate-fade-in-scale animation-delay-600" : ""}
+                    ${
+                      isLoaded
+                        ? "animate-fade-in-scale animation-delay-600"
+                        : ""
+                    }
                     opacity-0
                     justify-center
                     items-center
@@ -310,7 +315,8 @@ const AnubhavWebsite = () => {
                       width: "auto",
                     }}
                     onClick={() => {
-                      const kitsSection = document.getElementById("anubhav-kits");
+                      const kitsSection =
+                        document.getElementById("anubhav-kits");
                       if (kitsSection) {
                         kitsSection.scrollIntoView({ behavior: "smooth" });
                       }
@@ -327,8 +333,8 @@ const AnubhavWebsite = () => {
           <section
             className={`
             relative
-            mt-10 mb-10
-            sm:mt-40 sm:mb-40
+            mt-10
+            sm:mt-40 
             pt-2 pb-2
             sm:pt-0 sm:pb-0
             md:pt-0 md:pb-0
@@ -540,7 +546,7 @@ const AnubhavWebsite = () => {
                   <div className="relative z-10">
                     <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl lg:rounded-2xl flex items-center justify-center mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                       <svg
-                        className="w-8 h-8 lg:w-10 lg:h-10 text-white"
+                        className="w-12 h-12 lg:w-14 lg:h-14 text-white"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -563,11 +569,33 @@ const AnubhavWebsite = () => {
                   <div className="relative z-10">
                     <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-xl lg:rounded-2xl flex items-center justify-center mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                       <svg
-                        className="w-8 h-8 lg:w-10 lg:h-10 text-white"
+                        className="w-12 h-12 pt-1 lg:pt-2 lg:w-14 lg:h-14 text-white"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
-                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2M12 8.5L11.5 10.5L9.5 11L11.5 11.5L12 13.5L12.5 11.5L14.5 11L12.5 10.5L12 8.5Z" />
+                        <rect x="4" y="7" width="16" height="10" rx="4" />
+                        <rect x="9" y="3" width="6" height="4" rx="2" />
+                        <circle cx="8.5" cy="12" r="1.5" fill="black" />
+                        <circle cx="15.5" cy="12" r="1.5" fill="black" />
+                        <rect x="2" y="10" width="2" height="4" rx="1" />
+                        <rect x="20" y="10" width="2" height="4" rx="1" />
+                        <rect
+                          x="11.25"
+                          y="1"
+                          width="1.5"
+                          height="3"
+                          rx="0.75"
+                          fill="currentColor"
+                        />
+                        <circle cx="12" cy="1" r="1" fill="currentColor" />
+                        <rect
+                          x="9.5"
+                          y="15.5"
+                          width="5"
+                          height="1.2"
+                          rx="0.6"
+                          fill="black"
+                        />
                       </svg>
                     </div>
                     <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-green-600 transition-colors duration-300">
@@ -586,7 +614,7 @@ const AnubhavWebsite = () => {
                   <div className="relative z-10">
                     <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl lg:rounded-2xl flex items-center justify-center mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                       <svg
-                        className="w-8 h-8 lg:w-10 lg:h-10 text-white"
+                        className="w-12 h-12 lg:w-14 lg:h-14 text-white"
                         fill="currentColor"
                         viewBox="0 0 24 24"
                       >
@@ -671,7 +699,10 @@ const AnubhavWebsite = () => {
               Transform the way STEM, AI, and Robotics are taught. Contact us to
               bring Anubhav to your school today!
             </p>
-            <button className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 lg:px-8 py-3 lg:py-4 rounded-xl text-lg lg:text-xl font-medium font-['Nunito_Sans'] border-2  transform hover:scale-105 transition-all duration-200 shadow-lg" onClick={() => navigate("/contact")}>
+            <button
+              className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 lg:px-8 py-3 lg:py-4 rounded-xl text-lg lg:text-xl font-medium font-['Nunito_Sans'] border-2  transform hover:scale-105 transition-all duration-200 shadow-lg"
+              onClick={() => navigate("/contact")}
+            >
               Book a free Demo
             </button>
           </div>

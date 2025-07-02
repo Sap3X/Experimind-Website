@@ -29,7 +29,7 @@ const image =
     meeting2: require('./assets/Experimind-labs-Meeting-Room.webp'),
 
     vision_icons: require('./assets/eye.png'),
-    mission_icons: require('./assets/briefcase-alt-2.png'),
+    mission_icons: require('./assets/mountain.png'),
     values_icons: require('./assets/handshake.png'),
     
     insta: require('./assets/instagram.png'),

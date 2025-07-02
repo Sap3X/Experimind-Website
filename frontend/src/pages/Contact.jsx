@@ -81,12 +81,12 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="Utility-font-NunitoSans min-h-screen flex items-center justify-center p-4 bg-gray-50 font-poppins">
-      <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+    <div className="Utility-font-NunitoSans min-h-screen flex items-center justify-center p-4 bg-gray-50">
+      <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg overflow-hidden flex flex-col lg:flex-row">
         {/* Left Section - Contact Info */}
-        <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8 md:w-2/5 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8 lg:w-2/5 relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-4">
               Contact Information
             </h2>
             <p className=" text-blue-200 mb-8">
@@ -153,8 +153,8 @@ const ContactUs = () => {
         </div>
 
         {/* Right Section - Contact Form */}
-        <div className="p-6 md:p-8 md:w-3/5">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+        <div className="p-6 lg:p-8 lg:w-3/5">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6">
             Get in Touch
           </h2>
 
@@ -243,7 +243,7 @@ const ContactUs = () => {
 
 // Reusable Components
 const ContactInfoItem = ({ icon, title, text }) => (
-  <div className="flex items-start gap-3">
+  <div className="flex break-words max-w-md items-start gap-3">
     <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
       {icon}
     </div>

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Menu, X, ChevronRight } from "lucide-react";
 import img from "../assets/Experimind-labs-Logo.svg";
@@ -141,7 +142,7 @@ export default function ResponsiveNavbar() {
         </div>
 
         {/* Mobile & Tablet Burger Menu Button */}
-        <div className="lg:hidden">
+        <div className="lg:hidden pr-4">
           <button
             onClick={toggleMobileMenu}
             className="text-black hover:text-gray-600 transition-colors duration-200"

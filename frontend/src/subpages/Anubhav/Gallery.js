@@ -5,7 +5,7 @@ import img1 from "./assets/DSC05306.webp";
 import img2 from "./assets/DSC05299.webp";
 import img3 from "./assets/DSC05347.webp";
 import img4 from "./assets/DSC05351.webp";
-import img5 from "./assets/Anubhav_Kit-removebg-preview.webp";
+import img5 from "../../assets/Experimind-Anubhav-Kit.webp";
 import img6 from "./assets/DSC05306.webp";
 import img7 from "./assets/DSC05299.webp";
 import img8 from "./assets/DSC05347.webp";

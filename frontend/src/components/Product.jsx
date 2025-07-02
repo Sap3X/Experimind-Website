@@ -13,9 +13,9 @@ const ProductCard = ({ title, imageSrc, className = "", route }) => {
     <div
       className={`w-full max-w-sm bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-3 sm:p-4 lg:p-6 flex flex-col hover:-translate-y-1 ${className}`}
     >
-      <div className=" aspect-[5/3] w-full mb-3 sm:mb-4 overflow-hidden rounded-lg bg-gray-100">
+      <div className=" aspect-[3/3] w-full mb-3 sm:mb-4 overflow-hidden rounded-lg bg-gray-100">
         <img
-          className="w-50 h-50 object-cover hover:scale-105 transition-transform duration-500"
+          className="w-50 h-50 bg-white object-cover hover:scale-105 transition-transform duration-500"
           src={imageSrc}
           alt={title}
           loading="lazy"

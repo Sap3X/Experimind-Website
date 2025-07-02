@@ -7,7 +7,7 @@ import Careers from './pages/Careers';
 import PSL from './subpages/psl/page';
 import Anubhav from './subpages/Anubhav/Anubhav';
 import GeoMagic from './subpages/geo/Geomagic';
-import Prastuti from './subpages/prastuti/Pras'
+import Prastuti from './subpages/prastuti/Pras';
 import React from 'react';
 import Shiksha from './subpages/shiksha/component/Shiksha'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

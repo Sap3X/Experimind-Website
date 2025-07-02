@@ -97,7 +97,7 @@ export default function About() {
 
               {/* Mission Card */}
               <div className="flex flex-col items-center bg-blue-400 bg-opacity-40 p-8 lg:p-12 rounded-3xl text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-                <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-yellow-300 rounded-full mb-6">
+                <div className="w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center bg-orange-400 rounded-full mb-6">
                   <img
                     src={img.mission_icons}
                     alt="Mission Icon"
