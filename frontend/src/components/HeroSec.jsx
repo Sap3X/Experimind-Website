@@ -195,7 +195,14 @@ export default function HeroSection() {
               <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4 h-[500px] sm:h-[600px] lg:h-[700px]">
                 
                 {/* Column 1 - Offset upward */}
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 -translate-y-8 sm:-translate-y-12 lg:-translate-y-48">
+                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[25rem] xl:-translate-y-80">
+                  <div className="relative group">
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
+                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
+                        Student 1
+                      </div>
+                    </div>
+                  </div>
                   <div className="relative group">
                     <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
                       <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
@@ -227,7 +234,14 @@ export default function HeroSection() {
                 </div>
 
                 {/* Column 2 - Center */}
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 -translate-y-12 sm:-translate-y-16 lg:-translate-y-32">
+                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[] xl:-translate-y-[26rem]">
+                  <div className="relative group">
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
+                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
+                        Student 1
+                      </div>
+                    </div>
+                  </div>
                   <div className="relative group">
                     <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
                       <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
@@ -256,10 +270,11 @@ export default function HeroSection() {
                       </div>
                     </div>
                   </div>
+                  
                 </div>
 
                 {/* Column 3 - Offset downward */}
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 -translate-y-8 sm:-translate-y-12 lg:-translate-y-56">
+                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[] xl:-translate-y-[17rem]">
                   <div className="relative group">
                     <div className="w-full aspect-[3/4] bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
                       <div className="w-full h-full bg-cyan-400 flex items-center justify-center text-black font-bold text-lg">
@@ -271,6 +286,13 @@ export default function HeroSection() {
                     <div className="w-full aspect-[3/4] bg-gradient-to-br from-green-400 to-green-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
                       <div className="w-full h-full bg-green-400 flex items-center justify-center text-white font-bold text-lg">
                         Student 6
+                      </div>
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
+                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
+                        Student 1
                       </div>
                     </div>
                   </div>
