@@ -55,7 +55,7 @@ const ContactUs = () => {
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
-      await axios.post("http://localhost:9001/api/contact", {
+      await axios.post("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/contact", {
         name: formData.fullName,
         email: formData.email,
         phone: Number(formData.phone),

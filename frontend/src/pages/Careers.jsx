@@ -30,7 +30,7 @@ const Careers = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get("http://localhost:9001/api/jobs");
+        const res = await axios.get("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/jobs");
         const sortedJobs = res.data.sort((a, b) => {
           const getNumber = (id) => parseInt(id.split("-")[1]);
           return getNumber(b.jobId) - getNumber(a.jobId);
@@ -123,7 +123,7 @@ const Careers = () => {
     data.append("resume", internFormData.resume);
 
     try {
-      await axios.post("http://localhost:9001/api/internships/apply", data, {
+      await axios.post("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/internships/apply", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -192,7 +192,7 @@ const Careers = () => {
     data.append("resume", formData.resume);
 
     try {
-      await axios.post("http://localhost:9001/api/jobs/apply", data, {
+      await axios.post("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/jobs/apply", data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -212,7 +212,7 @@ const Careers = () => {
   useEffect(() => {
     const fetchPosters = async () => {
       try {
-        const res = await axios.get("http://localhost:9001/api/posters");
+        const res = await axios.get("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/posters");
         if (res.data.success && res.data.posters.length > 0) {
           setPosters(res.data.posters);
           setIsPosterAvai(true);
