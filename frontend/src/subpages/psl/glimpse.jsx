@@ -4,7 +4,7 @@ import im2 from "./assets/school-project.jpg"
 import im3 from "./assets/images.webp"
 import im4 from "./assets/image 93.jpg"
 import im5 from "./assets/image120.webp"
-import im6 from "./assets/image.webp"
+import im6 from "./assets/image.jpg"
 import im7 from "./assets/DSC05381.webp"
 
 // Mock images for demo
