@@ -82,7 +82,7 @@ const InfiniteCarousel = () => {
     <div className="w-full bg-gradient-to-r from-blue-50 via-white to-blue-50 py-8">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="Utility-font-Montserrat Utility-color-Blue text-3xl sm:text-4xl lg:text-6xl font-bold text-center mb-12 lg:mb-16">
-          What we do
+          Galleries
         </h2>
 
         <div
