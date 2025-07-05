@@ -107,7 +107,7 @@ const AnubhavSection = () => {
                 >
                   <div className="relative inline-block">
                     {/* Title */}
-                    <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black font-['SF_Pro_Display'] tracking-tight mb-2 leading-none">
+                    <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black Utility-font-Montserrat tracking-tight mb-2 leading-none">
                       ANUBHAV
                     </h2>
                     {/* Animated Underline */}
@@ -122,7 +122,7 @@ const AnubhavSection = () => {
                   </div>
                   <div className="h-8"></div>
                   {/* Subtitle */}
-                  <div className="flex items-center justify-center space-x-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
+                  <div className="Utility-font-Buenard flex items-center justify-center space-x-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">
                     <span className="transform transition-all duration-500 hover:scale-110">
                       Innovate
                     </span>
@@ -151,7 +151,7 @@ const AnubhavSection = () => {
                     }
                   `}
                 >
-                  <p className="text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed text-center">
+                  <p className="Utility-font-NunitoSans text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-relaxed text-center">
                     Anubhav empowers students and educators with hands-on STEM,
                     AI, and Robotics experiences. Our kits are designed to spark
                     curiosity, foster creativity, and build real-world
@@ -284,7 +284,7 @@ function FeatureCard({ icon, label, delay = "0ms" }) {
           <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-orange-400 to-amber-500 rounded-xl flex items-center justify-center transform transition-all duration-500 group-hover:rotate-6 group-hover:scale-110">
             {icon}
           </div>
-          <h3 className="text-gray-800 text-sm md:text-base lg:text-lg font-bold text-center group-hover:text-orange-600 transition-colors duration-300">
+          <h3 className="Utility-font-NunitoSans text-gray-800 text-sm md:text-base lg:text-lg font-bold text-center group-hover:text-orange-600 transition-colors duration-300">
             {label}
           </h3>
         </div>

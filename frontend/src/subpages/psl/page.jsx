@@ -1,23 +1,23 @@
 import { useState, useEffect } from "react";
 import Image from "./Gallery.js";
-import Prastuti from "./prastuti.jsx"
-import Anubhav from "./anubhav.jsx"
+import Prastuti from "./prastuti.jsx";
+import Anubhav from "./anubhav.jsx";
 import Pradarshan from "./pradarshan.jsx";
-import Glimpse from "./glimpse.jsx"
-import Compo from "./compo.jsx"
-import im1 from "./assets/DSC05363.webp"
-import im2 from "./assets/Hero Image.webp"
-import im3 from "./assets/DSC05407.webp"
-import im4 from "./assets/Prastuti Hero Image 2.webp"
-import im5 from "./assets/feedback.webp"
-import im6 from "./assets/communication.webp"
-import im7 from "./assets/location.webp"
-import im8 from "./assets/monitor.webp"
-import gen from "./assets/generation-z.webp"
-import stem from "./assets/stem.webp"
-import Header from "../../components/Header.jsx"
-import policy from "./assets/policy.webp"
-import ai from "./assets/artificial-intelligence.webp"
+import Glimpse from "./glimpse.jsx";
+import Compo from "./compo.jsx";
+import im1 from "./assets/DSC05363.webp";
+import im2 from "./assets/Hero Image.webp";
+import im3 from "./assets/DSC05407.webp";
+import im4 from "./assets/Prastuti Hero Image 2.webp";
+import im5 from "./assets/feedback.webp";
+import im6 from "./assets/communication.webp";
+import im7 from "./assets/location.webp";
+import im8 from "./assets/monitor.webp";
+import gen from "./assets/generation-z.webp";
+import stem from "./assets/stem.webp";
+import Header from "../../components/Header.jsx";
+import policy from "./assets/policy.webp";
+import ai from "./assets/artificial-intelligence.webp";
 import Footer from "../../components/Footer.jsx";
 import { useNavigate } from "react-router-dom";
 
@@ -54,12 +54,7 @@ export default function ResponsivePSLWebsite() {
     return () => observer.disconnect();
   }, []);
 
-  const heroImages = [
-    im1,
-    im2,
-    im3,
-    im4
-  ];
+  const heroImages = [im1, im2, im3, im4];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -72,7 +67,7 @@ export default function ResponsivePSLWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-amber-50">
-      <Header/>
+      <Header />
       {/* Hero Section */}
       <section
         id="home"
@@ -91,20 +86,22 @@ export default function ResponsivePSLWebsite() {
 
         {/* Hero Content */}
         <div className="relative z-10 w-full max-w-2xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
-          <h1 className="text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
+          <h1 className="Utility-font-Montserrat text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white">
             Transform Your
             <br />
             <span className="text-[#46cbff]">STEM Education</span>
           </h1>
-          <p className="mt-4 text-sm xs:text-base sm:text-xl md:text-2xl font-normal leading-relaxed max-w-lg mx-auto text-white">
+          <p className="Utility-font-Buenard mt-4 text-sm xs:text-base sm:text-xl md:text-2xl font-normal leading-relaxed max-w-lg mx-auto text-white">
             The Portable STEM Lab (PSL) transforms any classroom into an
             intuitive STEM learning space with minimal infrastructure.
           </p>
-          <div className="flex flex-col xs:flex-row gap-4 sm:gap-6 pt-6 justify-center items-center">
+          <div className="Utility-font-NunitoSans flex flex-col xs:flex-row gap-4 sm:gap-6 pt-6 justify-center items-center">
             <button
               className="w-full max-w-xs xs:w-auto xs:max-w-none px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg bg-[#103f91] text-white hover:bg-[#46cbff] transition-all duration-300 shadow-lg"
               onClick={() => {
-                document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               Discover PSL
@@ -112,7 +109,9 @@ export default function ResponsivePSLWebsite() {
             <button
               className="w-full max-w-xs xs:w-auto xs:max-w-none px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg font-semibold rounded-lg border-2 border-white text-white hover:bg-white hover:text-[#103f91] transition-all duration-300"
               onClick={() => {
-                document.querySelector('section.bg-gray-100')?.scrollIntoView({ behavior: "smooth" });
+                document
+                  .querySelector("section.bg-gray-100")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
               Watch Demo
@@ -126,14 +125,16 @@ export default function ResponsivePSLWebsite() {
         <div className="container mx-auto px-2 sm:px-4">
           <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
             <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+              <div
+                className="relative w-full"
+                style={{ paddingBottom: "56.25%" }}
+              >
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/zxt8Dy7iaRc"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
+                  src="https://drive.google.com/file/d/1RJpvf8P7S1u7iHXeBAdS9mkgYaNQNBPv/preview"
+                  width="640"
+                  height="480"
+                  allow="autoplay"
                 ></iframe>
               </div>
             </div>
@@ -146,17 +147,17 @@ export default function ResponsivePSLWebsite() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-16 items-center">
             <div>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#103f91] mb-4 sm:mb-8">
+              <h2 className="Utiluity-font-Montserrat text-2xl sm:text-4xl md:text-5xl font-bold text-[#103f91] mb-4 sm:mb-8">
                 What is PSL?
               </h2>
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-8">
+              <p className="Utility-font-NunitoSans text-justify text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-8">
                 The Portable STEM Lab (PSL) is a compact, self-sufficient lab
                 that transforms any classroom into an intuitive STEM learning
                 space with minimal infrastructure or trained instructors. It has
                 the unique ability to convert any classroom into a hands-on STEM
                 lab instantly.
               </p>
-              <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-8">
+              <p className="Utility-font-NunitoSans text-justify text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-8">
                 PSL bridges the resource gap, providing accessible, quality STEM
                 education to every student.
               </p>
@@ -174,13 +175,13 @@ export default function ResponsivePSLWebsite() {
       </section>
 
       {/* 3 Function */}
-      <Compo/>
+      <Compo />
 
       {/* Why Now Section */}
       <section className="py-10 sm:py-20 bg-gradient-to-br from-[#3974db] to-[#46cbff]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-8">
+            <h2 className="Utility-font-Montserrat text-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-8">
               Why PSL?
             </h2>
           </div>
@@ -215,7 +216,7 @@ export default function ResponsivePSLWebsite() {
                     className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 mx-auto mb-3 sm:mb-4  object-contain"
                     alt={reason.text}
                   />
-                  <p className="text-sm sm:text-base md:text-lg font-medium text-white text-center px-2">
+                  <p className="Utility-font-NunitoSans text-sm sm:text-base md:text-lg font-medium text-white text-center px-2">
                     {reason.text}
                   </p>
                 </div>
@@ -229,17 +230,17 @@ export default function ResponsivePSLWebsite() {
       <section id="products" className="py-10 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#103f91]">
+            <h2 className="Utility-font-Montserrat text-2xl sm:text-4xl md:text-5xl font-bold text-[#103f91]">
               Products Included in PSL
             </h2>
           </div>
           <section>
-            <Prastuti/>
+            <Prastuti />
           </section>
           <section>
-            <Anubhav/>
+            <Anubhav />
           </section>
-          <Pradarshan/>
+          <Pradarshan />
         </div>
       </section>
 
@@ -247,7 +248,7 @@ export default function ResponsivePSLWebsite() {
       <section className="py-10 sm:py-20 bg-gradient-to-b from-slate-50 to-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#103f91]">
+            <h2 className="Utility-font-Montserrat text-2xl sm:text-4xl md:text-5xl font-bold text-[#103f91]">
               Visit Us Today
             </h2>
           </div>
@@ -269,7 +270,7 @@ export default function ResponsivePSLWebsite() {
                 subtitle: "Instant Setup",
               },
               {
-                img:im8 ,
+                img: im8,
                 title: "Video Tutorials With AI",
                 subtitle: "Free Support",
               },
@@ -283,10 +284,10 @@ export default function ResponsivePSLWebsite() {
                   className="w-24 h-24 mx-auto mb-4 object-cover group-hover:scale-110 transition-transform duration-300"
                   alt={item.title}
                 />
-                <h3 className="text-xl font-bold text-[#103f91] mb-2">
+                <h3 className="Utility-font-Montserrat text-xl font-bold text-[#103f91] mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600}">{item.subtitle}</p>
+                <p className="Utility-font-NunitoSans text-gray-600}">{item.subtitle}</p>
               </div>
             ))}
           </div>
@@ -294,18 +295,18 @@ export default function ResponsivePSLWebsite() {
       </section>
 
       {/* Glimpse Section */}
-      <section className="py-10 sm:py-20 bg-white">
-        <Glimpse/>
+      <section className=" py-10 sm:py-20 bg-white">
+        <Glimpse />
       </section>
 
       {/* Gallery */}
       <section
         id="gallery"
         className="pb-10 sm:pb-20 bg-gradient-to-b from-slate-50 to-white"
-      > 
+      >
         <Image />
       </section>
-      
+
       {/* Call to Action Section */}
       <section
         id="contact"
@@ -314,18 +315,20 @@ export default function ResponsivePSLWebsite() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 items-center">
             <div className="text-white space-y-6 sm:space-y-8">
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight">
+              <h2 className="Utility-font-Montserrat text-2xl sm:text-4xl md:text-5xl font-bold leading-tight">
                 Ready to Transform Your Classroom?
               </h2>
-              <p className="text-base sm:text-xl font-light leading-relaxed">
+              <p className="Utility-font-Buenard text-base sm:text-xl font-light leading-relaxed">
                 Transform the way STEM, AI, and Robotics are taught. Contact us
                 to bring PSL to your school today!
                 <br />
               </p>
-             
+
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-                
-                <button className="w-full max-w-xs sm:w-auto sm:max-w-none px-4 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg font-semibold rounded-lg border-2 border-white text-white hover:bg-white hover:text-[#103f91] transition-all duration-300" onClick={() => navigate("/contact")}>
+                <button
+                  className="Utility-font-NunitoSans w-full max-w-xs sm:w-auto sm:max-w-none px-4 sm:px-8 py-2 sm:py-4 text-sm sm:text-lg font-semibold rounded-lg border-2 border-white text-white hover:bg-white hover:text-[#103f91] transition-all duration-300"
+                  onClick={() => navigate("/contact")}
+                >
                   Book a Free Demo
                 </button>
               </div>
@@ -343,7 +346,7 @@ export default function ResponsivePSLWebsite() {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

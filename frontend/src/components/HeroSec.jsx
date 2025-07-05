@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../image";
 
 export default function HeroSection() {
   return (
@@ -14,37 +15,47 @@ export default function HeroSection() {
               <div className="flex flex-col gap-2 sm:gap-3 -translate-y-32 md:-translate-y-28">
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                      Student 1
-                    </div>
+                    <img
+                      src={image.img_17}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-red-400 flex items-center justify-center text-white font-bold text-lg">
-                      Student 2
-                    </div>
+                    <img
+                      src={image.img_4}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-red-400 flex items-center justify-center text-white font-bold text-lg">
-                      Student 3
-                    </div>
+                    <img
+                      src={image.img_11}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                      Student 1
-                    </div>
+                   <img
+                      src={image.img_1}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-red-400 flex items-center justify-center text-white font-bold text-lg">
-                      Student 2
-                    </div>
+                    <img
+                      src={image.img_12}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
               </div>
@@ -53,44 +64,56 @@ export default function HeroSection() {
               <div className="flex flex-col gap-2 sm:gap-3 -translate-y-52 md:-translate-y-44">
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                      Student 3
-                    </div>
+                    <img
+                      src={image.img_18}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-blue-500 to-blue-600 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-blue-500 flex items-center justify-center text-white font-bold text-lg">
-                      Student 4
-                    </div>
+                    <img
+                      src={image.img_9}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                      Student 3
-                    </div>
+                    <img
+                      src={image.img_14}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                      Student 1
-                    </div>
+                    <img
+                      src={image.img_13}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-cyan-400 flex items-center justify-center text-black font-bold text-lg">
-                      Student 5
-                    </div>
+                    <img
+                      src={image.img_8}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                      Student 3
-                    </div>
+                    <img
+                      src={image.img_5}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
               </div>
@@ -99,37 +122,47 @@ export default function HeroSection() {
               <div className="flex flex-col gap-2 sm:gap-3 -translate-y-24 md:-translate-y-96">
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-cyan-400 flex items-center justify-center text-black font-bold text-lg">
-                      Student 5
-                    </div>
+                   <img
+                      src={image.img_3}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-green-400 to-green-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-green-400 flex items-center justify-center text-white font-bold text-lg">
-                      Student 6
-                    </div>
+                    <img
+                      src={image.img_2}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                      Student 3
-                    </div>
+                   <img
+                      src={image.img_16}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                      Student 1
-                    </div>
+                    <img
+                      src={image.img_19}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
                 <div className="relative group">
                   <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[1rem] overflow-hidden shadow-xl">
-                    <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                      Student 3
-                    </div>
+                    <img
+                      src={image.img_6}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                   </div>
                 </div>
               </div>
@@ -195,119 +228,176 @@ export default function HeroSection() {
               <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4 h-[500px] sm:h-[600px] lg:h-[700px]">
                 
                 {/* Column 1 - Offset upward */}
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[25rem] xl:-translate-y-80">
+                <div className="flex flex-col gap-2 sm:gap-3 lg:rounded lg:gap-4 lg:-translate-y-[25rem] xl:-translate-y-80">
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_17}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_4}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-red-400 flex items-center justify-center text-white font-bold text-lg">
-                        Student 2
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                     <img
+                      src={image.img_11}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-red-400 flex items-center justify-center text-white font-bold text-lg">
-                        Student 3
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_1}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_12}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                       <img
+                      src={image.img_6}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                 </div>
 
                 {/* Column 2 - Center */}
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[] xl:-translate-y-[26rem]">
+                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[20rem] xl:-translate-y-[26rem]">
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_18}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                        Student 3
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_9}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-blue-500 to-blue-600 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-blue-500 flex items-center justify-center text-white font-bold text-lg">
-                        Student 4
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-blue-500 to-blue-600 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_14}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                        Student 3
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_13}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_18}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
+                    </div>
+                    
+                  </div>
+                  <div className="relative group">
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_5}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
-                  
                 </div>
 
                 {/* Column 3 - Offset downward */}
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[] xl:-translate-y-[17rem]">
+                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-4 lg:-translate-y-[22rem] xl:-translate-y-[17rem]">
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-cyan-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 5
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-cyan-400 to-cyan-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_3}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-green-400 to-green-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-green-400 flex items-center justify-center text-white font-bold text-lg">
-                        Student 6
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-green-400 to-green-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                     <img
+                      src={image.img_2}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                     <img
+                      src={image.img_16}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-purple-500 flex items-center justify-center text-white font-bold text-lg">
-                        Student 3
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-purple-500 to-purple-600 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                     <img
+                      src={image.img_19}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                   <div className="relative group">
-                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[3rem] overflow-hidden shadow-xl">
-                      <div className="w-full h-full bg-yellow-400 flex items-center justify-center text-black font-bold text-lg">
-                        Student 1
-                      </div>
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                     <img
+                      src={image.img_15}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
+                    </div>
+                  </div>
+                  <div className="relative group">
+                    <div className="w-full aspect-[3/4] bg-gradient-to-br from-red-400 to-red-500 rounded-[2rem] lg:rounded-[1rem] overflow-hidden shadow-xl">
+                      <img
+                      src={image.img_6}
+                      alt="img-1"
+                      className="w-full h-full object-cover rounded-[1rem]"
+                    />
                     </div>
                   </div>
                 </div>

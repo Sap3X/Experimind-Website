@@ -181,14 +181,9 @@ export default function About() {
                 {
                   image: img.production,
                   name: "Sagar Shanbhogue",
-                  designation: "Production Management",
+                  designation: "Production Manager",
                   linkedin:
                     "https://www.linkedin.com/in/sagar-shanbhogue-718b75333/",
-                },
-                {
-                  image: img.intern3,
-                  name: "Sharath Dinesh",
-                  designation: "Production Executive",
                 },
               ].map((member, index) => (
                 <div
@@ -243,6 +238,12 @@ export default function About() {
             {/* Section 2 - Next 3 members */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3">
               {[
+                  {
+                  image: img.advisor,
+                  name: "Sandesh Shetty",
+                  designation: "Advisor",
+                  linkedin: "https://www.linkedin.com/in/sandesh5979/",
+                },
                 {
                   image: img.contenthead,
                   name: "Subramanya L. Hegde",
@@ -254,12 +255,6 @@ export default function About() {
                   image: img.mentor,
                   name: "Ganapati Hedge",
                   designation: "Mentor",
-                },
-                {
-                  image: img.advisor,
-                  name: "Sandesh Shetty",
-                  designation: "Advisor",
-                  linkedin: "https://www.linkedin.com/in/sandesh5979/",
                 },
               ].map((member, index) => (
                 <div

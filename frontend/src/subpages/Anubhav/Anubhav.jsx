@@ -265,12 +265,12 @@ const AnubhavWebsite = () => {
                   ${isLoaded ? "animate-slide-in-right" : ""}
                 `}
                 >
-                  <span className="Utility-font-Montserrat text-transparent bg-clip-text bg-gradient-to-r from-[#FFA500] to-[#FF8C00]">
+                  <span className="Utility-font-Montserrat text-transparent text-[#FF8C00]">
                     ANUBHAV
                   </span>
                 </h1>
                 <div
-                  className={`text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold font-['Inter'] mb-8 text-gray-700 opacity-0 ${
+                  className={`Utility-font-Buenard text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold  mb-8 text-gray-700 opacity-0 ${
                     isLoaded ? "animate-slide-in-right animation-delay-200" : ""
                   }`}
                 >
@@ -278,7 +278,7 @@ const AnubhavWebsite = () => {
                   <span className="block">Innovate Create Learn</span>
                 </div>
                 <p
-                  className={`text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium max-w-lg mx-auto lg:mx-0 mb-8 opacity-0 ${
+                  className={`Utility-font-NunitoSans text-gray-600 text-xs sm:text-sm md:text-base lg:text-lg font-medium max-w-lg mx-auto lg:mx-0 mb-8 opacity-0 ${
                     isLoaded ? "animate-slide-in-up animation-delay-400" : ""
                   }`}
                 >
@@ -302,7 +302,7 @@ const AnubhavWebsite = () => {
                   `}
                 >
                   <button
-                    className="
+                    className="Utility-font-NunitoSans
               bg-[#FFA500] hover:bg-[#FF8C00] text-white
               px-8 py-4
               text-lg
@@ -330,7 +330,7 @@ const AnubhavWebsite = () => {
           </div>
 
           {/* Video Section - seamlessly blended with hero */}
-          <section
+          {/* <section
             className={`
             relative
             mt-10
@@ -343,9 +343,9 @@ const AnubhavWebsite = () => {
             opacity-0
             ${isLoaded ? "animate-slide-in-up animation-delay-800" : ""}
           `}
-          >
+          > */}
             {/* Video Content */}
-            <div className="bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200 py-10">
+            {/* <div className="bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200 py-10">
               <div className=" relative z-10 container mx-auto px-2 sm:px-4">
                 <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
                   <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
@@ -366,8 +366,11 @@ const AnubhavWebsite = () => {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
+
+          {/* Anubhav explaination Section */}
           <AnubhavSection />
+
           {/* Product Kits Section */}
           <section
             id="anubhav-kits"
@@ -375,7 +378,7 @@ const AnubhavWebsite = () => {
           >
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-12 lg:mb-20">
-                <h2 className="text-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold font-['Nunito_Sans'] mb-6 tracking-tight">
+                <h2 className="Utility-font-Montserrat text-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight">
                   ANUBHAV KITS
                 </h2>
               </div>
@@ -533,7 +536,7 @@ const AnubhavWebsite = () => {
                   </span>
                   ?
                 </h2>
-                <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
+                <p className="Utility-font-NunitoSans text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
                   Discover the revolutionary features that make our kits the
                   perfect choice for modern education
                 </p>
@@ -553,10 +556,10 @@ const AnubhavWebsite = () => {
                         <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V19C3 20.1 3.89 21 5 21H11V19H5V3H13V9H21ZM17 13L22 18L17 23V20H13V16H17V13Z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                    <h3 className="Utility-font-Montserrat text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-blue-600 transition-colors duration-300">
                       Hands-On Learning
                     </h3>
-                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    <p className="Utility-font-NunitoSans text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                       Interactive experiments and projects that bring
                       theoretical concepts to life through practical application
                     </p>
@@ -598,10 +601,10 @@ const AnubhavWebsite = () => {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-green-600 transition-colors duration-300">
+                    <h3 className="Utility-font-Montserrat text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-green-600 transition-colors duration-300">
                       AI & Robotics
                     </h3>
-                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    <p className="Utility-font-NunitoSans text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                       Cutting-edge technology components that introduce students
                       to the future of artificial intelligence and robotics
                     </p>
@@ -621,10 +624,10 @@ const AnubhavWebsite = () => {
                         <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-purple-600 transition-colors duration-300">
+                    <h3 className="Utility-font-Montserrat text-xl lg:text-2xl font-bold text-gray-800 mb-2 lg:mb-3 group-hover:text-purple-600 transition-colors duration-300">
                       Curriculum Aligned
                     </h3>
-                    <p className="text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                    <p className="Utility-font-NunitoSans text-gray-600 text-sm lg:text-base leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                       Perfectly designed to complement existing STEM curricula
                       while enhancing teaching methodologies
                     </p>
@@ -636,15 +639,15 @@ const AnubhavWebsite = () => {
               {/* Interactive Timeline */}
               <div className="bg-gradient-to-r from-[#FFA500] to-[#FF8C00] rounded-2xl lg:rounded-3xl p-6 lg:p-12 text-white">
                 <div className="text-center mb-8 lg:mb-12">
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+                  <h3 className="Utility-font-Montserrat text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
                     Your Learning Journey
                   </h3>
-                  <p className="text-lg lg:text-xl opacity-90">
+                  <p className="Utility-font-NunitoSans text-lg lg:text-xl opacity-90">
                     From unboxing to mastering advanced concepts
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <div className="Utility-font-NunitoSans grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
                   <div className="group text-center cursor-pointer">
                     <div className="w-16 h-16 lg:w-20 lg:h-20 bg-white text-orange-500 group-hover:text-white rounded-full flex items-center justify-center mx-auto mb-4 lg:mb-6 transform group-hover:scale-110 group-hover:bg-white/30 transition-all duration-500">
                       <div className="text-2xl lg:text-3xl font-bold ">1</div>

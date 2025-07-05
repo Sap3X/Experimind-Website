@@ -65,7 +65,7 @@ const Testimonials = () => {
       </div>
 
       {/* Swiper Container with Navigation */}
-      <div className="relative max-w-full overflow-hidden">
+      <div className="Utility-font-NunitoSans relative max-w-full overflow-hidden">
         {/* Navigation Buttons */}
         <button
           className="swiper-button-prev-custom absolute left-4 lg:left-6 top-1/2 -translate-y-1/2 w-10 h-10 lg:w-12 lg:h-12 bg-white/95 hover:bg-white border border-blue-200 hover:border-blue-400 rounded-full flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 z-30"

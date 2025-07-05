@@ -141,11 +141,10 @@ export default function AnubhavSection() {
                 }}
                 className="text-center mb-8 sm:mb-12"
               >
-                <h2 className="text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-600 via-orange-500 to-orange-700 bg-clip-text text-transparent mb-4">
+                <h2 className="Utility-font-Montserrat text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-orange-600 via-orange-500 to-orange-700 bg-clip-text text-transparent mb-4">
                   ANUBHAV
                 </h2>
-                <div className="w-20 sm:w-32 h-1.5 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mb-6" />
-                <p className=" text-gray-700 max-w-3xl mx-auto font-medium text-sm xs:text-base sm:text-lg mt-2 ">
+                <p className=" Utility-font-Buenard text-gray-700 max-w-3xl mx-auto font-medium text-sm xs:text-base sm:text-lg mt-2 ">
                   Revolutionizing STEM Education Through Hands-on Learning
                   Experiences
                 </p>
@@ -176,7 +175,7 @@ export default function AnubhavSection() {
                         </div>
                       {/* Centered button below image */}
                         <div className="w-full flex justify-center mt-4">
-                          <button className="px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300" onClick={() => navigate("/anubhav")}>
+                          <button className="Utility-font-NunitoSans px-6 py-3 text-lg font-bold rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-orange-300" onClick={() => navigate("/anubhav")}>
                             Learn More
                           </button>
                         </div>
@@ -196,7 +195,7 @@ export default function AnubhavSection() {
                             <span className="text-xl">{feat.icon}</span>
                           </div>
                           <div className="flex-1">
-                            <p className="text-gray-800 font-medium text-base leading-tight">
+                            <p className="Utility-font-NunitoSans text-gray-800 font-medium text-base leading-tight">
                               {feat.text}
                             </p>
                           </div>
@@ -215,10 +214,10 @@ export default function AnubhavSection() {
                 }}
                 className="w-full"
               >
-                <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+                <h3 className="Utility-font-Montserrat text-xl xs:text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
                   Class Levels
                 </h3>
-                <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+                <div className="Utility-font-NunitoSans flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
                   {levelData.map((level, i) => (
                     <div
                       key={i}

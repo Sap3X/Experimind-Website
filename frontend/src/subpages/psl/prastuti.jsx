@@ -139,10 +139,10 @@ const EnhancedPrastutiSection = () => {
       <div className="absolute -top-16 -left-16 w-24 h-24 sm:w-40 sm:h-40 bg-cyan-100 opacity-20 rounded-full blur-2xl z-0"></div>
       <div className="absolute bottom-0 -right-16 w-16 h-16 sm:w-32 sm:h-32 bg-blue-200 opacity-20 rounded-full blur-2xl z-0"></div>
       <div className="text-center mb-6 sm:mb-10 relative z-10">
-        <h2 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-cyan-400 tracking-tight drop-shadow-lg">
+        <h2 className="Utility-font-Montserrat text-4xl sm:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-cyan-400 tracking-tight tracking-wider">
           PRASTUTI
         </h2>
-        <p className="text-blue-900 text-sm xs:text-base sm:text-lg mt-2 font-medium">
+        <p className="Utility-font-Buenard text-blue-900 text-sm xs:text-base sm:text-lg mt-2 font-medium">
           Empowering Teachers with Tools & Demos
         </p>
       </div>
@@ -159,12 +159,12 @@ const EnhancedPrastutiSection = () => {
           </div>
           <button
             aria-label="Learn more about Prastuti"
-            className="mt-2 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-bold rounded-xl bg-blue-900 text-white shadow-md hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 w-auto min-w-[140px] max-w-xs sm:max-w-sm mx-auto" onClick={() => navigate("/prastuti")}
+            className="Utility-font-NunitoSans  mt-2 px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-lg font-bold rounded-xl bg-blue-900 text-white shadow-md hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-300 w-auto min-w-[140px] max-w-xs sm:max-w-sm mx-auto" onClick={() => navigate("/prastuti")}
           >
             Learn More
           </button>
         </div>
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-6 xl:gap-8 w-full p-1 sm:p-2">
+        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 md:gap-7 lg:gap-5 xl:gap-7 w-full lg:mb-6 p-1 sm:p-2">
           {prastutiFeatures.map((feature, idx) => (
             <div
               key={idx}
@@ -173,7 +173,7 @@ const EnhancedPrastutiSection = () => {
               <div className="bg-white p-2 sm:p-3 rounded-full shadow border border-cyan-200 flex-shrink-0">
                 {feature.icon}
               </div>
-              <span className="text-blue-900 font-semibold text-xs sm:text-base break-words w-full">
+              <span className="Utility-font-NunitoSans text-blue-900 font-semibold text-xs sm:text-base break-words w-full">
                 {feature.text}
               </span>
             </div>
@@ -187,10 +187,10 @@ const EnhancedPrastutiSection = () => {
         }}
         className="w-full"
       >
-        <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
+        <h3 className="Utility-font-Montserrat text-xl xs:text-2xl sm:text-3xl font-bold text-gray-800 mb-6 text-center">
           Class Levels
         </h3>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+        <div className="Utility-font-NunitoSans flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
           {levelData.map((level, i) => (
             <div
               key={i}

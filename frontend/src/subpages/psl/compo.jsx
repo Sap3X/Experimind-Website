@@ -43,7 +43,7 @@ export default function STEMComponentsLayout() {
       <div className="max-w-7xl mx-auto xl:h-[600px] lg:h-[650px] md:h-[650px] sm:h-[1600px] h-[1700px] ">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h1 className="Utility-font-Montserrat Utility-color-Blue text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             3 Main Components of Portable STEM Lab
           </h1>
         </div>
@@ -78,17 +78,17 @@ export default function STEMComponentsLayout() {
                 <div className="p-6">
                   {/* Title Section */}
                   <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-xl font-bold text-gray-800">{component.title}</h3>
+                    <h3 className="Utility-font-Montserrat text-xl font-bold text-gray-800">{component.title}</h3>
                     <div className={`w-2 h-2 ${component.dotColor} rounded-full`}></div>
                   </div>
                   
-                  <p className="text-sm text-gray-600 italic mb-4">{component.subtitle}</p>
+                  <p className="Utility-font-NunitoSans text-sm text-gray-600 italic mb-4">{component.subtitle}</p>
 
                   {/* Description - Show on hover for large screens */}
                   <div className={`hidden md:block transition-all duration-300 ${
                     isHovered ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0 overflow-hidden'
                   }`}>
-                    <p className="text-sm text-gray-700 leading-relaxed mb-4">
+                    <p className="Utility-font-NunitoSans text-sm text-gray-700 leading-relaxed mb-4">
                       {component.description}
                     </p>
                   </div>

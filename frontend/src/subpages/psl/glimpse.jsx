@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import im1 from "./assets/image 89.webp"
-import im2 from "./assets/isolated-school-science-equipment-on-transparent-background-free-png.webp"
+import im2 from "./assets/school-project.jpg"
 import im3 from "./assets/images.webp"
-import im4 from "./assets/image 93.webp"
+import im4 from "./assets/image 93.jpg"
 import im5 from "./assets/image120.webp"
 import im6 from "./assets/image.webp"
 import im7 from "./assets/DSC05381.webp"
@@ -70,7 +70,7 @@ export default function GlimpseSection() {
       <div className="relative z-10 container mx-auto px-2 sm:px-4 lg:px-6 py-12 sm:py-16 lg:py-20">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-white bg-clip-text text-transparent mb-4 sm:mb-6 tracking-wider drop-shadow-lg px-4">
+          <h1 className="Utility-font-Montserrat text-4xl sm:text-6xl lg:text-7xl font-extrabold bg-white bg-clip-text text-transparent mb-4 sm:mb-6 tracking-wider drop-shadow-lg px-4">
             GLIMPSE OF PSL
           </h1>
         </div>
@@ -82,7 +82,7 @@ export default function GlimpseSection() {
             <div className="flex justify-center items-center gap-12">
               
               {/* Left Column - Top 3 features */}
-              <div className="flex flex-col gap-8">
+              <div className="Utility-font-Montserrat flex flex-col gap-8">
                 {features.slice(0, 3).map((feature, index) => (
                   <FeatureCard
                     key={index}
@@ -105,7 +105,7 @@ export default function GlimpseSection() {
               </div>
 
               {/* Right Column - Bottom 3 features */}
-              <div className="flex flex-col gap-8">
+              <div className="Utility-font-Montserrat flex flex-col gap-8">
                 {features.slice(3, 6).map((feature, index) => (
                   <FeatureCard
                     key={index + 3}
@@ -125,7 +125,7 @@ export default function GlimpseSection() {
             <div className="flex justify-center items-center gap-8">
               
               {/* Left Column - Top 3 features */}
-              <div className="flex flex-col gap-6">
+              <div className="Utility-font-Montserrat flex flex-col gap-6">
                 {features.slice(0, 3).map((feature, index) => (
                   <FeatureCard
                     key={index}
@@ -148,7 +148,7 @@ export default function GlimpseSection() {
               </div>
 
               {/* Right Column - Bottom 3 features */}
-              <div className="flex flex-col gap-6">
+              <div className="Utility-font-Montserrat flex flex-col gap-6">
                 {features.slice(3, 6).map((feature, index) => (
                   <FeatureCard
                     key={index + 3}
@@ -168,7 +168,7 @@ export default function GlimpseSection() {
             <div className="flex justify-center items-center gap-6">
               
               {/* Left Column - Top 3 features */}
-              <div className="flex flex-col gap-5">
+              <div className="Utility-font-Montserrat flex flex-col gap-5">
                 {features.slice(0, 3).map((feature, index) => (
                   <FeatureCard
                     key={index}
@@ -191,7 +191,7 @@ export default function GlimpseSection() {
               </div>
 
               {/* Right Column - Bottom 3 features */}
-              <div className="flex flex-col gap-5">
+              <div className="Utility-font-Montserrat flex flex-col gap-5">
                 {features.slice(3, 6).map((feature, index) => (
                   <FeatureCard
                     key={index + 3}
@@ -220,7 +220,7 @@ export default function GlimpseSection() {
               </div>
               
               {/* Feature cards in 2 rows of 3 */}
-              <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+              <div className="Utility-font-Montserrat grid grid-cols-3 gap-4 max-w-4xl mx-auto">
                 {features.map((feature, index) => (
                   <div key={index} className="flex justify-center">
                     <FeatureCard
@@ -248,7 +248,7 @@ export default function GlimpseSection() {
             </div>
 
             {/* Feature cards in responsive grid */}
-            <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto px-2">
+            <div className="Utility-font-Montserrat grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto px-2">
               {features.map((feature, index) => (
                 <div key={index} className="flex justify-center">
                   <FeatureCard
@@ -323,10 +323,10 @@ function PSLLearningHub({ activeCard, setActiveCard, image, size = "lg" }) {
         </div>
         {/* Content */}
         <div className="space-y-4">
-          <h3 className={`${config.title} font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-400 transition-all duration-300`}>
+          <h3 className={`${config.title} Utility-font-Montserrat font-bold text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-cyan-400 group-hover:to-blue-400 transition-all duration-300`}>
             PSL Learning Hub
           </h3>
-          <p className={`text-white/70 ${config.subtitle} leading-relaxed`}>
+          <p className={`Utility-font-NunitoSans text-white/70 ${config.subtitle} leading-relaxed`}>
             Discover the future of education with innovative learning experiences
           </p>
         </div>

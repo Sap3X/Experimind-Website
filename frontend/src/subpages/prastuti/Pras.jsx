@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import img1 from "./assets/Prastuti Hero Image 2.webp";
 import img2 from "./assets/Prastuti Hero Image.webp";
-import rack from "./assets/mainimage.webp"; // Importing the right image
+import rack from "./assets/mainimage.png"; // Importing the right image
 import Gallery from "./Gallery";
 import demo from "./assets/prasmain (1).webp";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import briefcase from "./assets/briefcase.webp";
-import video from './assets/video.webp';
-import traning from './assets/training.webp';
-import classroom from './assets/classroom.webp';
-import enrich from './assets/enrichment.webp';
-
+import video from "./assets/video.webp";
+import traning from "./assets/training.webp";
+import classroom from "./assets/classroom.webp";
+import enrich from "./assets/enrichment.webp";
 export default function Prastuti() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -28,9 +27,9 @@ export default function Prastuti() {
     <>
       <div className="min-h-screen bg-gray-50">
         <Header />
-        {/* HERO SECTION - ANIMATED */}
+        {/* HERO SECTION - ENHANCED RESPONSIVE */}
         <div
-          className="relative py-6 lg:py-8 w-full overflow-hidden"
+          className="relative py-4 sm:py-6 lg:py-8 w-full overflow-hidden"
           style={{
             background: "linear-gradient(135deg, #3186e7 0%, #1a5bb8 100%)",
           }}
@@ -38,30 +37,30 @@ export default function Prastuti() {
           {/* Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div
-              className={`absolute top-20 right-0 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-white/5 rounded-full transform translate-x-16 sm:translate-x-24 lg:translate-x-32 -translate-y-8 sm:-translate-y-12 lg:-translate-y-16 transition-all duration-1000 ease-out ${
+              className={`absolute top-10 sm:top-16 lg:top-20 right-0 w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 bg-white/5 rounded-full transform translate-x-8 sm:translate-x-16 lg:translate-x-24 xl:translate-x-32 -translate-y-4 sm:-translate-y-8 lg:-translate-y-12 xl:-translate-y-16 transition-all duration-1000 ease-out ${
                 isLoaded
                   ? "opacity-100 scale-100"
-                  : "opacity-0 scale-75 translate-x-32"
+                  : "opacity-0 scale-75 translate-x-16 sm:translate-x-32"
               }`}
             ></div>
             <div
-              className={`absolute bottom-0 left-0 w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-white/3 rounded-full transform -translate-x-12 sm:-translate-x-16 lg:-translate-x-20 translate-y-12 sm:translate-y-16 lg:translate-y-20 transition-all duration-1000 ease-out delay-300 ${
+              className={`absolute bottom-0 left-0 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 xl:w-80 xl:h-80 bg-white/3 rounded-full transform -translate-x-8 sm:-translate-x-12 lg:-translate-x-16 xl:-translate-x-20 translate-y-8 sm:translate-y-12 lg:translate-y-16 xl:translate-y-20 transition-all duration-1000 ease-out delay-300 ${
                 isLoaded
                   ? "opacity-100 scale-100"
-                  : "opacity-0 scale-75 -translate-x-32"
+                  : "opacity-0 scale-75 -translate-x-16 sm:-translate-x-32"
               }`}
             ></div>
           </div>
 
           {/* Hero Content Container */}
-          <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-12">
+          <div className="relative z-10 w-full px-3 sm:px-4 lg:px-6 xl:px-8 2xl:px-12">
             <div className="w-full max-w-7xl mx-auto">
               {/* Main Hero Row */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 xl:gap-12 items-center py-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 xl:gap-12 items-center py-4 sm:py-6 lg:py-8">
                 {/* LEFT: Classroom Demo Image */}
-                <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+                <div className="flex justify-center lg:justify-start order-2 lg:order-1 pt-8 sm:pt-16 lg:pt-32 xl:pt-48">
                   <div
-                    className={`relative transform hover:scale-110 transition-all duration-700 hover:rotate-1 ${
+                    className={`relative transform hover:scale-105 sm:hover:scale-110 transition-all duration-700 hover:rotate-1 ${
                       isLoaded
                         ? "translate-x-0 opacity-100"
                         : "-translate-x-full opacity-0"
@@ -74,10 +73,10 @@ export default function Prastuti() {
                     <img
                       src={img2}
                       alt="Prastuti Classroom Demo"
-                      className="w-72 h-52 sm:w-80 sm:h-60 lg:w-[24rem] lg:h-[16rem] xl:w-[28rem] xl:h-[20rem] object-contain drop-shadow-2xl rounded-2xl border-2 border-white/20"
+                      className="w-60 h-40 sm:w-72 sm:h-52 lg:w-80 lg:h-60 xl:w-[24rem] xl:h-[16rem] 2xl:w-[28rem] 2xl:h-[20rem] object-contain drop-shadow-2xl rounded-xl sm:rounded-2xl border border-white/20 sm:border-2"
                     />
                     <div
-                      className={`absolute -top-3 -left-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg transition-all duration-500 delay-700 ${
+                      className={`absolute -top-2 -left-2 sm:-top-3 sm:-left-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg transition-all duration-500 delay-700 ${
                         isLoaded
                           ? "animate-pulse opacity-100 scale-100"
                           : "opacity-0 scale-75"
@@ -86,15 +85,15 @@ export default function Prastuti() {
                       Classroom Demo
                     </div>
                     {/* Interactive glow effect */}
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-400/20 to-blue-700/20 opacity-0 hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                    <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-400/20 to-blue-700/20 opacity-0 hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
                   </div>
                 </div>
 
                 {/* CENTER: Prastuti Text Content with Round Image Below */}
-                <div className="text-center order-1 lg:order-2 flex flex-col items-center">
+                <div className="text-center order-1 lg:order-2 flex flex-col items-center px-2 sm:px-4">
                   {/* PRASTUTI Heading - Special Highlighting Animation */}
                   <h1
-                    className={` mt-16 text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight mb-2 transition-all duration-1000 ease-out ${
+                    className={`Utility-font-Montserrat tracking-widest mt-4 sm:mt-8 lg:mt-16 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight mb-2 sm:mb-4 transition-all duration-1000 ease-out ${
                       isLoaded
                         ? "translate-y-0 opacity-100 scale-100"
                         : "translate-y-8 opacity-0 scale-95"
@@ -104,7 +103,7 @@ export default function Prastuti() {
                   </h1>
 
                   <h2
-                    className={`text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold mb-4 transition-all duration-800 ease-out delay-300 ${
+                    className={`Utility-font-Buenard text-white text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold mb-4 sm:mb-6 whitespace-nowrap transition-all duration-800 ease-out delay-300 px-2 ${
                       isLoaded
                         ? "translate-y-0 opacity-100"
                         : "translate-y-4 opacity-0"
@@ -116,7 +115,7 @@ export default function Prastuti() {
                   <img
                     src={rack}
                     alt="Prastuti Main Product"
-                    className={`w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 object-contain drop-shadow-2xl rounded-full border-4 border-white/30 mb-4 transition-all duration-1000 ease-out delay-500 ${
+                    className={`w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 object-contain drop-shadow-2xl mb-4 sm:mb-6 transition-all duration-1000 ease-out delay-500 ${
                       isLoaded
                         ? "translate-y-0 opacity-100 scale-100 rotate-0"
                         : "translate-y-8 opacity-0 scale-75 rotate-12"
@@ -127,25 +126,12 @@ export default function Prastuti() {
                         : "none",
                     }}
                   />
-
-                  <p
-                    className={`text-white/90 text-sm sm:text-base lg:text-lg xl:text-xl leading-relaxed mb-4 max-w-xl mx-auto transition-all duration-800 ease-out delay-700 ${
-                      isLoaded
-                        ? "translate-y-0 opacity-100"
-                        : "translate-y-4 opacity-0"
-                    }`}
-                  >
-                    Revolutionary chapter-wise demonstration kit designed for
-                    Grades 8, 9 & 10. Transform your classroom into an
-                    interactive learning environment with hands-on activities
-                    that make complex concepts simple.
-                  </p>
                 </div>
 
                 {/* RIGHT: Teacher Training Image */}
-                <div className="flex justify-center lg:justify-end order-3">
+                <div className="flex justify-center lg:justify-end order-3 pt-8 sm:pt-16 lg:pt-32 xl:pt-48">
                   <div
-                    className={`relative transform hover:scale-110 transition-all duration-700 hover:rotate-1 ${
+                    className={`relative transform hover:scale-105 sm:hover:scale-110 transition-all duration-700 hover:rotate-1 ${
                       isLoaded
                         ? "translate-x-0 opacity-100"
                         : "translate-x-full opacity-0"
@@ -158,10 +144,10 @@ export default function Prastuti() {
                     <img
                       src={img1}
                       alt="Prastuti Teacher Training"
-                      className="w-72 h-52 sm:w-80 sm:h-60 lg:w-[24rem] lg:h-[16rem] xl:w-[28rem] xl:h-[20rem] object-contain drop-shadow-2xl rounded-2xl border-2 border-white/20"
+                      className="w-60 h-40 sm:w-72 sm:h-52 lg:w-80 lg:h-60 xl:w-[24rem] xl:h-[16rem] 2xl:w-[28rem] 2xl:h-[20rem] object-contain drop-shadow-2xl rounded-xl sm:rounded-2xl border border-white/20 sm:border-2"
                     />
                     <div
-                      className={`absolute -top-3 -right-3 bg-gradient-to-r from-green-500 to-green-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg transition-all duration-500 delay-900 ${
+                      className={`absolute -top-2 -right-2 sm:-top-3 sm:-right-3 bg-gradient-to-r from-green-500 to-green-700 text-white px-2 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-lg transition-all duration-500 delay-900 ${
                         isLoaded
                           ? "animate-pulse opacity-100 scale-100"
                           : "opacity-0 scale-75"
@@ -170,9 +156,28 @@ export default function Prastuti() {
                       Teacher Training
                     </div>
                     {/* Interactive glow effect */}
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-green-400/20 to-emerald-400/20 opacity-0 hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                    <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-gradient-to-r from-green-400/20 to-emerald-400/20 opacity-0 hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
                   </div>
                 </div>
+              </div>
+
+              {/* Spanning Text Below Hero Images */}
+              <div className="w-full mt-4 sm:mt-6 lg:mt-8">
+                <p
+                  className={`Utility-font-NunitoSans text-white/90 text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl leading-relaxed text-center w-full max-w-6xl mx-auto transition-all duration-800 ease-out delay-700 mb-4 sm:mb-6 lg:mb-8 px-2 sm:px-4 ${
+                    isLoaded
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-4 opacity-0"
+                  }`}
+                >
+                  Revolutionary chapter-wise demonstration kit designed
+                  specifically for Grades 8, 9 & 10 students, perfectly aligned
+                  with NCERT curriculum.
+                  <span className="sm:hidden"> </span>
+                  Transform your classroom into an interactive learning
+                  environment with hands-on activities that make complex
+                  concepts simple and memorable.
+                </p>
               </div>
             </div>
           </div>
@@ -201,12 +206,25 @@ export default function Prastuti() {
                   0 0 90px rgba(255, 255, 255, 0.2);
               }
             }
+
+            /* Mobile-first responsive adjustments */
+            @media (max-width: 640px) {
+              .bounce-slow {
+                animation-duration: 3s;
+              }
+            }
+
+            @media (max-width: 480px) {
+              .bounce-slow {
+                animation: none;
+              }
+            }
           `}</style>
         </div>
       </div>
 
       {/* What is Prastuti Section */}
-      <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+      <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 mb-10">
         <div className="bg-white rounded-2xl shadow-xl w-full px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-7xl mx-auto py-10 sm:py-12 lg:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Left Image */}
@@ -229,13 +247,12 @@ export default function Prastuti() {
             {/* Right Text */}
             <div className="space-y-6 lg:space-y-8">
               <div className="relative">
-                <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                <h2 className="Utility-font-Montserrat text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                   What is Prastuti?
                 </h2>
-                <div className="absolute -bottom-2 left-0 w-24 sm:w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full"></div>
               </div>
 
-              <div className="space-y-4 lg:space-y-6">
+              <div className="Utility-font-NunitoSans space-y-4 lg:space-y-6">
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-xl">
                   <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
                     <span className="font-bold text-blue-700">Prastuti</span> is
@@ -264,7 +281,7 @@ export default function Prastuti() {
 
                 <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-xl">
                   <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
-                    <span className="font-bold">No separate lab required!</span>
+                    <span className="font-bold">No separate lab required! </span>
                     No technical expertise needed! Prastuti brings the
                     laboratory experience
                     <span className="font-semibold">
@@ -281,26 +298,23 @@ export default function Prastuti() {
       </section>
 
       {/* Video Section */}
-      <section className="py-12 sm:py-16 bg-gray-100 ">
-        <div className="px-4 sm:px-6 max-w-6xl mx-auto">
-          <div className="bg-gradient-to-b from-gray-300 to-gray-600 rounded-md h-64 sm:h-80 lg:h-96 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 sm:w-10 sm:h-10 text-gray-600"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gray-100">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
+            <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <div
+                className="relative w-full"
+                style={{ paddingBottom: "56.25%" }}
+              >
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://drive.google.com/file/d/1BeAKh0pv70yfxxJn0gE_qRP1kaeDpviH/preview"
+                  width="640"
+                  height="480"
+                  allow="autoplay"
+                ></iframe>
               </div>
-              <p className="text-white text-lg sm:text-xl font-semibold">
-                Demo Video Coming Soon
-              </p>
             </div>
           </div>
         </div>
@@ -309,11 +323,11 @@ export default function Prastuti() {
       {/* Features Section */}
       <section className="py-12 sm:py-16 lg:py-20 xl:py-24 bg-gradient-to-b from-blue-800 to-blue-600 ">
         <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mb-12 lg:mb-16">
+          <h2 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mb-12 lg:mb-16">
             WHY CHOOSE US?
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
+          <div className="Utility-font-NunitoSans grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
             {[
               {
                 icon: briefcase,
@@ -373,18 +387,18 @@ export default function Prastuti() {
       >
         <div className="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <div className="text-center">
-            <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 lg:mb-8 leading-tight">
+            <h2 className="Utility-font-Montserrat text-white text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 lg:mb-8 leading-tight">
               Ready to Empower Your Classroom?
             </h2>
-            <p className="text-white text-base sm:text-lg lg:text-xl xl:text-2xl mb-8 lg:mb-12 leading-relaxed max-w-3xl mx-auto">
+            <p className="Utility-font-Buenard text-white text-base sm:text-lg lg:text-xl xl:text-2xl mb-8 lg:mb-12 leading-relaxed max-w-3xl mx-auto">
               Transform the way STEM, AI, and Robotics are taught. Contact us to
               bring Prastuti to your school today!
             </p>
             <button
-              className="inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-black text-sm sm:text-base md:text-lg lg:text-xl font-bold py-3 px-6 sm:py-4 sm:px-8 lg:py-5 lg:px-10 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="Utility-font-NunitoSans inline-flex items-center bg-yellow-400 hover:bg-yellow-300 text-black text-sm sm:text-base md:text-lg lg:text-xl font-bold py-3 px-6 sm:py-4 sm:px-8 lg:py-5 lg:px-10 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg"
               onClick={() => navigate("/contact")}
             >
-              Book a Demo Now
+              Order Now
             </button>
           </div>
         </div>

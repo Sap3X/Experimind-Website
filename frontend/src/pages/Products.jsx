@@ -88,7 +88,7 @@ const EducationalSolutions = () => {
               <h3 className="Utility-font-Montserrat Utility-color-Blue text-3xl md:text-4xl font-bold">
                 {solution.title}
               </h3>
-              <p className="text-justify text-lg md:text-xl text-gray-700 leading-relaxed">
+              <p className="Utility-font-NunitoSans text-justify text-lg md:text-xl text-gray-700 leading-relaxed">
                 {solution.description}
               </p>
               <button

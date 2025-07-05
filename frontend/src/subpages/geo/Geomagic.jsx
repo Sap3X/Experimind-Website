@@ -43,16 +43,16 @@ export default function GeoMagic() {
               <div className="text-center max-w-4xl mx-auto">
                 {/* Subtitle */}
                 <div className="mb-8 md:mb-16">
-                  <p className="text-white/90 text-base md:text-[1.25rem] lg:text-[1.75rem]    font-semibold tracking-wide uppercase mb-2">
+                  <p className="text-white/90 Utility-font-Montserrat text-base md:text-[1.25rem] lg:text-[1.75rem] font-semibold tracking-wide uppercase mb-2">
                     Experiential Geometry Learning
                   </p>
-                  <p className="text-white text-xs md:text-[1.25rem] lg:text-[1.5rem] font-light tracking-wider uppercase">
+                  <p className="text-white Utility-font-NunitoSans text-xs md:text-[1.25rem] lg:text-[1.5rem] font-light tracking-wider uppercase">
                     Integrated with 1 - 10th Grade Curriculum
                   </p>
                 </div>
 
                 {/* Main Heading */}
-                  <h1 className="text-white text-3xl md:text-[3rem] lg:text-[3.75rem] font-bold mb-6 md:mb-8 leading-tight drop-shadow-lg" style={{lineheight: "1.25rem",}} >
+                  <h1 className="text-white text-3xl Utility-font-Montserrat md:text-[3rem] lg:text-[3.75rem] font-bold mb-6 md:mb-8 leading-tight drop-shadow-lg" style={{lineheight: "1.25rem",}} >
                   GeoMagic Where Geometry
                   <br />
                   <span className="bg-clip-text text-white">
@@ -61,13 +61,13 @@ export default function GeoMagic() {
                 </h1>
 
                 {/* Description */}
-                <p className="text-gray-100/90 text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-4 md:mb-6 max-w-3xl mx-auto drop-shadow-md">
+                <p className="Utility-font-NunitoSans text-gray-100/90 text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-4 md:mb-6 max-w-3xl mx-auto drop-shadow-md">
                   Build shapes, explore angles, and dive into trigonometry with
                   hands-on parts, a guidebook, and quick video lessons.
                 </p>
 
                 {/* Tagline */}
-                <p className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 md:mb-12 drop-shadow-lg">
+                <p className="Utility-font-NunitoSans text-white text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 md:mb-12 drop-shadow-lg">
                   Fun. <span className="text-yellow-300">Simple.</span> Magical.
                 </p>
               </div>
@@ -105,16 +105,16 @@ export default function GeoMagic() {
               <div className="text-center max-w-lg mx-auto">
                 {/* Subtitle */}
                 <div className="mb-8">
-                  <p className="text-white/90 text-xs font-medium tracking-wide uppercase mb-1">
+                  <p className="Utility-font-Montserrat text-white/90 text-xs font-medium tracking-wide uppercase mb-1">
                     Experiential Geometry Learning
                   </p>
-                  <p className="text-white/80 text-sm font-light tracking-wider uppercase">
+                  <p className="Utility-font-NunitoSans text-white/80 text-sm font-light tracking-wider uppercase">
                     Integrated with 1 - 10th Grade Curriculum
                   </p>
                 </div>
 
                 {/* Main Heading */}
-                <h1 className="text-white text-2xl font-bold mb-4 leading-tight drop-shadow-lg">
+                <h1 className="Utility-font-Montserrat text-white text-2xl font-bold mb-4 leading-tight drop-shadow-lg">
                   GeoMagic Where Geometry
                   <br />
                   <span className="bg-clip-text text-white">
@@ -123,20 +123,22 @@ export default function GeoMagic() {
                 </h1>
 
                 {/* Description */}
-                <p className="text-purple-100/90 text-sm font-medium leading-relaxed mb-3 drop-shadow-md">
+                <p className="Utility-font-NunitoSans text-purple-100/90 text-sm font-medium leading-relaxed mb-3 drop-shadow-md">
                   Build shapes, explore angles, and dive into trigonometry with
                   hands-on parts, a guidebook, and quick video lessons.
                 </p>
 
                 {/* Tagline */}
-                <p className="text-white text-lg font-semibold mb-6 drop-shadow-lg">
+                <p className="Utility-font-NunitoSans text-white text-lg font-semibold mb-6 drop-shadow-lg">
                   Fun. Simple. <span className="text-yellow-300">Magical.</span>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center my-12 px-4 md:px-8">
+
+        {/* Video Section - Uncomment if needed */}
+        {/* <div className="flex flex-col items-center justify-center my-12 px-4 md:px-8">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6 text-black">
             Watch GeoMagic in Action
           </h2>
@@ -164,23 +166,24 @@ export default function GeoMagic() {
               allowFullScreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
+
         {/* The section below is the "Why Geomagic?" section */}
         <div className="flex flex-col items-center mb-16 px-4 md:px-8 lg:px-16 pt-6">
           {/* Main heading */}
-          <h1 className="text-black text-3xl md:text-4xl lg:text-6xl font-bold text-center max-w-md md:max-w-lg lg:max-w-xl mb-4 lg:mb-6 ">
+          <h1 className="Utility-font-Montserrat mt-12 text-black text-3xl md:text-4xl lg:text-6xl font-bold text-center max-w-md md:max-w-lg lg:max-w-xl mb-4 lg:mb-6 ">
             WHY GEOMAGIC?
           </h1>
 
           {/* Subtitle */}
-          <p className="text-black text-lg md:text-xl lg:text-2xl text-center max-w-2xl md:max-w-4xl lg:max-w-5xl mb-8 md:mb-12 lg:mb-14 leading-relaxed">
+          <p className="Utility-font-NunitoSans text-black text-lg md:text-xl lg:text-2xl text-center max-w-2xl md:max-w-4xl lg:max-w-5xl mb-8 md:mb-12 lg:mb-14 leading-relaxed">
             Our key to experiential geometry. Dive into hands-on learning with
             our kit and video tutorials, igniting curiosity and creativity.
             Explore the magic of geometry today!
           </p>
 
           {/* Icons container */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mb-4 md:mb-6 text-center">
+          <div className="Utility-font-NunitoSans grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 w-full max-w-6xl mb-4 md:mb-6 text-center">
             <div className="flex justify-center flex-col items-center">
               <div
                 className="w-20 h-20 m-2 md:w-32 md:h-32 lg:w-36 lg:h-36 rounded-full bg-slate-200"
@@ -274,8 +277,10 @@ export default function GeoMagic() {
             </div>
           </div>
         </div>
+
         {/* Product Contain */}
         <ProductShowcase />
+
         {/* { Gallery Section } */}
         <SmoothCoverflowCarousel />
         <div className="w-full max-w-7xl mx-auto p-4 md:p-6">
@@ -290,16 +295,16 @@ export default function GeoMagic() {
             <div className="relative flex flex-col md:flex-row items-center justify-between p-6 md:p-12 lg:p-16">
               {/* Left content */}
               <div className="flex-1 text-white mb-6 md:mb-0 md:pr-8 text-center md:text-left">
-                <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 leading-tight">
+                <h1 className="Utility-font-Montserrat text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-6 leading-tight">
                   Curious how GeoMagic works?
                 </h1>
-                <p className="text-sm md:text-lg lg:text-xl mb-6 md:mb-8 opacity-90 leading-relaxed max-w-md md:max-w-lg">
+                <p className="Utility-font-NunitoSans text-sm md:text-lg lg:text-xl mb-6 md:mb-8 opacity-90 leading-relaxed max-w-md md:max-w-lg">
                   See it in action and uncover the clever ways it brings
                   geometry to life.
                   <br className="hidden md:block" />
-                  Discover how fun—and surprising—geometry can be!
+                  Discover how fun and surprising geometry can be!
                 </p>
-                <button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
+                <button className="Utility-font-NunitoSans bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 md:px-8 md:py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-sm md:text-base">
                   <span className="flex items-center justify-center" onClick={() => navigate("/contact")}>
                     Book a Free Demo
                   </span>
