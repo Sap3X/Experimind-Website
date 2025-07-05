@@ -139,7 +139,7 @@ const EnhancedPrastutiSection = () => {
       <div className="absolute -top-16 -left-16 w-24 h-24 sm:w-40 sm:h-40 bg-cyan-100 opacity-20 rounded-full blur-2xl z-0"></div>
       <div className="absolute bottom-0 -right-16 w-16 h-16 sm:w-32 sm:h-32 bg-blue-200 opacity-20 rounded-full blur-2xl z-0"></div>
       <div className="text-center mb-6 sm:mb-10 relative z-10">
-        <h2 className="Utility-font-Montserrat text-4xl sm:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-cyan-400 tracking-tight tracking-wider">
+        <h2 className="Utility-font-Montserrat text-4xl sm:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-cyan-400 tracking-wider">
           PRASTUTI
         </h2>
         <p className="Utility-font-Buenard text-blue-900 text-sm xs:text-base sm:text-lg mt-2 font-medium">
