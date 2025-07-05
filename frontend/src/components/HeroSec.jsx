@@ -1,7 +1,9 @@
 import React from "react";
 import image from "../image";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+  const navigate= useNavigate();
   return (
     <>
       <div className="h-svh lg:max-h-screen bg-gradient-to-br from-[#1c1b23] via-[#2a1f3d] to-[#181820] text-white relative overflow-hidden">
@@ -178,18 +180,18 @@ export default function HeroSection() {
           <div className="absolute inset-0 flex flex-col justify-end z-20 px-4 pb-8">
             <div className="space-y-6 text-center">
               <div className="space-y-4">
-                <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
-                  Together Let Us Make Learning<br />Fun And Experiential
+                <h1 className="Utility-font-Montserrat text-4xl sm:text-5xl font-bold leading-tight">
+                  Together Let Us <br /> Make Learning Fun <br /> And Experiential
                 </h1>
                 
-                <p className="text-gray-200 text-base leading-relaxed max-w-sm mx-auto">
+                <p className="Utility-font-Buenard text-gray-200 text-base leading-relaxed max-w-sm mx-auto">
                   Innovation Education for a Brighter Future
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <button className="bg-[#f05a28] hover:bg-[#f05a28]/90 text-white px-8 py-3 rounded-full font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg">
-                  Explore Our Produxts {"->"}
+                <button className="bg-[#f05a28] hover:bg-[#f05a28]/90 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg" onClick={() => navigate("/products")}>
+                  Explore Our Products {"->"}
                 </button>
               </div>
 
@@ -207,7 +209,7 @@ export default function HeroSection() {
               <div className="space-y-6">
                 <div className="flex items-center justify-center lg:justify-start gap-3">
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                    Together Ket Us Make Learning Fun<br /> And Experiential
+                    Together let Us <br /> Make Learning Fun <br /> And Experiential
                   </h1>
                 </div>
                 
@@ -217,7 +219,7 @@ export default function HeroSection() {
               </div>
 
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                <button className="bg-[#f05a28] hover:bg-[#f05a28]/90 text-white px-8 py-3 rounded-full font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg">
+                <button className="bg-[#f05a28] hover:bg-[#f05a28]/90 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 hover:scale-105 hover:shadow-lg" onClick={() => navigate("/products")}>
                   Explore Our Products {"->"}
                 </button>
               </div>
