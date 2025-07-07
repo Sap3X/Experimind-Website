@@ -4,13 +4,16 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import careersImage from "../assets/Career_Hero_img.svg";
 import img from "../image";
+import { toast } from "react-toastify";
 
 const Careers = () => {
+  const apiUrl = process.env.REACT_APP_BACKEND_URL;
   const [jobs, setJobs] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [showInternshipModal, setShowInternshipModal] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,7 +33,7 @@ const Careers = () => {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/jobs");
+        const res = await axios.get(`${apiUrl}/api/jobs`);
         const sortedJobs = res.data.sort((a, b) => {
           const getNumber = (id) => parseInt(id.split("-")[1]);
           return getNumber(b.jobId) - getNumber(a.jobId);
@@ -44,7 +47,6 @@ const Careers = () => {
     fetchJobs();
   }, []);
 
-  // Fixed function to properly close job modal
   const handleCloseJobModal = () => {
     setShowModal(false);
     setSelectedJob(null);
@@ -59,13 +61,11 @@ const Careers = () => {
     document.body.style.overflow = "auto";
   };
 
-  // Also fix the handleApplyInternshipClick function:
   const handleApplyInternshipClick = () => {
     setShowInternshipModal((prev) => {
       const newState = !prev;
       document.body.style.overflow = newState ? "hidden" : "auto";
       if (!newState) {
-        // Clear form and errors when closing
         setInternFormData({
           name: "",
           email: "",
@@ -98,7 +98,6 @@ const Careers = () => {
     e.preventDefault();
     const newErrors = {};
 
-    // Fix: Check internFormData instead of formData
     if (!internFormData.name.trim()) newErrors.name = "Name is required";
     if (!internFormData.email.trim()) newErrors.email = "Email is required";
     if (!internFormData.phone.trim()) newErrors.phone = "Phone is required";
@@ -111,8 +110,8 @@ const Careers = () => {
       return;
     }
 
-    // Clear errors if validation passes
     setErrors({});
+    setLoading(true);
 
     const data = new FormData();
     data.append("roles", internFormData.roles);
@@ -123,12 +122,12 @@ const Careers = () => {
     data.append("resume", internFormData.resume);
 
     try {
-      await axios.post("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/internships/apply", data, {
+      await axios.post(`${apiUrl}/api/internships/apply`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
-      alert("Application submitted successfully!");
+      toast.success("Application submitted successfully");
       setShowInternshipModal(false);
       setInternFormData({
         name: "",
@@ -138,11 +137,13 @@ const Careers = () => {
         reason: "",
         resume: null,
       });
-      setErrors({}); // Clear errors
-      document.body.style.overflow = "auto"; // Reset overflow
+      setErrors({});
+      document.body.style.overflow = "auto";
     } catch (err) {
       console.error("Application failed:", err);
-      alert("Failed to submit. Please try again.");
+      toast.success("Failed to submit. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -154,21 +155,18 @@ const Careers = () => {
     }));
   };
 
-  // Fixed handleSubmit function with jobId and jobTitle
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newErrors = {};
 
-    // Validation
     if (!formData.name.trim()) newErrors.name = "Name is required";
     if (!formData.email.trim()) newErrors.email = "Email is required";
     if (!formData.phone.trim()) newErrors.phone = "Phone is required";
     if (!formData.reason.trim()) newErrors.reason = "Reason is required";
     if (!formData.resume) newErrors.resume = "Resume is required";
 
-    // Check if selectedJob exists
     if (!selectedJob) {
-      alert("Error: No job selected. Please try again.");
+      toast.success("Error: No job selected. Please try again.");
       return;
     }
 
@@ -177,14 +175,12 @@ const Careers = () => {
       return;
     }
 
-    // Clear errors if validation passes
     setErrors({});
+    setLoading(true);
 
     const data = new FormData();
-    // Add job-specific data
     data.append("jobId", selectedJob.jobId);
     data.append("jobTitle", selectedJob.title);
-    // Add form data
     data.append("name", formData.name);
     data.append("email", formData.email);
     data.append("phone", formData.phone);
@@ -192,27 +188,28 @@ const Careers = () => {
     data.append("resume", formData.resume);
 
     try {
-      await axios.post("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/jobs/apply", data, {
+      await axios.post(`${apiUrl}/api/jobs/apply`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
-      alert("Application submitted successfully!");
-      handleCloseJobModal(); // Use the proper close function
+      toast.success("Application submitted successfully!");
+      handleCloseJobModal();
     } catch (err) {
       console.error("Application failed:", err);
-      alert("Failed to submit. Please try again.");
+      toast.success("Failed to submit. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
-  // Remove handleSubmit1 as it's not being used and causes confusion
   const [posters, setPosters] = useState([]);
   const [isPosterAvai, setIsPosterAvai] = useState(false);
 
   useEffect(() => {
     const fetchPosters = async () => {
       try {
-        const res = await axios.get("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/posters");
+        const res = await axios.get(`${apiUrl}/api/posters`);
         if (res.data.success && res.data.posters.length > 0) {
           setPosters(res.data.posters);
           setIsPosterAvai(true);
@@ -274,7 +271,7 @@ const Careers = () => {
           {isPosterAvai ? (
             <div className="flex justify-center mb-16 px-4">
               <button
-                className="bg-[#FFDD15] text-black text-lg md:text-xl lg:text-2xl py-4 px-6 rounded-lg"
+                className="bg-[#FFDD15] mt-4 text-black text-lg md:text-xl lg:text-2xl py-4 px-6 rounded-lg"
                 onClick={handleApplyInternshipClick}
               >
                 Start Your Internship Journey
@@ -564,11 +561,14 @@ const Careers = () => {
                     shared.
                   </div>
                   <button
-                    type="submit"
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg w-full md:w-auto transition-colors duration-200"
-                  >
-                    Apply Now <i className="fas fa-paper-plane ml-2"></i>
-                  </button>
+        type="submit"
+        disabled={loading}
+        className={`${
+          loading ? "bg-blue-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"
+        } text-white px-6 py-3 rounded-lg w-full md:w-auto transition-colors duration-200`}
+      >
+        {loading ? "Applying..." : "Apply Now"} <i className="fas fa-paper-plane ml-2"></i>
+      </button>
                 </div>
               </form>
             </div>
@@ -766,18 +766,20 @@ const Careers = () => {
                     shared.
                   </div>
                   <button
-                    type="submit"
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg w-full md:w-auto transition-colors duration-200"
-                  >
-                    Apply Now <i className="fas fa-paper-plane ml-2"></i>
-                  </button>
+        type="submit"
+        disabled={loading}
+        className={`${
+          loading ? "bg-blue-400 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"
+        } text-white px-6 py-3 rounded-lg w-full md:w-auto transition-colors duration-200`}
+      >
+        {loading ? "Applying..." : "Apply Now"} <i className="fas fa-paper-plane ml-2"></i>
+      </button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       )}
-
       <Footer />
     </div>
   );

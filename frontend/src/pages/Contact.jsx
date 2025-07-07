@@ -13,9 +13,12 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { toast } from "react-toastify";
+
 
 // ContactUs Component
 const ContactUs = () => {
+  const apiUrl = process.env.REACT_APP_BACKEND_URL;
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -27,7 +30,7 @@ const ContactUs = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -55,7 +58,7 @@ const ContactUs = () => {
     setIsSubmitting(true);
     try {
       // You can integrate this with your existing API endpoint
-      await axios.post("https://ssgrfsbhtryrsdafshtjgbdsfbsrbxsd.onrender.com/api/contact", {
+      await axios.post(`${apiUrl}/api/contact`, {
         name: formData.fullName,
         email: formData.email,
         phone: Number(formData.phone),
@@ -63,7 +66,7 @@ const ContactUs = () => {
         reason: formData.message,
       });
 
-      alert("Thank you for your message! We will get back to you soon.");
+      toast.success("Thank you for your message! We will get back to you soon.");
       setFormData({
         fullName: "",
         email: "",
@@ -74,9 +77,10 @@ const ContactUs = () => {
       });
     } catch (error) {
       console.error("Error submitting contact form:", error);
-      alert("Failed to submit form. Please try again.");
+      toast.success("Failed to submit form. Please try again.");
     } finally {
       setIsSubmitting(false);
+      
     }
   };
 
@@ -306,7 +310,6 @@ export default function Contact() {
 
       {/* ContactUs Component */}
       <ContactUs />
-
       <Footer />
     </div>
   );

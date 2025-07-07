@@ -12,6 +12,8 @@ import React from 'react';
 import Shiksha from './subpages/shiksha/component/Shiksha'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
             <Route path="/shiksha" element={<Shiksha />} />
             <Route path="/anubhav" element={<Anubhav />} />
           </Routes>
+          <ToastContainer position="bottom-left" autoClose={3000}/>
       </BrowserRouter>
   );
 }

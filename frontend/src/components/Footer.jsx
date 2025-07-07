@@ -18,7 +18,7 @@ export default function Footer() {
             Udupi - 574110
           </p>
           <p className="Utility-font-NunitoSans text-sm font-semibold">
-            Call us For Support: +917483276508
+            Call us For Support: +91-7483276508 / 8088247843
           </p>
           <div className="w-full h-[12.5rem] border border-white rounded-lg overflow-hidden">
             <iframe
