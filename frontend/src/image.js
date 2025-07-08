@@ -26,7 +26,7 @@ const image =
     who_we_are_1: require('./assets/About-ExperimindLabs-1st-pic.webp'),
     who_we_are_2: require('./assets/About-ExperimindLabs-2nd-pic.webp'),
 
-    arrow: require('./assets/arrow-right-circle.png'),
+    arrow: require('./assets/arrow-right-circle.webp'),
 
     shiksha: require('./assets/Experimind-labs-Robot-Shiksha.webp'),
     psl: require('./assets/Experimind_PSL.webp'),
@@ -49,14 +49,14 @@ const image =
     meeting: require('./assets/Experimindlabs-meeting.webp'),
     meeting2: require('./assets/Experimind-labs-Meeting-Room.webp'),
 
-    vision_icons: require('./assets/eye.png'),
-    mission_icons: require('./assets/mountain.png'),
-    values_icons: require('./assets/handshake.png'),
+    vision_icons: require('./assets/eye.webp'),
+    mission_icons: require('./assets/mountain.webp'),
+    values_icons: require('./assets/handshake.webp'),
     
-    insta: require('./assets/instagram.png'),
-    Twitter: require('./assets/twitter-x.png'),
-    linkedin: require('./assets/linkedin.png'),
-    youtube: require('./assets/youtube.png'),
+    insta: require('./assets/instagram.webp'),
+    Twitter: require('./assets/twitter-x.webp'),
+    linkedin: require('./assets/linkedin.webp'),
+    youtube: require('./assets/youtube.webp'),
 
     ceo: require('./assets/Akshay-Mashelkar.webp'),
     director: require("./assets/Latha-Bhandari.webp"),

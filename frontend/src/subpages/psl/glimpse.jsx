@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import im1 from "./assets/image 89.webp"
-import im2 from "./assets/school-project.jpg"
+import im2 from "./assets/school-project.webp"
 import im3 from "./assets/images.webp"
-import im4 from "./assets/image 93.jpg"
+import im4 from "./assets/image 93.webp"
 import im5 from "./assets/image120.webp"
-import im6 from "./assets/image.jpg"
+import im6 from "./assets/image.webp"
 import im7 from "./assets/DSC05381.webp"
 
 // Mock images for demo

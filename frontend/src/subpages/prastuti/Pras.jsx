@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import img1 from "./assets/Prastuti Hero Image 2.webp";
 import img2 from "./assets/Prastuti Hero Image.webp";
-import rack from "./assets/mainimage.png"; // Importing the right image
+import rack from "./assets/mainimage.webp"; // Importing the right image
 import Gallery from "./Gallery";
 import demo from "./assets/prasmain (1).webp";
 import { useNavigate } from "react-router-dom";
@@ -93,7 +93,7 @@ export default function Prastuti() {
                 <div className="text-center order-1 lg:order-2 flex flex-col items-center px-2 sm:px-4">
                   {/* PRASTUTI Heading - Special Highlighting Animation */}
                   <h1
-                    className={`Utility-font-Montserrat tracking-widest mt-4 sm:mt-8 lg:mt-16 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight mb-2 sm:mb-4 transition-all duration-1000 ease-out ${
+                    className={`Utility-font-Montserrat tracking-widest mt-14 sm:mt-8 lg:mt-16 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-extrabold leading-tight mb-4 sm:mb-4 transition-all duration-1000 ease-out ${
                       isLoaded
                         ? "translate-y-0 opacity-100 scale-100"
                         : "translate-y-8 opacity-0 scale-95"

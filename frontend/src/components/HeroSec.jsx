@@ -20,6 +20,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_17}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -29,6 +30,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_4}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -38,6 +40,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_11}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -56,6 +59,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_12}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -69,6 +73,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_18}
                       alt="img-1"
+                      loading="lazy"
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -78,6 +83,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_9}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -87,6 +93,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_14}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -96,6 +103,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_13}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -105,6 +113,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_8}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -114,6 +123,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_5}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -127,6 +137,7 @@ export default function HeroSection() {
                    <img
                       src={image.img_3}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -136,6 +147,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_2}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -145,6 +157,7 @@ export default function HeroSection() {
                    <img
                       src={image.img_16}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -154,6 +167,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_19}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -163,6 +177,7 @@ export default function HeroSection() {
                     <img
                       src={image.img_6}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                   </div>
@@ -245,6 +260,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_4}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -254,6 +270,7 @@ export default function HeroSection() {
                      <img
                       src={image.img_11}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -263,6 +280,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_1}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -272,6 +290,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_12}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -281,6 +300,7 @@ export default function HeroSection() {
                        <img
                       src={image.img_6}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -294,6 +314,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_18}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -303,6 +324,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_9}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -312,6 +334,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_14}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -321,6 +344,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_13}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -330,6 +354,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_18}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -340,6 +365,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_5}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -353,6 +379,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_3}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -362,6 +389,7 @@ export default function HeroSection() {
                      <img
                       src={image.img_2}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -371,6 +399,7 @@ export default function HeroSection() {
                      <img
                       src={image.img_16}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -380,6 +409,7 @@ export default function HeroSection() {
                      <img
                       src={image.img_19}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -389,6 +419,7 @@ export default function HeroSection() {
                      <img
                       src={image.img_15}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
@@ -398,6 +429,7 @@ export default function HeroSection() {
                       <img
                       src={image.img_6}
                       alt="img-1"
+                      loading='lazy'
                       className="w-full h-full object-cover rounded-[1rem]"
                     />
                     </div>
