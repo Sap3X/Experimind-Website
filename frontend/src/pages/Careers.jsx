@@ -3,7 +3,6 @@ import axios from "axios";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import careersImage from "../assets/Career_Hero_img.svg";
-import img from "../image";
 import { toast } from "react-toastify";
 
 const Careers = () => {

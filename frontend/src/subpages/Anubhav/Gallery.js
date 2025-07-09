@@ -62,7 +62,6 @@ const SmoothCoverflowCarousel = () => {
     const isMobile = width < 400;
     const xUnit = isMobile ? width * 0.45 : width * 0.6;
     const zUnit = isMobile ? -height * 0.18 : -height * 0.33;
-    const scaleUnit = width / 700;
 
     const positionTransforms = {
       "-2": `${baseTransform} translateX(${-2 * xUnit}px) translateZ(${

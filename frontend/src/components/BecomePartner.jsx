@@ -69,11 +69,6 @@ const BecomePartner = () => {
     },
   ];
 
-  const handleBecomePartner = () => {
-    // Navigation logic would go here
-    console.log("Navigate to contact page");
-  };
-
   return (
     <>
       <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 mb-16 lg:mb-24 relative overflow-hidden">

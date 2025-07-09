@@ -312,6 +312,7 @@ export default function Prastuti() {
                   src="https://drive.google.com/file/d/1BeAKh0pv70yfxxJn0gE_qRP1kaeDpviH/preview"
                   width="640"
                   height="480"
+                  title="Prastuti Demo Video"
                   allow="autoplay"
                 ></iframe>
               </div>

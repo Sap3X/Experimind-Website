@@ -101,7 +101,7 @@ const SmoothCoverflowCarousel = () => {
       const interval = setInterval(nextSlide, 3000);
       return () => clearInterval(interval);
     }
-  }, [isAutoPlaying, isTransitioning, currentIndex, isDragging]);
+  }, [isAutoPlaying, isTransitioning, currentIndex, isDragging, nextSlide]);
 
   const getVisibleSlides = () => {
     const slides = [];

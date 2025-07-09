@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, use } from "react";
+import { useState, useEffect } from "react";
 import img1 from "../../assets/Experimind-Anubhav-Kit.webp";
 import img4 from "./assets/DSC05299.webp";
 import img5 from "./assets/DSC05347.webp";
@@ -21,10 +21,6 @@ const AnubhavWebsite = () => {
     }, 100);
     return () => clearTimeout(timer);
   }, []);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
 
   const handleBox1Click = () => {
     setSelectedBox("box1");
