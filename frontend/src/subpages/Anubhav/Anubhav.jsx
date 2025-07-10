@@ -257,13 +257,11 @@ const AnubhavWebsite = () => {
                   md:text-6xl
                   lg:text-7xl
                   xl:text-8xl
-                  font-bold font-['Montserrat'] tracking-tight mb-6 leading-tight break-words opacity-0
+                  font-bold tracking-tight Utility-font-Montserrat mb-6 leading-tight break-words opacity-0 text-[#dead51]
                   ${isLoaded ? "animate-slide-in-right" : ""}
                 `}
                 >
-                  <span className="Utility-font-Montserrat text-transparent text-[#FF8C00]">
-                    ANUBHAV
-                  </span>
+                  ANUBHAV
                 </h1>
                 <div
                   className={`Utility-font-Buenard text-lg sm:text-2xl md:text-3xl lg:text-4xl font-bold  mb-8 text-gray-700 opacity-0 ${
@@ -340,8 +338,8 @@ const AnubhavWebsite = () => {
             ${isLoaded ? "animate-slide-in-up animation-delay-800" : ""}
           `}
           > */}
-            {/* Video Content */}
-            {/* <div className="bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200 py-10">
+          {/* Video Content */}
+          {/* <div className="bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200 py-10">
               <div className=" relative z-10 container mx-auto px-2 sm:px-4">
                 <div className="max-w-6xl mx-auto px-0 sm:px-4 lg:px-8">
                   <div className="relative bg-gray-800 rounded-lg overflow-hidden shadow-lg">

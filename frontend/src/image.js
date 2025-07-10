@@ -1,6 +1,5 @@
 const image =
 {
-    heroimg: require('./assets/Heroimg.webp'),
     img_1: require('./components/assets/img_1.webp'),
     img_2: require('./components/assets/img_2.webp'),
     img_3: require('./components/assets/img_3.webp'),
